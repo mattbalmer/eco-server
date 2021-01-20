@@ -7,4 +7,8 @@ This contains all non-sensitive (ie. usernames & server password) modifications 
 
 ## Patch Notes
 
-todo
+### 1.1
+
+    - Increased growth time of all animals: 0.5 days -> 0.8 days
+    - Increased growth time of all plants: 0.5 days -> 0.65 days
+    - Increased growth time of all trees: 0.5 days -> 2.0 - 3.5 days (official growth time / 2) (old growth redwoods are now 10 days, 30 on official)
