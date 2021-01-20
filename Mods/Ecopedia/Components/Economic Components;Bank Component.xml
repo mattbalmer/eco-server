@@ -1,0 +1,10 @@
+<ecopedia icon="BankComponent">
+  <summary loc="3">The Bank component is used to create and manage bank accounts</summary>
+  <section loc="1">The <b>Bank Component</b> is where [Bank Accounts] are created and managed. Citizens can create multiple accounts for themselves or share accounts with other citizens. Accounts can also be assigned to [Titles] and [Demographics].</section>
+  <section image="IllustrationBankComponent" loc="2">
+    <b>Account Users</b> can perform transactions using the account (adding and removing funds).
+
+<b>Account Managers</b> can change the users in both the manager list and the user list, rename the account, and perform transactions. 
+
+In the <b>Advanced Settings</b>, you can set the account as a <b>Government Account</b>.  Government accounts can receive and pay out tax funds, and are ignored when collecting tax and calculating personal wealth. To set this, you must have government banking priviliges, assigned by an [Elected Title|Elected Titles].</section>
+</ecopedia>

@@ -1,0 +1,33 @@
+<ecopedia icon="CivicObjectComponent">
+  <summary loc="45">The Civic Object Component allows citizens to propose, amend, and repeal civic objects.</summary>
+  <section loc="42">    
+The <b>Civic Object Component</b> allows citizens to propose, amend, and repeal various <b>Civic Objects</b>. </section>
+  <section type="header" loc="317">Types of Civic Objects</section>
+  <section loc="318">
+Once a [Constitution] is passed, new government policies are contained as Civic Objects in the government building they were created in. There are many types of government buildings, each with their own type of civic object:
+
+- [Laws] are set at a [CourtItem]
+- [Demographics] are set at a [CensusBureauItem]
+- [Districts] are set at a [ZoningOfficeItem]
+- [Elected Titles] are set at a [GovernmentOfficeItem]
+- [Civic Articles] are set at a [CapitolItem] or [AmendmentsItem]
+- [Election Processes] are set at a [BoardOfElectionsItem]
+	</section>
+  <section type="header" loc="319">Proposing Civic Objects</section>
+  <section image="IllustrationCivicObject" loc="320">
+Clicking the "Draft" button will allow a citizen to propose a new civic object. Citizens can optionally begin a new draft to a civic object by clicking the "Copy" button which appears when hovering over the icon. This will bring up a dialog allowing you to select any civic object (past or present) to use as a basis. 
+
+By visiting the Civic Object Component on a government building that already contains civic objects, these policies can be amended or repealed. To repeal a civic object, click the red 'X' that appears when you mouse over the icon.  To amend an existing one, click the "Revise" button available in the interface.
+
+The buildings containing civic objects must remain placed and active for the civic object to stay in effect. If a government building is picked up, all civic objects contained on it come with it and they will eventually become disabled if the building is not replaced.
+	</section>
+  <section type="header" loc="43">Civic Duties</section>
+  <section loc="44">Within a Civic Object Component, you will see a list of your [Civic Duties]. This informs the citizen what permissions they have regarding civic objects, given the current [Constitution].The possibilities of different civic duties are:</section>
+  <section image="IllustrationCivicDuties" loc="321">
+- <b>Apply Changes Immediately:</b> Citizens given executive privilege can add, remove, and edit civic objects immediately.
+
+- <b>Propose via Election:</b> Citizens with the ability to propose elections will be able to propose an addition/deletion/edit, which will then trigger a new election (using whatever [Election Process|Election Processes] that is defined in the constitution).
+
+- <b>View Only:</b> If the citizen has no privileges as defined in the constitution, they may only view the civic objects by clicking on them and are not allowed to make changes.
+  </section>
+</ecopedia>

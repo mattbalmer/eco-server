@@ -1,0 +1,20 @@
+<ecopedia priority="5" icon="Ecopedia_CivicDuties">
+  <summary loc="277">Your civic duties are the many different ways you can interact with the government.</summary>
+  <section type="banner" image="ecopedia_banner_civicduties" />
+  <section loc="275">
+    The [Government|Government Overview] of Eco is run by individual citizens, and the quality of governance is fully dependent on how those citizens participate.
+
+    There are a number of ways to participate in the running of the government, including:
+
+    - <b>Founding</b> the government by creating a [CapitolItem] and [Constitution].
+    - <b>Defining</b> civics objects including [Districts], [Demographics], [Elected Titles], [Election Processes], and [Amendments|Constitution].
+    - <b>Running as a candidate</b> for an [Elected Title|Elected Titles], giving special powers assigned to it by the constitution.
+    - <b>Enacting [Laws]</b> after attaining the privilege to (defined in the constitution).
+    - <b>Enacting [Executive Actions]</b>, with privileges also defined in the constitution.
+    - <b>Voting</b> in [Elections] for [Elected Titles] and other civic actions.
+    - <b>Debating</b> laws with the use of [Data], presenting arguments to your fellow citizens arguing for one choice over another.
+  </section>
+  <section image="IllustrationGovernmentActionBar" loc="276">
+    Each of these options are available at a variety of locations which must be constructed by citizens. The current government can be viewed by selecting the <i>Government</i> icon in the action bar and hovering over each section will specify where the civic object is defined.
+  </section>
+</ecopedia>

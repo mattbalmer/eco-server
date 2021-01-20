@@ -1,0 +1,10 @@
+<ecopedia icon="ElectionProcess">
+  <summary loc="188">Defines how an election takes place.</summary>
+  <section type="banner" image="ElectionprocessEcopedia" />
+  <section loc="187">Citizens can define new types of elections at a [BoardOfElectionsItem], and each election process created there can be used for various changes to government and leadership.
+
+[Civic Articles] can reference Election Processes in order to designate actions that require an election.  [Elected Titles] created at a [GovernmentOfficeItem] must specify an Election Process by which new members get elected.
+
+Each Election Process can define a different set of voters, vetoers, timings, percent needed to win, etc.  Using different types of elections, citizens can design their government to have different seats of power. For example, they can define a powerful Title that must be elected by the general population but can be impeached by them as well. 
+</section>
+</ecopedia>

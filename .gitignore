@@ -1,0 +1,16 @@
+*.code-workspace
+
+Mods.zip
+
+EcoServer.exe
+EcoServer32.exe
+DefaultWorld
+
+/Configs/Network.eco
+/Configs/Users.eco
+/Configs/Voice.eco
+
+Mods_Backup/
+Logs/
+EmptySteamDepot/
+Storage/

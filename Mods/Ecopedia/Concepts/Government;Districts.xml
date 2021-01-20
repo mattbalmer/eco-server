@@ -1,0 +1,10 @@
+<ecopedia icon="District">
+  <summary loc="184">A defined section of land, which can be referenced by laws and other systems.</summary>
+  <section type="banner" image="DistrictsEcopedia" />
+  <section loc="183">Districts are created by players at a [ZoningOfficeItem] and can be used as areas that are specified by laws.
+
+A district is a selected area of land, non-contiguous, which players can adjust at will.  Districts are contained in District Maps, and there can be multiple district maps in the world. However, within each district map, no districts may overlap.
+
+Districts can be used to designate where actions are allowed with laws. A law can be created, for example, that prevents creating chopping trees in a 'Protected Zone' district.
+</section>
+</ecopedia>

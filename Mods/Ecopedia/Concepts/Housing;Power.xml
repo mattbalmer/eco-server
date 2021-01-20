@@ -1,0 +1,10 @@
+<ecopedia icon="ecopedia_power">
+  <summary loc="218">Many objects require power to function, which can be generated in a variety of ways.</summary>
+  <section type="banner" image="powerecopedia2" />
+  <section loc="217">Many objects require <b>power</b> to function, and as your society progresses the types of power will progress as well.
+  
+Early on, most power will come from calories expended by citizens.  Local-power sources can also be built such as [Waterwheels|Waterwheel Item], powering only the immediate vicinity.  When technology progresses to electricity, power can then be generated centrally, allowing groups to form together to power towns and cities as a group rather than having to individually setup power sources (community projects like this are a great fit for using the [Taxes] system to fund them, and [Contracts] and [Work Parties] to get them built).
+  
+Many types of power generation exist, and each has different <b>fuel needs</b> as well as <b>environmental impact</b>.  The building, fueling, and operation of power plants can become a major [Pollution] source as technology advances, and citizens will need to carefully regulate the types of power used and how pollution is handled to prevent an ecological catastrophe.
+  </section>
+</ecopedia>

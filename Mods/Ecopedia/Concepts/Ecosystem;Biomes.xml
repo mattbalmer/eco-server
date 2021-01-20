@@ -1,0 +1,34 @@
+<ecopedia icon="Ecopedia_Biomes" priority="-1">
+  <summary loc="142">The living system of plants and animals which provides the means for humans to survive.</summary>
+  <section type="banner" image="ecopedia_banner_biomes" />
+  <section loc="139">
+The huge diversity and richness of life across the planet can be broadly categorized into areas called biomes. Biomes in Eco are regions of the world that fall into particular ranges of precipitation and temperature. Because of these simulated physical differences, different species of microorganisms, plants, fungi, and animals are able to survive and thrive in different biomes. Each biome in Eco hosts a unique set of resources for players to discover and extract in order to build and fuel their societies. Communities of life within each biome have interdependent relationships usually tied to habitat, diet, and soil which in turn arise because of the climate and earth resources present. 
+  
+Biomes are ecosystems within the global ecosystem, and within biomes there are sometimes further divisions or ‘sub-biomes’, such as the high desert, tallgrass prairie grasslands, glacial ice in the tundra, or marine coasts. Biomes and sub-biomes are contiguous units, many of which have restrictions about which biomes they can reside next to or within. Over time, as conditions change due to player influence biomes have the potential to be radically reshaped. 
+
+Climate change may shift the boundaries of biomes, displacing communities-- some species will survive and adapt, but others will not be so resilient. Direct displacement of soil and other habitat destruction from activities like construction, farming, mining, and logging will also have an impact on species within biomes to differing degrees. Species of plants or animals might not only prefer particular biomes, but particular parts of sub-biomes, which will mean a greater impact if those highly localized areas are altered or destroyed. Resilient and adaptive species will be able to thrive across biome boundaries as they are altered, but those same species may become a threat to more sensitive plants or animals in the new biomes they are introduced to.
+ </section>
+  <section type="header" loc="140">
+    <b>Biomes in Eco:</b>
+  </section>
+  <section loc="141">
+    <b>Ocean</b> : The parts of the ocean on the continental shelves, abundant with life.
+<b>Deep Ocean</b> : The deepest parts of the ocean, bearing the largest marine species and migrating populations of fish.
+<b>Cold Coast</b> : Beaches and shallow waters in colder climates.
+<b>Warm Coast</b> : Beaches and shallow waters in warmer climates.
+<b>Wetlands</b> : A unique biome characterized by a saturation of the soil with fresh or brackish water.
+<b>Grasslands</b> : A biome where there is enough water to support grasses but not many trees.
+<b>Desert</b> : The dryest biome, and in Eco currently the hottest as well.
+<b>Cold Forest</b> : A biome wet enough to support dense tree cover, and cold enough that conniferous trees tend to dominate.
+<b>Warm Forest</b> : A biome wet enough to support dense tree cover, and warm enough that broadleaf trees tend to dominate.
+<b>Rainforest</b> : A wet and warm biome that supports a forest abundant with plant and animal life.
+<b>Taiga</b> : A cold and somewhat dry biome that supports a sparse forest of conniferous trees.
+<b>Tundra</b> : A very cold biome that cannot support trees but is host to a unique plant and animal community.
+<b>Ice</b> : The coldest areas of the land, covered by glacial ice. 
+
+There are also a few sub-biomes in Eco currently:
+
+<b>High Desert</b> : A geologically uplifted part of the desert with species more tolerant to cold and that enjoy the steep cliffs caused by erosion.
+<b>Cold Steppe</b> : A slightly colder grassland, often characterized by even fewer trees and larger open spaces.  
+  </section>
+</ecopedia>

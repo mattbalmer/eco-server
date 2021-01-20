@@ -1,0 +1,9 @@
+<ecopedia icon="Ecopedia_FoodWebs" priority="-1">
+  <summary loc="305">The living system of plants and animals which provides the means for humans to survive.</summary>
+  <section type="banner" image="ecopedia_banner_foodweb" />
+  <section loc="304">
+A foundational goal of the ecosystem simulation in Eco is to contain a multitude of <b>food webs</b>. <b>Food webs</b> can be thought of as a set of 'consumer' and 'consumed' relationships between plants and animals that centers on a particular community of animals and their favorite foods. In general, the idea is to have at least one strong food web present in each biome. Food webs often are the basis of the most important inter and intra-relationships between species in an ecosystem. Many species rely on other species for food, or to hunt the species that is eating them.
+
+Animal's prey and predators can be viewed through the web interface and checking the linked layers. Currently the prey-predator relationship is one way: the predators require the prey to exist, but they don't actually remove any from the simulation. This means that an explosion of elk would increase the wolf population, but this wouldn't put pressure onto the elk. Changing this relationship to consume both ways while ensuring it doesn't spiral out of control in an unexpected and sudden way is important as we move forward.
+  </section>
+</ecopedia>

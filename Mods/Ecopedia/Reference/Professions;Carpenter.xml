@@ -1,0 +1,10 @@
+<ecopedia chapter="Reference" icon="Ecopedia_Carpenter">
+  <summary loc="242">Carpenters are specialist at working with wood.</summary>
+  <section loc="241">Carpenters are specialist at working with wood.
+
+  - [LoggingSkill] allows citizens to chop trees faster while expending less calories. In addition, this specialty is used to produce [HewnLogItem] which are the primary building material for the carpentry profession.
+  - [CarpentrySkill] allows citizens to produce wooden furniture and [Boards|Board Item]. By using a [SawmillItem], citizens with this specialty can produce [LumberItem] and higher quality furniture.
+  - [CompositesSkill] allows citizens to use advanced technology to produce the finest quality wood building material.
+  - [PaperMillingSkill] allows citizens to refine wood pulp into [PaperItem]. Paper is used for some specialty furniture.
+	</section>
+</ecopedia>

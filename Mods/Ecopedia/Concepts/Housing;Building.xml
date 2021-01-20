@@ -1,0 +1,26 @@
+<ecopedia icon="Ecopedia_Building">
+  <summary loc="299">Using a hammer or a crane, citizens can create buildings for homes and industry.</summary>
+  <section type="banner" image="buildingecopedia2" />
+  <section loc="298">After collecting some basic raw materials, <b>building</b> is one of the first things a citizen will do to establish themselves in the world.
+  
+  </section>
+  <section type="header" loc="312">Buildings in Eco</section>
+  <section image="IllustrationBuilding" loc="313">
+Buildings are divided up into [Rooms] and serve a variety of purposes.
+
+Some of these uses include:
+
+- Making a home filled with furniture to gain bonus [Experience] from housing
+
+- Providing a space for [Crafting] stations to function
+
+- Housing the various [Civic Objects|Civic Object Component] neccesary to establish a government
+</section>
+  <section type="header" loc="314">Creating Buildings</section>
+  <section image="IllustrationBuildingForms" loc="315">When carrying a building material, the hammer is able to switch between different block shapes and building patterns.
+
+Citizens build their first homes using a [StoneHammerItem], but as technology progresses increasingly better building tools become available that consume less calorie when used.
+
+Large-scale construction projects can be quickly completed with the use of a [CraneItem], but at the cost of creating [Pollution].
+  </section>
+</ecopedia>

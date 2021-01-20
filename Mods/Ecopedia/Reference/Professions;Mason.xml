@@ -1,0 +1,11 @@
+<ecopedia chapter="Reference">
+  <summary loc="252">Masons are specialist at mining and working with stone.</summary>
+  <section loc="251">Masons are specialists at mining and working with stone. They provide a valuable source of building material and furniture for homes. The ore they collect is used by Smiths to smelt metal bars.
+  
+  -[MiningSkill] allows citizens to expend less calories while mining stone and ore. Miners also process the collected ore and concentrate it to be used for smelting.
+  -[MasonrySkill] allows citizens to produce [MortarItem], a primary ingredient for most mason building materials. The [MortaredStoneItem] they produce is a great source of early housing material.
+  -[PotterySkill] allows citizens to craft [BrickItem] building material and furniture out of [ClayItem].
+  -[GlassworkingSkill] allows citizens to create [GlassItem] and later [FramedGlassItem]. Glass is a nice supplemental buildling material and is used in a variety of industrial projects.
+  -[AdvancedMasonrySkill] is a high-level mason skill that produces the finest quality Ashlar Stone building material and furniture.
+  </section>
+</ecopedia>

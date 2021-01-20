@@ -1,0 +1,8 @@
+<ecopedia chapter="Reference">
+  <summary loc="256">Smiths smelt ore into metal bars and create advanced tools.</summary>
+  <section loc="255">Smiths smelt concentrated ore into metal bars that can be used by a variety of professions. In addition, Smiths create superior tools that help citizens work more productively.
+  
+- [SmeltingSkill] are specialists at making the metal bars that make up the foundation of technological advancement. The iron tools they create provide significant benefit over the early stone tools.
+- [AdvancedSmeltingSkill] allows citizens to further refine iron bars into [Steel|SteelBarItem] for use in industry and high-tier building materials. Citizens with this specialty can use the steel they create to even more modern tools than the iron tools created by basic smelting.
+  </section>
+</ecopedia>

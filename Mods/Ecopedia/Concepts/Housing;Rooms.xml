@@ -1,0 +1,17 @@
+<ecopedia icon="Ecopedia_rooms">
+  <summary loc="228">Rooms protect you and your equipment from the elements, providing skill points and allowing equipment to function.</summary>
+  <section type="banner" image="roomsecopedia" />
+  <section image="Illustration_rooms" loc="227">Rooms are enclosed areas protected from the elements where all holes to the outside world are filled with walls, doors and windows.
+
+You can see the details about a room in a panel on the right side of the screen while you’re inside one stating its information. Many types of objects have Room Requirements and will take up space in their room, and require the materials of the room to be a specific quality.  Your housing value is also affected by the quality of the room materials.  This means a brick a house for example will provide much more benefit than a dirt hovel.
+
+
+<b>Furnishings and Room Types</b>
+By claiming land and building rooms on it, you will begin to gain additional experience, which persists even when offline.  Adding additional types of rooms and furnishings for those rooms will increase it further.  Each type of furniture is associated with a kind of room: Bathroom, Bedroom, Kitchen, or General (displayed on the tooltip of the item).  The room type will be determined by whichever category you have the highest contribution of furnishings from.  Each room will have its value calculated by summing all the furnishings inside it.
+
+Repeats of the same furniture inside a room or repeats of the same room type in a house will give you diminishing returns; that is, you will still get housing points for them, but not as many as the first.   Eventually the point gain will be negligible, and it won’t be worth it to add any more of that type of furniture or room to the house.  For example, your 12th bathroom is going to add much less value to your house than your first one.
+
+<b>Room Material Quality</b>
+The average tier of the room material will also determine your housing value, by setting a soft cap.  Once your room value has exceeded the soft cap for the room, then you will get diminishing returns for additional housing points.  When this happens, it may be time to renovate the materials of the room.
+</section>
+</ecopedia>

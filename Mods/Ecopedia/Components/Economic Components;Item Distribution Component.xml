@@ -1,0 +1,9 @@
+<ecopedia icon="ItemDistributionComponent">
+  <summary loc="25">Allows the owner to provide free items to new citizens, as an act of good will and to boost initial citizen prosperity.</summary>
+  <section loc="23">The <b>Item Distribution Component</b> allows the owner to provide free items to new citizens, as an act of good will and to boost initial citizen prosperity.</section>
+  <section image="IllustrationItemDistribution" loc="24">
+All new citizens who qualify (based on how long they have played) can collect their items by visiting the [DistributionStationItem]. Upon entering the world, new citizens will start with a global map marker to alert them that the items are available. Note that the [Storage Component] must remain stocked with the items being distributed to allow new citizens to collect them.
+
+The owner may designate what items are to be distributed, how many of each item, and how recently the citizen must have joined the world to be eligible.
+  </section>
+</ecopedia>

@@ -1,0 +1,23 @@
+<ecopedia icon="Work Party">
+  <summary loc="137">Work Parties are joint agreements by a number of players to perform a given task, with compensation being distributed in various ways.</summary>
+  <section type="banner" image="WorkpartiesEcopedia" />
+  <section loc="136">A <b>Work Party</b> is an agreement among multiple citizens to perform work.  They are started by an individual citizen by visiting a [Contract Board|Contract Board Component] after creating a work order.
+
+The citizen issuing a Work Party can define the various parameters of the work, which includes:
+ - The work orders to be completed.
+ - What is required of citizens who want to join the work party.
+ - What payment will be given to people who participate.
+ - How that payment will be distributed.
+ - How that payment will be distributed.
+
+Work parties are especially useful for performing [Research]. A citizen can setup a research project, costing a large amount of resources, and attach a work party to it. Citizens can then automatically join the work party (even when the issuing citizen is offline, if they meet the designated requirements) and start performing the task.
+
+Payment can take a variety of forms:
+- [Currency], distributed based on how much work is performed, either immediately or upon completion.
+- [Reputation], given from the work party creator to the laborer (subject to the daily limits of reputation that may be given).
+- Knowledge of a specific specialty (the same effect as reading a skill-scroll). For this benefit, the work party creator must possess the skill book for the specialty, or it must be crafted in one of the work orders of the party.
+- Granting a [Title], which can give them new privileges for accessing property and other abilities.
+
+The economy of Eco is focused not just on trading of goods but trading of labor, and work parties make it easy to farm out many kinds of work to the general populace.
+  </section>
+</ecopedia>

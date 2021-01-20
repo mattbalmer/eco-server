@@ -1,0 +1,9 @@
+<ecopedia chapter="Reference">
+  <summary loc="250">Hunters are specialists at hunting animals and preparing meat for chefs.</summary>
+  <section loc="249">
+    Hunters are specialists at efficiently hunting animals and preparing meat for use by chefs. The two hunter specialties are closely linked as the animals hunted must be processed before it can be used by a chef. 
+    
+  - [ButcherySkill] allows citizens to process animal carcasses into prepared meat for chefs. The pelts and hides they create can be used for clothing and other crafting projects.
+  - [HuntingSkill] grants citizens bonus damage when hunting animals and allows them to approach animals at a closer distance without causing them to run.
+  </section>
+</ecopedia>

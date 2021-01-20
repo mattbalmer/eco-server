@@ -1,0 +1,13 @@
+<ecopedia icon="WorkbenchItem">
+  <summary loc="117">Crafting is the creation of products by citizens at specific tables.</summary>
+  <section type="banner" image="CraftingEcopedia2" />
+  <section loc="116">
+Crafting is the creation of new products from ingredients, labor, and/or power.  Crafting may also create byproducts that cause pollution and negatively affec the environemnt.  It forms the backbone of the economy, generating demand for resources which come from the ecosystem around them, as well as demand for individual skilled labor and shared services like [Power|Power Component] or [Sewage].
+
+Any table which has a [Crafting Component] can create products defined in a list. Crafting tables can be shared, each having configurable [Authorization Component] that determines who may access them, and fees can be set in the [Credit Component] on the table to earn money from sharing your table.
+
+The inputs and outputs can either be taken directly from the crafting table, or placed in an attached [Storage Component].  Placing ingredients and products in storage allows citizens to queue up large orders that run automatically. 
+
+Many recipes require <b>labor</b> of a specific [Skill|skills overview].  While any citizen can start a crafting recipe or contribute ingredients, only a citizen with the required skills may add labor to it.  To form a group and have many citizens contribute to a work order while sharing in payment, [Work Parties] may be created.
+  </section>
+</ecopedia>

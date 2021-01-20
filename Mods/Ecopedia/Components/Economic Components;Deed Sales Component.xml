@@ -1,0 +1,14 @@
+<ecopedia icon="DeedSalesComponent">
+  <summary loc="16">The Deed Sales Component allows citizens to buy and sell property.</summary>
+  <section loc="14">The <b>Deed Sales Component</b> allows citizens to buy and sell [Property].
+  </section>
+  <section image="IllustrationDeedSalesComponent" loc="15">
+By visiting a [Real Estate Desk|Real Estate Desk Item], citizens can create listings for their deeds and view the listings of other citizens. All posted listings can be accessed from any real estate desk.
+
+When creating a listing, the property owner sets the price and [Currency] used. All revenue will go into the selected [Bank Account|Bank Accounts].
+
+When buying a deed, the currency will be taken from the bank account selected by the buyer. 
+
+After property is sold, the deed and all objects contained on the deed are transferred to the new owner. 
+  </section>
+</ecopedia>

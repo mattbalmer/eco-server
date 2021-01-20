@@ -1,0 +1,11 @@
+<ecopedia chapter="Reference">
+  <summary loc="244">Chefs cook high quality food that enables citizens to gain experience faster.</summary>
+  <section loc="243">Chefs cook high quality food that enables citizens to gain experience faster. Using the raw food produced by farmers and hunters, chefs create food that is high in nutrients. As technology advances, the chef specialties cook progressively higher quality food.
+  
+  - [CampfireCookingSkill] is the entry level Chef specialty that uses a [CampfireItem] to prepare better meals than the basic charred food produced by non-chefs.
+  - [CookingSkill] is the second step in the Chef profession that uses a [CastIronStoveItem] to produce higher quality meals.
+  - [BakingSkill] is an alternative to Cooking that uses [FlourItem] to produce baked goods.
+  - [AdvancedCookingSkill] is a high-level Chef profession that produces the highest tier of food.
+  - [AdvancedBakingSkill] is an alternative to Advanced Cooking that uses [YeastItem] to produce high quality baked goods with [LeavenedDoughItem].
+  </section>
+</ecopedia>

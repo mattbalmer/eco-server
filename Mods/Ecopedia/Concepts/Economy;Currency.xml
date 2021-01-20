@@ -1,0 +1,14 @@
+<ecopedia icon="CurrencySymbol">
+  <summary loc="119">Currency is a societal construct that makes trade easier.</summary>
+  <section type="banner" image="CurrencyEcopedia" />
+  <section loc="118">Currencies are a means of facilitating trade, as a representation of value. Their value is entirely determined by how they’re used.
+
+There are two types of currencies in Eco, backed and unbacked.
+  
+An <b>unbacked currency</b> is currency by fiat, and every player starts with their own personal currency with an infinite amount. These are especially useful early game when there is no global currency designated.  However, these currencies require a lot of trust that the owner of them does not manipulate their value, as they have an unlimited amount and can easily destabilize an economy that uses them.
+  
+<b>Backed currencies</b> are much more stable. A backed currency is created at a [Mint|Mint Component] by converting a currency supporting material into coins.  More currency can only be created by acquiring more of the given material.  This provides a much stronger limit on the amounts of currency that can be introduced into the world and forms a stronger foundation for global trade.  Often, a world will choose to move from a collection of personal currencies to one or more backed currencies as the economy grows through the arc of the game, and more global trade and collaboration is required.
+  
+Currencies can be transferred to others in the Economy Viewer, as well as through [Trade].  All currency is stored in a [Bank Account|Bank Accounts].
+</section>
+</ecopedia>

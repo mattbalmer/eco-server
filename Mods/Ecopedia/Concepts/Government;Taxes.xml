@@ -1,0 +1,21 @@
+<ecopedia icon="PayTax">
+  <summary loc="212">Tax can be taken from the economy to fund publics works project as well as incentivize or disincentivize economic activity.</summary>
+  <section type="banner" image="TaxesEcopedia" />
+  <section loc="211">For the good of the people, or at least the enrichment of the government, taxes can be levied on many actions in Eco.
+  
+<b>Treasury Taxes</b>
+At a [TreasuryItem], Taxes can be set on a variety of actions:
+ - Sales Tax.  Tax applied to the sale of goods at a store.
+ - Crafting Fee Tax. Tax applied to the fees taken from sharing your crafting station.
+ - Contract Tax. Taxes taken from payments made through contracts and work parties.
+ - Direct Transfer Tax. Taxes taken from transfers between players.
+ - Self Direct Transfer Tax. Taxes taken when transferring to an account you have access to (to optionally protect against tax avoidance loopholes).
+
+Only a citizen holding an [Elected Title|Elected Titles] who has been granted the right to ‘Set Taxes at the Treasury’ may adjust these rates.  All taxes taken from these settings will be stored in the special ‘Treasury’ bank account.  Allocation may be made out of this special bank account into others through commands on the treasury.
+
+<b>Law Taxes</b>
+Taxes can also be set through [Laws], which can have their amounts and destinations determined dynamically. The bank account they are placed in can also be determined, allowing for the funding of specific funds for specific purposes, stored in bank accounts accessible to a limited number of people only.  Using the law system, these taxes can be very specifically targeted and adjusted based on the actions that are happening.
+
+For example, a 'Minister of Transportation' Elected Title position could be created, having sole access to a Transportation Fund [Bank Account|Bank Accounts].  A law could then be created to tax the production and trade of fuel, with proceeds going into the Transportation Fund, where the currently elected Minister of Transportation can use them to fund new roadbuilding [Work Parties].
+</section>
+</ecopedia>

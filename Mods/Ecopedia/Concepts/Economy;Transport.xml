@@ -1,0 +1,10 @@
+<ecopedia icon="Asphalt Road">
+  <summary loc="135">With resources and their usage spread out across the world, transforming the world by building transportation infrastructure becomes necessary.</summary>
+  <section type="banner" image="TransportEcopedia" />
+  <section loc="134">With resources spread out through the world and the locations where they are collected and processed differing from where they’re used, transport becomes a critical factor to success in Eco.
+
+To efficiently transform materials, you’ll need to create vehicles to carry them, and those require flattening the ground into roads.  Using a [StoneRoadToolItem] you can flatten ground and make it usable be vehicles, and with ramps you can make gentle slopes that vehicles can travel on.  More advanced vehicles will require mode advanced roads to travel efficiently, and roads will need to be upgraded periodically as new technology comes available.
+
+Building roads between villages and resource caches will take time and the effort of many citizens, and is a great candidate for public works projects funded by [Taxes] and built using [Work Parties].  As the world progresses in technology, more and more transportation infrastructure will be created to aid the flow of commerce, eventually growing to a point where the road construction and vehicle usage will create an impact on the environment.  Careful management of this influence will be key to preserving the ecosystems that they pass through.
+</section>
+</ecopedia>

@@ -1,0 +1,13 @@
+<ecopedia icon="Ecopedia_Hunting" priority="-1">
+  <summary loc="268">The living system of plants and animals which provides the means for humans to survive.</summary>
+  <section type="banner" image="ecopedia_banner_hunting" />
+  <section loc="267">
+Animal species are inhabitants of the world in Eco that vary greatly in terms of possible use as resources. Some species make for excellent sources of meat and food like milk, where others may provide useful byproducts like wool, leather, tallow, or bone meal. But animals also vary greatly in terms of their resilience and adaptability to impacts on their populations, habitat, and food sources. 
+
+Through hunting, players can use various traps and hand tools to harvest wild animals directly from the ecosystems they live in for use. Hunting can also serve as a way to control or cull excessive populations of animals. Hunting will be an important but not strictly necessary activity for players especially earlier on in order to meet the appetite of a large society. 
+
+Hunting an animal is only the first step in making the most use out of it. Butchery advancements will allow players to process and use animals for a large variety of animal products. Collaboration with other professions like cooks and tailors will unlock many nutritional, industrial, and even cultural uses for animals and their products, not all of which need be obtained through hunting. However, if a particular animal product becomes popular in the economy, care will have to be taken to avoid destructive pressure on a species. Hunting is often the final blow to an endangered species whose products become more and more valuable as they become more and more rare.
+
+To get started with hunting, you'll need to craft a [WoodenBowItem] and some [Arrows|Arrow Item]. More advanced bows will make it easier to hit your target quickly. Keep in mind that animals can be killed more quickly with a well-aimed shot, and that it may be easier to hunt some animals based on the time of day. 
+  </section>
+</ecopedia>

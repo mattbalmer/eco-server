@@ -1,0 +1,8 @@
+<ecopedia icon="Ecopedia_Reputation">
+  <summary loc="129">A value set by other citizens or from laws that represents your social standing.</summary>
+  <section type="banner" image="ReputationEcopedia" />
+  <section loc="127">Each player can affect the <b>Reputation</b> of any other player, which can in turn be used as a factor in laws, contracts, etc, which may query a citizens reputation and determine privileges (or lack thereof) based on the value). To set reputation on a citizen, hover over their name in chat and click their reputation listing in the tooltip (a list of all citizens can be found on the page [Current Citizens]).
+</section>
+  <section loc="128">Reputation is modified by a <b>Network Multiplier</b>, which is a calculate as +1 for every citizen giving you positive reputation, and -1 for every citizen giving you negative reputation.  This way, it becomes more beneficial to help many citizens and gain a wide-spread reputation than to focus narrowly on a few citizens.  <b>Relative Reputation</b> is another value that only takes into account citizens that you have given positive reputation to.
+</section>
+</ecopedia>

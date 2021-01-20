@@ -1,0 +1,16 @@
+<ecopedia priority="3" icon="Ecopedia_ChoosingProfession">
+  <summary loc="274">A world with a range of professions can trade for mutual benefits.</summary>
+  <section type="banner" image="ecopedia_banner_choosingaprofession" />
+  <section loc="270">
+    Once you've covered your basic needs, it's time to think about how you want to contribute to the joint project of society, and your <b>profession</b> is how you do that.
+  </section>
+  <section image="IllustrationSkillsWindow" loc="271">
+
+Each profession has a number of [Specialties] beneath it which will unlock special abilities. Because citizens can only have a limited number of specialties, a good approach is to take different specialties and then [Trade] between each other.  In the skills window, you can see how many citizens have chosen each profession and look for the most-needed skills, choosing those to focus on.
+  </section>
+  <section loc="272">
+    Check out the [Profession Overview] for a tour of the different options.
+  </section>
+  <section image="IllustrationSkillsPanel" loc="273">(Note: the skills dialog is hidden until later in the tutorial.  It can be made visible by completing the tutorial or skipping it.)
+ </section>
+</ecopedia>

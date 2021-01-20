@@ -1,0 +1,16 @@
+<ecopedia icon="ExchangeComponent">
+  <summary loc="22">Allows citizens to setup a currency exchange .</summary>
+  <section loc="17">The <b>Exchange Component</b> allows citizens to trade one [Currency] for another.</section>
+  <section type="header" loc="18">Exchanging Currency</section>
+  <section image="IllustrationExchangeComponent" loc="19">
+The owner of a [CurrencyExchangeItem] uses the Exchange Component to offer currency exchanges to other citizens. When setting up an exchange, the <b>Owner Currency</b> is the currency being offered for sale. For each unit of owner currency purchased, citizens will be charged the set amount of alternate currency.
+
+When an [Authorized Consumer|Authorization Component] visits the currency exchange, they will see a list of all offered exchanges. By default, all citizens are authorized consumers.
+	</section>
+  <section type="header" loc="20">Exchange Restrictions</section>
+  <section image="IllustrationExchangeRestriction" loc="21">
+The owner of the Currency Exchange has the option to setup <b>Balance Restrictions</b>. These will prevent citizens from exchanging currency if the amount of currency in the chosen account does not meet the restriction.
+
+The number on the left is the minimum currency holding and the number on the right is the maximum currency holding. If either value for the balance restriction is left at 0, there will be no limit for that part of the balance restriction.
+	</section>
+</ecopedia>

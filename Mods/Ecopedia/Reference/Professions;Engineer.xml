@@ -1,0 +1,11 @@
+<ecopedia chapter="Reference">
+  <summary loc="246">Engineers are master inventors who produce vehicles and other advanced products for other citizens.</summary>
+  <section loc="245">Engineers use the materials created by other professions to lead the way in technological advancement. The vehicles they produce greatly improve the capacity for trade and the speed at which citizens work. The crafting tables they produce are used by a variety of professions to create high-end goods. Being an engineer requires frequent interaction with other professions as engineers are unable to produce the primary inputs necessary for crafting.
+  
+-[BasicEngineeringSkill] allows citizens to produce roads and carts to help with transportation. In addition, basic engineering creates the crafting tables necessary to process and smelt ore.
+-[MechanicsSkill] allows to citizens to create early motorized vehicles, like a [SteamTruckItem]. Mechanics provides the first source of electric power to help enable tecnological progression.
+-[IndustrySkill] allows citizens to create advanced vehicles, like an [ExcavatorItem], to quickly collect large amounts of natural resources.
+-[OilDrillingSkill] allows citizens to use a [PumpJackItem] to collect [PetroleumItem] for use in fuel and a variety of industrial projects.
+-[ElectronicsSkill] is a high-end engineer specialty that uses expensive ingredients to produce the most advanced materials needed for modern crafting projects. In addition to this and providing a source of green electricity, electronics is used to craft the [LaserItem] needed to save the world from the meteor.
+  </section>
+</ecopedia>

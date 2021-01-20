@@ -1,0 +1,18 @@
+<ecopedia icon="StoreComponent">
+  <summary loc="32">Sets up an interface for other citizens to buy and sell goods from/to you automatically.</summary>
+  <section loc="29">
+The <b>Store Component</b> allows citizens to set items they wish to buy from and sell to other citizens. These actions can happen automatically, not requiring the store owner to be online.
+  </section>
+  <section type="header" loc="310">Setting up a Store</section>
+  <section image="IllustrationStoreComponent" loc="30">
+The currency and bank account selected in the [Credit Component] will be used for all transactions at the store. When selecting "None" for the currency in a store, direct trades are possible that are not subject to sales tax. 
+ 
+A store owner can link specific containers in the [Storage Component] to pick which items are considered part of the store's inventory. By default, all nearby storage containers are linked to the store when it is first placed.
+
+When creating a <b>Sale List</b>, only the price needs to be set. The inventory for a Sale List is determined automatically by the availability of items in the linked storage containers.
+
+When creating a <b>Purchase List</b>, the price and <b>Max to Buy</b> quantity for each item must be decided. If the Max to Buy quantity is left at zero, the store will continue to purchase items until the linked containers are full. If a Max to Buy quantity is specified, citizens can sell that item until the linked storage contains that amount.
+
+For tools with <b>durability</b>, a minimum durability to buy/sell can be set, and only items of that durability or higher will be eligible for trade via the store.
+ </section>
+</ecopedia>

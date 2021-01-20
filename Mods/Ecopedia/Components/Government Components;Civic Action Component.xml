@@ -1,0 +1,32 @@
+<ecopedia icon="BallotBoxItem">
+  <summary loc="41">Allows citizens to participate in elections and perform executive actions.</summary>
+  <section loc="34">
+The <b>Civic Action Component</b> allows citizens to participate in [Elections], perform [Executive Actions], and resign from office, depending on which object is being used.
+</section>
+  <section type="header" loc="35">Participating in Elections</section>
+  <section image="IllustrationCivicActions" loc="36">
+When using the Civic Action Component at a [Ballot Box|Ballot Box Item], citizens can run for [Elected Titles] and participate in elections. 
+
+By pressing the <b>Vote</b> button, players are redirected to the web interface where they can see all running [Elections], discuss them with their fellow citizens, provide evidence for their arguments with [Data], and vote.  
+
+Citizens who have been granted <b>Veto</b> power in the current [Election Process|Election Processes] can instantly overturn an election.
+
+To run for elected titles, first an eligible citizen must use the <b>Start Election</b> action. Once an election has started, eligible citizens can select <b>Enter Election</b> to join the race and give a campaign speech. Candidates can opt to <b>Withdraw from Election</b> at any time using the option available on a Ballot Box.
+</section>
+  <section type="header" loc="37">Performing Executive Actions</section>
+  <section image="IllustrationExecutiveAction" loc="38">
+Using the Civic Action Component at an [Executive Office|Executive Office Item] allows an elected title to perform one-time executive actions that affect a set of citizens.
+
+The <b>Citizen Conditions</b> dictate which citizens the executive action applies to, and multiple conditions can be set for a citizen to quality. To perform an action for all citizens, use the [Demographic] ‘Everyone’ as the citizen condition.
+
+The <b>Action on Each Citizen</b> will take effect as soon as the executive action is approved. Multiple actions can be performed at once for each citizen who meets the conditions.
+</section>
+  <section type="header" loc="39">Government Office Actions</section>
+  <section image="IllustrationGovernmentOffice" loc="40">
+At the [Government Office|Government Office Item], the Civic Action Component allows elected titles to resign or remove other elected titles from office.
+
+The <b>Resign from Office</b> action allows any elected official to step down from their position. If a <b>Successor</b> title was assigned to the Elected Title when it was created, a new official will be randomly selected from all citizens holding that title; otherwise the Elected Title becomes vacant.
+
+The <b>Remove Official from Office</b> action allows citizens who have be given the authority the remove elected titles from office. The same rules for finding a successor apply as if the official resigned.
+</section>
+</ecopedia>

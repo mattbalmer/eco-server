@@ -1,0 +1,12 @@
+<ecopedia icon="BuildContract">
+  <summary loc="115">Contracts maintain an agreement between two citizens.</summary>
+  <section type="banner" image="ContractsEcopedia" />
+  <section loc="113">
+    A <b>contract</b> is an agreement between two citizens created at a [Contract Board|contract board component].  The agreement can have any number of clauses, and specify combinations of work to be performed and compensation to be paid.  It is posted by the client citizen, and can be accepted by any valid citizen asynchronously.</section>
+  <section loc="114">Examples of contract include:
+    - Create a road between two designated points.
+    - Loan money between two parties with a given interest rate and due date.
+    - Build a room of given requirements at a specific location.
+    - Custom requirements described in text, and accepted/rejected by the client upon completion.
+  </section>
+</ecopedia>

@@ -1,0 +1,10 @@
+<ecopedia icon="RepairComponent">
+  <summary loc="97">Allows citizens to repair tools.</summary>
+  <section loc="95">The <b>Repair Component</b> allows citizens to repair tools at a [ToolBenchItem].</section>
+  <section type="header" loc="311">Repairing Tools</section>
+  <section image="IllustrationRepairComponent" loc="96">
+After inserting a broken tool, the repair costs will appear. Advanced tools can be repaired for less resources by citizens with the corresponding [Specialty|Specialties]. The resources used can be manually added by a citizen or taken from a linked container in the [Storage Component].
+
+The owner of a Tool Bench can allow other citizens access to repair their own tools for a fee set in the [Credit Component]. When offering tool repair to the public, consumer rights must be given in the [Authorization Component].
+  </section>
+</ecopedia>

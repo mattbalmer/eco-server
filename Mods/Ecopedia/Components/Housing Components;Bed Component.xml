@@ -1,0 +1,7 @@
+<ecopedia icon="BedComponent">
+  <summary loc="65">Allows sleeping in single-player servers or servers where sleep is enabled.</summary>
+  <section loc="64">
+    <b>Beds</b> allow citizens to accelerate time when all citizens are using it simultaneously (or offline).  
+  
+<i>(This feature is disabled by default on dedicated servers to prevent accelerating time when users are offline, but can be enabled by a server administrator.)</i></section>
+</ecopedia>

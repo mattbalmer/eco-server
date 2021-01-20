@@ -1,0 +1,46 @@
+<ecopedia icon="CivicObjectComponent" priority="-1">
+  <summary loc="207">An institution designed and run by the people to promote the common good.</summary>
+  <section type="banner" image="EcopediaGovernment" />
+  <section type="quote" loc="193">"The punishment which the wise suffer who refuse to take part in the government, is to live under the government of worse men."\n- Plato</section>
+  <section loc="194">Between the ecosystem and the economy lies the government, run by citizens to ensure the survival and thriving of both.
+  
+  </section>
+  <section loc="195">
+    The government is created by citizens, piece by piece, growing their power and capability alongside the power of the populace.  The parts of the government are:
+  </section>
+  <section image="Constitution" loc="196">[Constitution]
+Before any other aspect of government can be created, a Constitution must be created at a [CapitolItem]. It determines how the government operates via civic articles.
+</section>
+  <section image="ConstitutionalArticle" loc="197">[Civic Articles]
+A constitution contains civic articles which define how the government functions: who can do what, and how.  They can be created at a [CapitolItem] on a new constitution or added to an existing constitution at an [AmendmentsItem] table.
+</section>
+  <section image="Law" loc="198">[Laws]
+Laws determine rules and processes that all citizens are compelled to follow.  A [CourtItem] can hold up to 3 laws. 
+</section>
+  <section image="Election" loc="199">[Elections]
+Elections will be started automatically when making changes that require them, as determined by the constitution. They can have many effects (changing laws, electing leaders, performing executive actions).
+</section>
+  <section image="ElectionProcess" loc="200">[Election Processes]
+An election process determines how elections work: who can vote and veto, how long they last, what majorities are required, etc. A [BoardOfElectionsItem] can hold up to three election processes.
+</section>
+  <section image="ElectedTitle" loc="201">[Elected Titles]
+An Elected Title is a government position that can be given special privileges. A [GovernmentOfficeItem] can hold one elected title.
+</section>
+  <section image="Demographic" loc="202">[Demographics]
+A demographic defines a group of people according to specific rules. This group can then be used in other aspects of the government.  A [CensusBureauItem] can hold up to three demographics.
+</section>
+  <section image="District" loc="203">[Districts]
+Defines an area of land which can be referenced in laws and other places.  A [ZoningOfficeItem] can hold up to three district maps.
+</section>
+  <section image="ElectedTitle" loc="204">[Executive Actions]
+An executive action is a one-time operation that can be performed to enact changes to society. They are performed at an [ExecutiveOfficeItem] by users given privileges from the constitution (typically elected titles).
+</section>
+  <section image="BallotBoxItem" loc="205">
+  [Ballot Boxes|Civic Action Component]
+  A ballot box allows operations to be performed related to elections and holding office.
+</section>
+  <section image="Treasury" loc="206">
+  [Treasury|Treasury Component]
+  Determines taxes on various parts of the economy.
+</section>
+</ecopedia>

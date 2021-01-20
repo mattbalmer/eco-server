@@ -1,0 +1,12 @@
+<ecopedia icon="MintComponent">
+  <summary loc="28">Allows citizens to create and print backed currencies.</summary>
+  <section loc="26">The <b>Mint Component</b> allows citizens to create [Currencies|Currency] which are <b>backed by a resource</b>. 
+</section>
+  <section image="IllustrationMintComponent" loc="27">
+When creating a currency at a [MintItem], a backing item is chosen, as well as an amount of <b>Coins per Item</b> that are generated from each item consumed.  By using a backing item for currency, the total possible amount of currency can be limited to the number of items contributed, thus providing more stability as it becomes harder to flood the market with new currency.  The choice in backing item will affect this, with more rare items generally providing more stability by being harder to obtain.
+
+The backing material and coins per item are permanent, so take care when deciding how to back a currency. Once a currency is minted, it will become tied to the mint it was created on, even if that mint is picked up.
+
+Citizens who have been granted consumer rights in the [Authorization Component] can use the Mint Component to mint additional currency. Currency can be minted into the target [Bank Account|Bank Accounts] selected by the mint owner, or any bank account the citizen minting has access to in the [Bank Component].
+  </section>
+</ecopedia>

@@ -1,0 +1,50 @@
+{
+    "categories": {
+        "Population": [
+            "Citizen Population",
+            "Animal Population",
+            "Plant Population",
+            "Tree Population"
+        ],
+        "Economy": [
+            "Trade",
+            "Personal Wealth In Default Currency",
+            "Government Holdings In Default Currency",
+            "Lifetime Trade In Default Currency",
+            "Mint Currency"
+        ],
+        "Citizen Growth": [
+            "Gain specialty",
+            "Character level up"
+        ],
+        "Citizen Activity": [
+            "Harvest or Hunt",
+            "Construct or Deconstruct",
+            "Dig Or Mine",
+            "Tamp Road",
+            "Plow Field",
+            "Plant Seeds",
+            "Chat Sent",
+            "Play"
+        ],
+        "Crafting": [
+            "Item Crafted",
+            "Work Party Started",
+            "Worked For Work Party"
+        ],
+        "Government": [
+            "Vote",
+            "Laws",
+            "Elected Titles",
+            "Start Election",
+            "Pay Tax"
+        ],
+        "Air Pollution": [
+            "Lifetime CO2 from Pollution",
+            "Lifetime CO2 from Plants",
+            "Lifetime CO2 from Animals",
+            "Total CO2",
+            "Average Global Temperature"
+        ]
+    }
+}

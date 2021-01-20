@@ -1,0 +1,20 @@
+<ecopedia icon="ModulesComponent">
+  <summary loc="82">Allows citizens to upgrade their crafting tables.</summary>
+  <section loc="77"> The <b>Module Component</b> allows citizens to insert upgrades into their [Crafting] tables. After inserting an upgrade, work orders on that table will have reduced resource costs and crafting times.</section>
+  <p></p>
+  <p></p>
+  <section type="header" loc="78">Using Upgrades</section>
+  <section image="IllustrationModuleComponent" loc="79">
+Upgrades come in five different quality levels. A level 1 upgrade decreases the resource cost and craft time by 10%, with each progressive level adding an additional decrease.
+
+Crafting tables accept different types of upgrades. Early tables accept 'Basic Upgrades', while later tables require 'Advanced Upgrades' or 'Modern Upgrades'. Each tier of upgrade has five different quality levels, with the highest quality level being a <b>Specialty Upgrade</b>.
+
+Some recipes have costs using <b>Static Ingredients</b>. Static ingredients are not affected by the resource cost reduction, but the recipes that contain them still get a reduction for crafting time. 
+		</section>
+  <section type="header" loc="80">Specialty Upgrades</section>
+  <section image="IllustrationModuleSpecialty" loc="81">
+The highest level of upgrade can only be crafted by a citizen who has reached the maximum level in their chosen [Specialty|Specialties]. Unlike other upgrades, these upgrades recieve an additional cost reduction when crafting recipes using the specified profession.
+
+Some specialties have different tiers of upgrades that correspond to different crafting tables. For example, [CarpentrySkill] has the [CarpentryBasicUpgradeItem] for the [CarpentryTableItem] and the [CarpentryAdvancedUpgradeItem] for the [SawmillItem].
+  </section>
+</ecopedia>

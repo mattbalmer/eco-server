@@ -1,0 +1,16 @@
+<ecopedia icon="PowerComponent">
+  <summary loc="94">The Power Component is used to check the supply and demand for power and fuel.</summary>
+  <section loc="89">The <b>Power Component</b> is used to check the status of local power grid. It is also used to check the consumption of objects that require fuel to operate.</section>
+  <section type="header" loc="90">Fuel</section>
+  <section image="IllustrationFuelComponent" loc="91">
+Objects that consume fuel will can have fuel input here, and each may require different types of fuel to operate. The tooltips for the accepted fuel contain a list of specific items that can be used to fuel the object. Fuel can also be added from the [Storage Component].
+
+While operating, an object consumes fuel every second, measured in Watts (W). Each type of fuel contains a different amount of potential energy, measured in Joules (J). For every 1 Watt needed per second, 1 Joule of energy is consumed. Fuel is not consumed while the object is inactive.
+  </section>
+  <section type="header" loc="92">Energy Stats</section>
+  <section image="IllustrationPowerComponent" loc="93">
+There are two types of [Power] that can be used by an object, <b>Electric</b> and <b>Mechanical</b>. The <b>power grid</b> displays the type and availability of the needed power for this object. If there is not enough power supply to match the power demanded, objects will become inactive.
+
+Power generators that consume fuel become inactive if there are no nearby objects demanding power. There is no need to turn them on and off to conserve fuel.
+  </section>
+</ecopedia>

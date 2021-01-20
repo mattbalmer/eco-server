@@ -1,0 +1,19 @@
+<ecopedia priority="1" icon="Ecopedia_FoodandShelter">
+  <summary loc="288">Setting up a source of food and shelter is a first priority. </summary>
+  <section type="banner" image="ecopedia_banner_foodandshelter" />
+  <section loc="280">While a functioning society is necessary to stop the meteor, each <b>individual</b> must have their own needs met, starting with <b>food and shelter</b>.
+ </section>
+  <section type="header" loc="281">Choosing a Settlement</section>
+  <section loc="282">When choosing a location to settle in, you'll want to consider the following factors:</section>
+  <section image="IllustrationSettlement" loc="283">
+    <b>Proximity to Resources</b>
+Natural food sources and building supplies nearby will greatly speed up initial progress.
+
+<b>Proximity to Others</b>
+Setting up near other settlements offers a distinct advantage, as you can then trade with others to gain progress faster.  However, an overcrowded area may also have limited options for expansion and natural food in the vicinity. You'll want to find a balance based on personal preference.
+  </section>
+  <section type="header" loc="284">Claiming Your Plot</section>
+  <section image="IllustrationStarterClaim" loc="285"> Once you've selected a place to build your first settlement, you'll want to claim [Property] around it.  When placing your starting tent this will automatically occur, and further property can be claimed with land papers.  Property you claim will be protected from other citizens, unless you give them access.</section>
+  <section type="header" loc="286">Food</section>
+  <section image="IllustrationWildFood" loc="287">Finding a food supply is critical to having the calories you need to work.  Additionally, the [Nutrition] of the food you eat impacts how fast you gain experience, so you'll want to eat the best food available for the fastest gains.  When settling in the wilderness, look for food sources nearby you can take from, or plan to setup a [Farm|Farming].  When settling near an existing village, have a look at the local economy to see what you can [Trade] in order to get food.</section>
+</ecopedia>

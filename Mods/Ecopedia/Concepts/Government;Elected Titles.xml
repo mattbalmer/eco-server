@@ -1,0 +1,22 @@
+<ecopedia icon="ElectedTitle">
+  <summary loc="186">Elected Titles are government officials that can be assigned permissions to manage government policy.</summary>
+  <section type="banner" image="ElectedtitlesEcopedia" />
+  <section loc="185">Elected Titles are government officials that can be assigned permissions to manage government policy. These titles can be used anywhere you can specify a citizen (permissions, laws, etc.). 
+
+Elected titles are created at a [GovernmentOfficeItem]. Several conditions can be set when defining an elected title:
+
+  - An [Election Process|Election Processes] with term limits for title holders
+  - The number of citizens who can hold the elected title at the same time
+  - Requirements to stay in office once elected to the title
+  - A successor who takes over the position if a title holder is removed from office
+
+While creating an elected title, the following permissions can be assigned:
+
+  - Setting the tax rate at a [TreasuryItem]
+  - Access to spend the funds in the Treasury bank account
+  - Government banking privileges to create government bank accounts that are exempt from personal wealth calculations
+  - The ability to place a global map marker to notify citizens of a point of interest
+
+Elected titles can be assigned wages that are paid periodically to the citizens that hold the title.
+  </section>
+</ecopedia>

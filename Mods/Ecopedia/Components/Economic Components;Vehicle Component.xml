@@ -1,0 +1,15 @@
+<ecopedia icon="WoodCartItem">
+  <summary loc="264">Vehicles can be used for performing a variety of tasks.</summary>
+  <section loc="261">Any object containing a <b>Vehicle Component</b> can be mounted and interacted with in a variety of ways, providing a number of benefits.
+  
+Many vehicles require [Power|Power Component] to operate and each have their own [Storage|Storage Component]. Building infrastructure around the world will greatly enhance your [Transport] capabilites as many vehicles require roads to operate.</section>
+  <section type="header" loc="316">Types of Vehicles</section>
+  <section loc="262">  
+- <b>Transportation:</b> Vehicles like the [WoodCartItem] can transport goods and people from place to place. As technology progresses, more advanced vehicles become available with faster movement speeds and higher carrying capacity at the cost of creating pollution
+
+- <b>Excavation:</b> The [ExcavatorItem] and [SkidSteerItem] can quickly move large quantites of dirt and rock. This will greatly increase the speed of [Mining] and allow areas of land to be quickly cleared for new construction projects.
+
+- <b>Contruction:</b> The [CraneItem] can quickly perform large-scale [Building] projects. The crane has a much larger building range than a citizen who is building with a hammer and can access large amounts of storage.
+</section>
+  <section></section>
+</ecopedia>

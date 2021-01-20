@@ -1,0 +1,18 @@
+<ecopedia icon="Skill Scrolls">
+  <summary loc="239">Specialties can be gained by collecting Character Experience, and each specialty will unlock new unique abilities.</summary>
+  <section type="banner" image="specialtiesecopedia" />
+  <section image="Illustration_specialties" loc="238">
+    Specialties are unlocked as you level-up from Character [Experience].  Each specialty (represented with a star) will unlock new abilities you can use.
+
+<b>Professions and Specialties</b>
+[Professions|Profession Overview] are simply groupings of skills, and don’t serve any other purpose besides storing similar skills together.
+Specialties are each contained under a profession and require two steps to gain.
+
+1. First, you must read a skill scroll for the skill.
+2. Next, you must spend a star to take the specialty.
+
+Once you have chosen the specialty, you gain the base-level abilities associated with it. As you perform actions related to that specialty, you will gain Specialty [Experience], leveling up the specialty and unlocking new abilities to it.
+You can see the spread of specialties that other citizens have chosen on the skill selection dialog, and it is often a good idea to choose specialties that other players have not chosen or leveled up. This will allow you to each perform your own specialties and [Trade] with each other for a net gain.
+
+</section>
+</ecopedia>

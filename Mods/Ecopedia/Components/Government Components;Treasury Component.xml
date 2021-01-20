@@ -1,0 +1,13 @@
+<ecopedia icon="TreasuryComponent">
+  <summary loc="59"> Allows citizens holding an Elected Title with tax permission to set taxes and select the World Default Currency.</summary>
+  <section loc="52">The <b>Treasury Component</b> allows [Elected Titles] that have been granted the right to 'Set Taxes at the Treasury' to adjust the tax rate and select the World Default Currency.</section>
+  <section type="header" loc="53">Taxes</section>
+  <section image="IllustrationTreasuryTaxes" loc="54">After [Taxes] are set in the Treasury Component, they are automatically applied to all relevant transactions. All revenue goes into the Treasury [Bank Account|Bank Accounts]. Elected titles that have the setting 'Government Banking Privileges' can transact directly from the Treasury account (allowing selection of the account within the [Credit Component]).  Money can also come out of the treasury via [Laws] that make payments to citizens.</section>
+  <section type="header" loc="55">World Default Currency</section>
+  <section image="IllustrationTreasuryCurrency" loc="56">The <b>World Default Currency</b> is the default [Currency] used when placing a new object that contain the Credit Component. Citizens can still choose to use any currency in a [Trade], but having a World Default Currency makes it is easier to establish an economy with a common currency.</section>
+  <section type="header" loc="57">Direct Taxes</section>
+  <section loc="58">Elected Titles with rights to 'Set Taxes at the Treasury' can tax or allocate funds directly from citizens. This is done through managing the desired currency and selecting which citizens the action will apply to. An elected title must always give a reason why they are performing this action that is displayed to all citizens.
+	  
+Treasury management also includes the option to dump currency from the Treasury account. This will remove the currency permanently, so take care when using this ability on backed currencies.
+	  </section>
+</ecopedia>

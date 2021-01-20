@@ -1,0 +1,18 @@
+<ecopedia icon="Ecopedia_EconomicParticipation" priority="-1">
+  <summary loc="344">A general overview of the current economy that contains information such as available trades, work parties, and contracts.</summary>
+  <section type="banner" image="EconomyviewerEcopedia" />
+  <section loc="345">The <b>Economy Viewer</b> provides a general overview of the current economy and is an incredibly useful tool for economic participation. Among other users, the Economy Viewer shows the location of every [StoreItem] and what is currently being bought and sold.</section>
+  <section image="IllustrationEconomyViewer" loc="346">
+The Economy Viewer provides detailed information about the following:
+
+   - Current [Trade] offers
+   - Existing [Work Parties] and their status
+   - Any [Contracts] that are posted
+   - Locations of [Public Crafting Stations|Crafting Component]
+   - Information on existing [Currencies|Currency]
+   
+In additon, the Economy Viewer allows citizens to directly transfer currency to other citizens and quickly check the status of their own [Bank Accounts] and any outstanding debts.
+   </section>
+  <section type="header" loc="347">Accessing the Economy Viewer</section>
+  <section image="IllustrationEconomyViewerButton" loc="348">The Economy Viewer can be accessed by clicking the Economy button located at the bottom right of the screen.</section>
+</ecopedia>
