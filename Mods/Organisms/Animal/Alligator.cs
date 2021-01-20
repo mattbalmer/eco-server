@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.Organisms
@@ -35,7 +35,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Alligator";
                 this.DisplayName = Localizer.DoStr("Alligator");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 1f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(Turkey), typeof(Tuna), typeof(Salmon), typeof(Trout), typeof(Deer), typeof(Elk), typeof(Hare), typeof(Agouti), typeof(SnappingTurtle), typeof(Tortoise), typeof(Crab) };
                 this.CalorieValue = 100f;

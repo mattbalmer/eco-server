@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -20,7 +20,7 @@ namespace Eco.Mods.TechTree
     [Serialized]
     [LocDisplayName("Dirt")]
     [Weight(30000)]
-    [MaxStackSize(40)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [MakesRoads]
     [Tag("RoadType")]
@@ -31,7 +31,7 @@ namespace Eco.Mods.TechTree
         public override LocString DisplayNamePlural  => Localizer.DoStr("Dirt");
         public override LocString DisplayDescription => Localizer.DoStr("Healthy soil is essential to support life. When displaced, dirt can be used to terraform an area to support buildings and infrastructure.");
         public override bool CanStickToWalls         => false;
-
+	
         public LocString FlowTooltip(float flowrate) => default;
 
         public float OnPipeExit(WireOutput wire, Ray posDir, PipePayload payload)
@@ -50,7 +50,7 @@ namespace Eco.Mods.TechTree
     [Serialized]
     [LocDisplayName("Sand")]
     [Weight(30000)]
-    [MaxStackSize(40)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [StartsDiscovered]
     [Tag("Excavatable", 1)]
