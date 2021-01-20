@@ -70,7 +70,7 @@ namespace Eco.Mods.Organisms
                 this.DisplayName = Localizer.DoStr("Old Growth Redwood");
                 this.DisplayDescription = Localizer.DoStr("Old growth redwood trees develop over centuries, with some living trees being over 2000 years old. Unlike most trees, these are a non-renewable resource and will not grow back if harvested.");
                 // Lifetime
-                this.MaturityAgeDays = 10f;
+                this.MaturityAgeDays = 0.5f;
                 // Generation
                 this.Height = 1;
                 // Food

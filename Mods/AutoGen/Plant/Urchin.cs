@@ -68,7 +68,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Urchin";
                 this.DisplayName = Localizer.DoStr("Urchin");
                 // Lifetime
-                this.MaturityAgeDays = 0.65f;
+                this.MaturityAgeDays = 0.5f;
                 // Generation
                 this.Water = true; 
                 this.Height = 2;

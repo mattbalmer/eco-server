@@ -68,7 +68,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Saxifrage";
                 this.DisplayName = Localizer.DoStr("Saxifrage");
                 // Lifetime
-                this.MaturityAgeDays = 0.65f;
+                this.MaturityAgeDays = 0.5f;
                 // Generation
                 this.Height = 1;
                 // Food

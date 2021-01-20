@@ -36,7 +36,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "SnappingTurtle";
                 this.DisplayName = Localizer.DoStr("SnappingTurtle");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.5f;
                 // Food
                 this.FoodSources = new List<System.Type>()
                 { 

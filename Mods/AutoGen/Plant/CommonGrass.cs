@@ -68,7 +68,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "CommonGrass";
                 this.DisplayName = Localizer.DoStr("Common Grass");
                 // Lifetime
-                this.MaturityAgeDays = 0.65f;
+                this.MaturityAgeDays = 0.5f;
                 // Generation
                 this.Height = 1;
                 // Food

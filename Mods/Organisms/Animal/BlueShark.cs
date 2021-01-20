@@ -29,7 +29,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "BlueShark";
                 this.DisplayName = Localizer.DoStr("BlueShark");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.5f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(Bass), typeof(PacificSardine), typeof(Tuna), typeof(Crab), typeof(MoonJellyfish) };
                 this.CalorieValue = 100f;
