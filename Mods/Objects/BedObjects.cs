@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 namespace Eco.Mods.TechTree
 {
@@ -61,12 +61,6 @@ namespace Eco.Mods.TechTree
             // return a confirmation text if there's a sleeping user
             return sleepingPlayer != null ? Localizer.Do($"Are you sure you want to remove {sleepingPlayer.User.UILink()}'s bed while they are sleeping in it? This is generally considered quite rude and uncouth.") : LocString.Empty;
         } 
-
-        public override void Initialize() 
-        {
-            this.Parent.IsHUDElement = true;
-            base.Initialize();
-        }
 
         [ChatSubCommand("Test", "Spawn a bed and sleep in it.", ChatAuthorizationLevel.Developer)]
         public static void Bed(User user)

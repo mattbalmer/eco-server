@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.Organisms
@@ -38,7 +38,7 @@ namespace Eco.Mods.Organisms
                     BT.Selector("Amphibious On Land",
                         MovementBehaviors.AmphibiousFlee,
                         BT.If("Return Home", MovementBehaviors.ShouldReturnHome, MovementBehaviors.AmphibiousWanderHome),
-                        BT.If("Return to Water", x => (x.Position.y > WorldLayerManager.ClimateSim.State.SeaLevel + MaxHeightAboveSeaLevel, $"above sea-level {(x.Position.Y + WorldLayerManager.ClimateSim.State.SeaLevel).ToString("0.#")} not more than {MaxHeightAboveSeaLevel}"),
+                        BT.If("Return to Water", x => (x.Position.y > WorldLayerManager.Obj.ClimateSim.State.SeaLevel + MaxHeightAboveSeaLevel, $"above sea-level {(x.Position.Y + WorldLayerManager.Obj.ClimateSim.State.SeaLevel).ToString("0.#")} not more than {MaxHeightAboveSeaLevel}"),
                             MovementBehaviors.MoveToWater),
                         BT.Random("Relax", 
                             RelaxBehaviors.TryIdle,

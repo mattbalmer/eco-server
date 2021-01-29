@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.Organisms
@@ -18,6 +18,7 @@ namespace Eco.Mods.Organisms
     using Eco.Gameplay.Players;
     using Eco.Gameplay.Interactions;
     using Eco.Gameplay.Items;
+    using Eco.Shared.Serialization;
     using Range = Eco.Shared.Math.Range;
 
     public class SnappingTurtle : AnimalEntity
@@ -36,7 +37,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "SnappingTurtle";
                 this.DisplayName = Localizer.DoStr("SnappingTurtle");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 1f;
                 // Food
                 this.FoodSources = new List<System.Type>()
                 { 
@@ -60,7 +61,7 @@ namespace Eco.Mods.Organisms
                 // Behavior
                 this.BrainType = typeof(AmphibiousBrain);
                 this.IsPredator = false;
-                this.WanderingSpeed = 0.2f;
+                this.WanderingSpeed = 0.13f;
                 this.Speed = 0.2f;
                 this.ClimbHeight = 0;
                 this.Health = 2.5f;

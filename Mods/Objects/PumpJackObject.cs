@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 namespace Eco.Mods.TechTree
 {
@@ -18,7 +18,7 @@ namespace Eco.Mods.TechTree
         public void OnCraftingComplete()
         {
             var newSpeed = 0.0f;
-            WorldLayerManager.GetLayer(LayerNames.Oilfield).ApplyRadius(this.Position.XZi, Radius, (x, val) =>
+            WorldLayerManager.Obj.GetLayer(LayerNames.Oilfield).ApplyRadius(this.Position.XZi, Radius, (x, val) =>
             {
                 var newVal = val - ((1 - (Vector2.Distance(x, this.Position.XZ) / Radius)) * 0.05f);
                 newSpeed += newVal;
@@ -32,7 +32,7 @@ namespace Eco.Mods.TechTree
         [Tooltip(120)]
         public TooltipSection OilTooltip(Player player)
         {
-            var layer = WorldLayerManager.GetLayer(LayerNames.Oilfield);
+            var layer = WorldLayerManager.Obj.GetLayer(LayerNames.Oilfield);
             var pos = player.User.Position.XZi;
             float value = 0.0f;
             layer.ForRadius(layer.WorldPosToLayerPos(pos), PumpJackObject.Radius, (x, val) => value += val);

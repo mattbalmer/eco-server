@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -54,7 +54,7 @@ namespace Eco.Mods.TechTree
             this.GetComponent<FuelConsumptionComponent>().Initialize(45);
             this.GetComponent<AirPollutionComponent>().Initialize(0.5f);
             this.GetComponent<VehicleComponent>().Initialize(20, 1);
-            this.GetComponent<VehicleToolComponent>().Initialize(5, 2400000, new DirtItem(),
+            this.GetComponent<VehicleToolComponent>().Initialize(5, 2800000, new DirtItem(),
                 100, 200, 0, VehicleUtilities.GetInventoryRestriction(this), toolOnMount:true);
         }
     }

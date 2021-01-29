@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods
@@ -49,10 +49,10 @@ namespace Eco.Mods
         }
 
         [ChatSubCommand("Pollute", "Creates X tons of air pollution", ChatAuthorizationLevel.Admin)]
-        public static void Air(User user, float tons) => WorldLayerManager.ClimateSim.AddAirPollutionTons(new WorldPosition3i(user.Position.XYZi), tons);
+        public static void Air(User user, float tons) => WorldLayerManager.Obj.ClimateSim.AddAirPollutionTons(new WorldPosition3i(user.Position.XYZi), tons);
 
         [ChatSubCommand("Pollute", "Changes CO2 PPM by X", ChatAuthorizationLevel.Admin)]
-        public static void CO2(User user, float ppm) => WorldLayerManager.ClimateSim.State.TotalCO2 += ppm;
+        public static void CO2(User user, float ppm) => WorldLayerManager.Obj.ClimateSim.State.TotalCO2 += ppm;
 
         [CITest]
         [ChatSubCommand("Pollute", "Rains tailings from the heavens to ruin the world", ChatAuthorizationLevel.Admin)]

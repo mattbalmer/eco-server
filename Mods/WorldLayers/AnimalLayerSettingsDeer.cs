@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.WorldLayers
@@ -17,7 +17,7 @@ namespace Eco.Mods.WorldLayers
             this.InitMultiplier = 1f;
             this.SyncToClient = false;
             this.Range = new Range(0f, 3.5f);
-            this.RenderRange = null;
+            this.OverrideRenderRange = null;
             this.MinColor = new Color(1f, 1f, 1f);
             this.MaxColor = new Color(0f, 1f, 0f);
             this.SumRelevant = true;

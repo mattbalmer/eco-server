@@ -1,5 +1,5 @@
 <ecopedia icon="Ecopedia_Mining" priority="-1">
-  <summary loc="166">The living system of plants and animals which provides the means for humans to survive.</summary>
+  <summary loc="166">The extraction of ore, coal, and other valuable minerals from the ground.</summary>
   <section type="banner" image="ecopedia_banner_mining" />
   <section loc="161">
 The ground beneath you is host to a huge variety of resources, such as rocks, metals, and other mineral deposits. Different types of rock host different kinds of mineral deposits or lend themselves to trapping other resources like petroleum. Due to the immense complexity of earth resources in reality and the necessity in Eco of providing players with a predictable balance of raw materials to start with, rocks and their deposits are generated based on Biomes. Each biome comes with a suite of associated rocks and deposits that sprawls out beneath it in layers.

@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
         public bool WaterTest(Vector3i pos)
         {
             var block = World.GetBlock(pos + Vector3i.Up);
-            return (block is WaterBlock && !(block as WaterBlock).PipeSupplied) ? World.GetWaterHeight(pos.XZ) > WorldLayerManager.ClimateSim.State.SeaLevel : false;
+            return (block is WaterBlock && !(block as WaterBlock).PipeSupplied) ? World.GetWaterHeight(pos.XZ) > WorldLayerManager.Obj.ClimateSim.State.SeaLevel : false;
         }
     }
 

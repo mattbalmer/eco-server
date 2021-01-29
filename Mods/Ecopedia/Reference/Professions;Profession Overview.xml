@@ -57,7 +57,7 @@ Below is a list of all professions and the corresponding specialties. Citizens c
   <section loc="339">
 [Smiths|Smith] specialize in smelting ore and making tools for other citizens using the metal bars they create.
   - [SmeltingSkill] allows citizens to smelt the metal bars that make up the foundation of technological advancement. The iron tools they create provide significant benefit over the early stone tools.
-  - [AdvancedSmeltingSkill] allows citizens to further refine iron bars into [Steel|SteelBarItem] for use in industry and high-tier building materials. Citizens with this specialty can use the steel they create more advanced tools.
+  - [AdvancedSmeltingSkill] allows citizens to further refine iron bars into [Steel|SteelBarItem] for use in industry and high-tier building materials. Citizens with this specialty can use the steel they create to make more advanced tools.
 </section>
   <section type="header" loc="340">Tailor</section>
   <section loc="341">
@@ -66,7 +66,7 @@ The [Tailor] specializes in making high end furniture and specialized clothing t
 </section>
   <section type="header" loc="342">Survivalist</section>
   <section loc="343">
-[Survivalists|Survivalist] specializes in carrying extra weight and reducing the calories expended when using basic tools. All citizens are survivalists in the world of Eco. 
+[Survivalists|Survivalist] specialize in carrying extra weight and reducing the calories expended when using basic tools. All citizens are survivalists in the world of Eco. 
    - Experience in [SelfImprovementSkill] is gained anytime a citizen levels up another specialty. Self-improvement has two main benefits. As citizens progress, they will have increased carry weight capacity and a larger stomach capacity for extra calories. In addition, less calories are consumed when using hammers and shovels.
 </section>
 </ecopedia>

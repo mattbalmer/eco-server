@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 using System;
@@ -39,8 +39,8 @@ public static class PlayerDefaults
             { typeof(StonePickaxeItem), 1 },
             { typeof(TorchItem), 1 },
             { typeof(TorchStandItem), 1 },
-            { typeof(TomatoItem), 15 },
-            { typeof(RawFishItem), 15 },
+            { typeof(TomatoItem), 20 },
+            { typeof(RawFishItem), 20 },
         };
     }
     public static IEnumerable<Type> GetDefaultSpecialties()

@@ -25,7 +25,7 @@ Any payment offered for a contract will be held in a special Escrow {Bank Accoun
 8;[
 {Work Parties} can also be posted on a Contract Board, allowing the creation of tasks that can be completed by multiple other citizens, as opposed to contracts which are an agreement between two parties only. Before posting a work party, a citizen must start a work order on a crafting table they own.
 
-After posting a work party, Laborers can join the project at the Contract Board. By default anyone can join the work party as a laborer, but requirements can set for individual roles or general requirements for anyone to join. When 'Expand Roles When Full' is checked, space for new laborers to join is created automatically when all roles are filled.
+After posting a work party, Laborers can join the project at the Contract Board. By default anyone can join the work party as a laborer, but requirements can be set for individual roles or general requirements for anyone to join. When 'Expand Roles When Full' is checked, space for new laborers to join is created automatically when all roles are filled.
 
 When setting the Work desired, the poster of the work party can decide to hire for labor, resources, or both. Any citizen who contributes to the work party will recieve a share of the payment based on the amount of work they provided. By assigning additional Weight to a particular job in a work party, that job will recieve a higher share of the payment.
 ]
@@ -56,7 +56,7 @@ Objects with a {Crafting Component} can define a fee for authorized citizens to 
 14;[The Deed Sales Component allows citizens to buy and sell {Property}.
   ]
 15;[
-By visiting a {Real Estate Desk|Real Estate Desk Item}, citizens can create listings for their deeds and view the listings of other citizens. All posted listing can be accessed from any real estate desk.
+By visiting a {Real Estate Desk|Real Estate Desk Item}, citizens can create listings for their deeds and view the listings of other citizens. All posted listings can be accessed from any real estate desk.
 
 When creating a listing, the property owner sets the price and {Currency} used. All revenue will go into the selected {Bank Account|Bank Accounts}.
 
@@ -196,7 +196,7 @@ All placed objects have authorization components.
 69;[
 After selecting an item and quantity to craft, resources and labor are required to start the project. These resources can be added manually (placing them directly on the crafting table) or by linking a {Storage Component} that contains them.
 
-Citizens with a related {Specialty|Specialties} require less calories to add labor. Some projects required skilled labor from a citizen with the corresponding specialty. This reduction is applied after the work order is started so citizens of various skill level can contribute to the same work party.
+Citizens with a related {Specialty|Specialties} require less calories to add labor. Some projects require skilled labor from a citizen with the corresponding specialty. This reduction is applied after the work order is started so citizens of various skill level can contribute to the same work party.
 
 By adding an upgrade in the {Modules Component}, work orders on a crafting table will have reduced crafting time and resource costs.
 
@@ -350,7 +350,7 @@ Currencies can be transferred to others in the Economy Viewer, as well as throug
 120;["Economy has frequently nothing whatever to do with the amount of money being spent, but with the wisdom used in spending it."
     Henry Ford
   ]
-121;[The economy comprises the actions of harvesting, production and trade among citizens, taking from the {Ecosystem|Ecosystem Overview} under the regulation of the {Government|Government Overview}. Citizens will need to need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
+121;[The economy comprises the actions of harvesting, production and trade among citizens, taking from the {Ecosystem|Ecosystem Overview} under the regulation of the {Government|Government Overview}. Citizens will need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
   ]
 122;[Economy Concepts]
 123;[
@@ -628,7 +628,7 @@ Depending on what {Civic Articles} are available, these actions may or may not r
     The government is created by citizens, piece by piece, growing their power and capability alongside the power of the populace.  The parts of the government are:
   ]
 196;[{Constitution}
-Before any other aspect of government can be created, a Constitution must be created at a {CapitolItem}. It determines the how the government operates via civic articles.
+Before any other aspect of government can be created, a Constitution must be created at a {CapitolItem}. It determines how the government operates via civic articles.
 ]
 197;[{Civic Articles}
 A constitution contains civic articles which define how the government functions: who can do what, and how.  They can be created at a {CapitolItem} on a new constitution or added to an existing constitution at an {AmendmentsItem} table.
@@ -705,7 +705,8 @@ Titles can also have wages set on them. Wages are paid periodically as long as a
 215;[A citizen cannot thrive without proper shelter, and together with your {Nutrition} your Housing value will determine your {Experience} multiplier.  The better your house’s materials and furnishing are, the higher your experience multiplier.  
 
 Additionally, many objects require houses and utilities to operate. The housing system consists of the following parts:
- - {Rooms}. A room is a fully contained space, and many objects require being place inside a room to function.
+ - {Residency}. You can share residency of a property with others.
+ - {Rooms}. A room is a fully contained space, and many objects require being placed inside a room to function.
  - {Property}. Citizens can claim individual plots of land which they then can control access to.
  - {Power}. Many items require a power source to operate, and generated power can be shared among many citizens.
  - {Sewage}. Certain items require a sewage system of pipes, pumps, and wastewater treatment.
@@ -759,7 +760,7 @@ Character Experience
 Character Experience is your background learning rate, how fast you are gaining knowledge and abilities.  It is constantly going up, even when you’re offline.  Each real-day, you will gain Character Experience at the rate of 1 * your experience multiplier.  When you reach a level up, you will gain a new specialty unlock, represented by a star.  Each level up will require more and more character experience to gain, so it is very difficult to have more than a few specialties.
 
 Specialty Experience
-Specialty Experience is your skill at a specific ability, and rather than going up constantly, it only goes up when you perform actions related to that specialty, such as crafting or performing labor.  Like Character Experience, it too is multiplied by you Experience Multiplier. Along the left side of the screen, you’ll see icons displaying how much experience you’re gaining when you perform actions, and you can click these to get a closer look at the level ups for that specialty.
+Specialty Experience is your skill at a specific ability, and rather than going up constantly, it only goes up when you perform actions related to that specialty, such as crafting or performing labor.  Like Character Experience, it too is multiplied by your Experience Multiplier. Along the left side of the screen, you’ll see icons displaying how much experience you’re gaining when you perform actions, and you can click these to get a closer look at the level ups for that specialty.
 Some level ups will allow you to unlock talents, which give specific bonuses related to the skills they’re in.
 
 Experience Multiplier
@@ -785,7 +786,7 @@ All food provides both calories and nutrients, so while gaining calories from fo
 235;[Nutrition, alongside housing, determines how fast you gain experience.]
 236;[Central to a thriving economy is the ability to specialize and trade, thereby working more efficiently than if you attempted to do everything yourself.  Achieving a successful society depends on successfully accomplishing both.  
     
-    A citizen's skills give them unique abilities and enhancements, which allows them to {Trade} with other citizens having different skills in the economy. As you gain {Experience}, you can unlock new {Specialties} and level-up existing ones.  The experience you gain is multiplied by you {Nutrition} and {Housing|Housing Overview}.    
+    A citizen's skills give them unique abilities and enhancements, which allows them to {Trade} with other citizens having different skills in the economy. As you gain {Experience}, you can unlock new {Specialties} and level-up existing ones.  The experience you gain is multiplied by your {Nutrition} and {Housing|Housing Overview}.    
   ]
 237;[The skill system allows citizens to specialize in specific trades.]
 238;[
@@ -969,7 +970,7 @@ The world begins as a vast untouched wilderness, and through the ages citizens w
 291;[
   Eco is a world bookended by two threats: Environmental collapse, and the ever-looming {Meteor|The Meteor}.
   
-To succeed, you'll need to progress through the ages, advancing science and industry to a level that can destroy the meteor without causing ecological collapse in the process.  You will do this as individual member of a larger society, and the creating a positive interplay between individual needs and societal needs is critical to success.  
+To succeed, you'll need to progress through the ages, advancing science and industry to a level that can destroy the meteor without causing ecological collapse in the process.  You will do this as an individual member of a larger society, and the creating a positive interplay between individual needs and societal needs is critical to success.  
 
 Your focus in Eco will be on managing your individual progress while simultaneously working to progress the {Economy|Economy Overview} as a whole, and doing so inside a rich {Ecosystem|Ecosystem Overview} of plants and animals that are affected by what you do.  
 
@@ -1011,7 +1012,7 @@ The Text Component can be found on Signs, {Vehicles|Vehicle Component}, and the 
   
 Text can be useful for giving directions, advertising, or just writing a friendly greeting
 
-For those familar with text markup, a variety of tags may be use to alter the size, color, and formatting of text.
+For those familar with text markup, a variety of tags may be used to alter the size, color, and formatting of text.
 ]
 303;[Allows citizens write text that is displayed to other citizens.]
 304;[
@@ -1047,7 +1048,7 @@ Some of these uses include:
 
 Citizens build their first homes using a {StoneHammerItem}, but as technology progresses increasingly better building tools become available that consume less calorie when used.
 
-Large-scale construction projects can be quickly be completed with the use of a {CraneItem}, but at the cost of creating {Pollution}.
+Large-scale construction projects can be quickly completed with the use of a {CraneItem}, but at the cost of creating {Pollution}.
   ]
 316;[Types of Vehicles]
 317;[Types of Civic Objects]
@@ -1174,4 +1175,22 @@ In additon, the Economy Viewer allows citizens to directly transfer currency to 
 348;[The Economy Viewer can be accessed by clicking the Economy button located at the bottom right of the screen.]
 349;[Feeding the World
 Food forms the backbone of a growing society in Eco, fueling the increase in skills needed to build a civilization.  A well-organized network of food producers, from farmers to chefs, ensures that citizens gain skills at the rate they need.
+]
+350;[The property where you have taken residency provides your housing points.]
+351;[
+Each deed can have any number of residents, and those residents will share in an {Experience} boost based on the quality and number of occupants.
+
+As the number of occupants increases, the occupancy penalty increases.  At small numbers of occupants (1 or 2), there is virtually no penalty, and citizens can effectively cohabitate this way and share in the benefit of a well-stocked house.  As the occupants increases beyond that (5 and above), the penalty becomes more steep, eventually topping out at 99% when the house is too overcrowded.
+
+However, the 'diminishing returns' rate of rooms is favorably affected by occupancy (because three bathrooms is overkill when you live alone, but great when you have roommates).  This means that you can overcome the penalty by building a larger house, and duplicate rooms will be inversely affected the occupancy bonus.
+  
+To become a resident of a property, click the name of the property (visible on the popup status panel when youre in the property). From there you can become a resident (if you own the deed) as well as invite others to become residents.  These other invited citizens may then join as a resident through the same interface. You can even invite groups by specifying titles or demographics, allowing you to create housing for special classes of citizens (new players for example). You can also set the max number of occupants, to ensure that residency managed this way (by inviting large groups) doesn't result in overcrowded housing.
+
+Note: An additional feature will be added latter permitting automatic rent collection agreements between citizens. For now this can be done with manual transfers.]
+352;[Permissions for Residents
+When a citizen becomes a resident of a property, they will gain a special set of permissions, even if they don't otherwise have access to the property, known as Resident Rights. These rights are as follows:
+
+  - Pre-furnished rooms supportedL Residents can access all world objects on the property as consumers.
+  - You can move in your own stuff: Residents may place objects anywhere on the property (but not blocks).
+  - No stealing the furniture that came with the place allowed: Residents may pick up world objects only if they originally placed them.  
 ]

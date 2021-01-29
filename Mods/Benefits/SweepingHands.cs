@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -12,6 +12,7 @@ namespace Eco.Mods.TechTree
     using Eco.Gameplay.Property;
     using Eco.Shared.Math;
     using Eco.Shared.Networking;
+    using Eco.Shared.Utils;
 
     public partial class MiningSweepingHandsTalent
     {
@@ -72,7 +73,7 @@ namespace Eco.Mods.TechTree
                 if (!(rubble is IRepresentsItem rubbleRepresentsItem) || rubbleRepresentsItem.RepresentedItemType != itemType)
                     continue;
                 
-                var addedToPack = pack.PickupRubble(player, userInventory, rubble, itemType, checkAuthFirst: positionIsNew, notificate: false); // Check auth before adding to the pack if the position is new.
+                var addedToPack = pack.PickupRubbles(player, userInventory, rubble.SingleItemAsEnumerable(), itemType, checkAuthFirst: positionIsNew, notificate: false); // Check auth before adding to the pack if the position is new.
                 if (addedToPack && ++numTaken == numToTake) break;
 
                 if (positionIsNew) checkedPlots.Add(plotPosition, addedToPack); // Add auth check for this plot to the dictionary.

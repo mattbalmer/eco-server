@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -112,6 +112,12 @@ namespace Eco.Mods.TechTree
             new TagDefinition("NotInBrowser")                   { AutoHighlight = false, ShowInEcopedia = false },
             new TagDefinition("Plant")                          { AutoHighlight = false, ShowInEcopedia = false },
             new TagDefinition("Tree")                           { AutoHighlight = false, ShowInEcopedia = false },
+            
+            // Law: tag for law trigger property
+            new TagDefinition("Specialty")                      { AutoHighlight = false, ShowInEcopedia = false },
+            new TagDefinition("Profession")                     { AutoHighlight = false, ShowInEcopedia = false },
+            new TagDefinition("Plants")                         { AutoHighlight = false, ShowInEcopedia = false },
+            new TagDefinition("Animals")                        { AutoHighlight = false, ShowInEcopedia = false },
         };
 
         /// <summary> Called on Mods initialization for the marker interface <see cref="IModInit"/>. Registers all <see cref="TagDefinition"/> from <see cref="Definitions"/>. </summary>

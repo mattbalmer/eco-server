@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -13,7 +13,7 @@ namespace Eco.Mods.TechTree
         public override bool HasActiveRequirements { get { return true; } }
         public override bool Active(object obj, User user = null)
         {
-            var playerActivity = WorldLayerManager.GetLayer(LayerNames.PlayerActivity);
+            var playerActivity = WorldLayerManager.Obj.GetLayer(LayerNames.PlayerActivity);
             if (playerActivity.EntryWorldPos(user.Position.XZi) > 0.8)
                 return true;
             return false;

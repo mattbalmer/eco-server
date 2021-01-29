@@ -47,9 +47,6 @@ Lors de la sélection de [Bank Accounts], les citoyens peuvent sélectionner n'i
 Toutes les [Currencies|Currency] du monde peuvent être sélectionnées dans le composant de crédit. C'est la monnaie qui sera utilisée pour toutes les transactions qui ont lieu sur cet objet (par exemple, un [Store|Store Component] acceptera la monnaie définie ici).
 
 Lorsque vous sélectionnez aucun pour la monnaie dans un magasin, les transactions directes sont possibles sans avoir besoin d'une monnaie.
-
-Objects with a [Crafting Component] can define a fee for authorized citizens to use them. The settings in the Credit Component will determine what currency that fee is charged in and what account the funds are deposited to.
-
 13;The Credit Component allows citizens to set the bank account and currency for transactions on an object.
 14;Le composant de vente d'acte permet aux citoyens d'acheter et de vendre des [Property].  
 15;
@@ -94,15 +91,6 @@ The Store Component allows citizens to set items they wish to buy from and sell 
   
 30;
 La monnaie et le compte bancaire sélectionnés dans la [Credit Component] seront utilisés pour toutes les transactions au magasin. En sélectionnant aucune pour la devise dans un magasin, il est possible d'effectuer des transactions directes qui ne sont pas soumises à la taxe sur les ventes. 
- 
-A store owner can link specific containers in the [Storage Component] to pick which items are considered part of the store's inventory. By default, all nearby storage containers are linked to the store when it is first placed.
-
-When creating a Sale List, only the price needs to be set. The inventory for a Sale List is determined automatically by the availability of items in the linked storage containers.
-
-When creating a Purchase List, the price and Max to Buy quantity for each item must be decided. If the Max to Buy quantity is left at zero, the store will continue to purchase items until the linked containers are full. If a Max to Buy quantity is specified, citizens can sell that item until the linked storage contains that amount.
-
-For tools with durability, a minimum durability to buy/sell can be set, and only items of that durability or higher will be eligible for trade via the store.
-
 32;Sets up an interface for other citizens to buy and sell goods from/to you automatically.
 33;Components related to the government.
 34;
@@ -340,9 +328,9 @@ Les monnaies peuvent être transférées à d'autres dans le visionneur d'écono
 119;La monnaie est une construction sociétale qui facilite le commerce.
 120;Economy has frequently nothing whatever to do with the amount of money being spent, but with the wisdom used in spending it.
     Henry Ford
-
-121;The economy comprises the actions of harvesting, production and trade among citizens, taking from the [Ecosystem|Ecosystem Overview] under the regulation of the [Government|Government Overview]. Citizens will need to need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
-
+  
+121;The economy comprises the actions of harvesting, production and trade among citizens, taking from the [Ecosystem|Ecosystem Overview] under the regulation of the [Government|Government Overview]. Citizens will need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
+  
 122;Economy Concepts
 123;
 - [Crafting]. Utiliser des outils industriels pour créer de nouveaux produits.
@@ -611,7 +599,7 @@ Depending on what [Civic Articles] are available, these actions may or may not r
     The government is created by citizens, piece by piece, growing their power and capability alongside the power of the populace.  The parts of the government are:
   
 196;[Constitution]
-Before any other aspect of government can be created, a Constitution must be created at a [CapitolItem]. It determines the how the government operates via civic articles.
+Before any other aspect of government can be created, a Constitution must be created at a [CapitolItem]. It determines how the government operates via civic articles.
 
 197;[Civic Articles]
 A constitution contains civic articles which define how the government functions: who can do what, and how.  They can be created at a [CapitolItem] on a new constitution or added to an existing constitution at an [AmendmentsItem] table.
@@ -682,7 +670,8 @@ Les titres élus donnent beaucoup de flexibilité dans la définition de la gouv
 215;A citizen cannot thrive without proper shelter, and together with your [Nutrition] your Housing value will determine your [Experience] multiplier.  The better your house’s materials and furnishing are, the higher your experience multiplier.  
 
 Additionally, many objects require houses and utilities to operate. The housing system consists of the following parts:
- - [Rooms]. A room is a fully contained space, and many objects require being place inside a room to function.
+ - [Residency]. You can share residency of a property with others.
+ - [Rooms]. A room is a fully contained space, and many objects require being placed inside a room to function.
  - [Property]. Citizens can claim individual plots of land which they then can control access to.
  - [Power]. Many items require a power source to operate, and generated power can be shared among many citizens.
  - [Sewage]. Certain items require a sewage system of pipes, pumps, and wastewater treatment.
@@ -763,7 +752,7 @@ La nourriture est le pilier de la croissance d'une société dans Eco, alimentan
 235;Nutrition, alongside housing, determines how fast you gain experience.
 236;Central to a thriving economy is the ability to specialize and trade, thereby working more efficiently than if you attempted to do everything yourself.  Achieving a successful society depends on successfully accomplishing both.  
     
-    A citizen's skills give them unique abilities and enhancements, which allows them to [Trade] with other citizens having different skills in the economy. As you gain [Experience], you can unlock new [Specialties] and level-up existing ones.  The experience you gain is multiplied by you [Nutrition] and [Housing|Housing Overview].    
+    A citizen's skills give them unique abilities and enhancements, which allows them to [Trade] with other citizens having different skills in the economy. As you gain [Experience], you can unlock new [Specialties] and level-up existing ones.  The experience you gain is multiplied by your [Nutrition] and [Housing|Housing Overview].    
   
 237;The skill system allows citizens to specialize in specific trades.
 238;Les spécialités sont déverrouillées au fur et à mesure que vous vous mettez à niveau par rapport au personnage [Experience].  Chaque spécialité (représentée par une étoile) déverrouillera de nouvelles capacités que vous pourrez utiliser.
@@ -984,7 +973,7 @@ The Text Component can be found on Signs, [Vehicles|Vehicle Component], and the 
   
 Text can be useful for giving directions, advertising, or just writing a friendly greeting
 
-For those familar with text markup, a variety of tags may be use to alter the size, color, and formatting of text.
+For those familar with text markup, a variety of tags may be used to alter the size, color, and formatting of text.
 
 303;Allows citizens write text that is displayed to other citizens.
 304;
@@ -1020,7 +1009,7 @@ Some of these uses include:
 
 Citizens build their first homes using a [StoneHammerItem], but as technology progresses increasingly better building tools become available that consume less calorie when used.
 
-Large-scale construction projects can be quickly be completed with the use of a [CraneItem], but at the cost of creating [Pollution].
+Large-scale construction projects can be quickly completed with the use of a [CraneItem], but at the cost of creating [Pollution].
   
 316;Types de véhicules
 317;Types of Civic Objects
@@ -1036,19 +1025,19 @@ Once a [Constitution] is passed, new government policies are contained as Civic 
 	
 319;Proposing Civic Objects
 320;
-Clicking the Draft button will allow a citizen to propose a new civic object. Citizens can optionally begin a new draft to a civic object by clicking the Copy button which appears when hovering over the icon. This will bring up a dialog allowing you to select any civic object (past or present) to use as a basis. 
+Clicking the 'Draft' button will allow a citizen to propose a new civic object. Citizens can optionally begin a new draft to a civic object by clicking the 'Copy' button which appears when hovering over the icon. This will bring up a dialog allowing you to select any civic object (past or present) to use as a basis. 
 
-By visiting the Civic Object Component on a government building that already contains civic objects, these policies can be amended or repealed. To repeal a civic object, click the red 'X' that appears when you mouse over the icon.  To amend an existing one, click the Revise button available in the interface.
+By visiting the Civic Object Component on a government building that already contains civic objects, these policies can be amended or repealed. To repeal a civic object, click the red 'X' that appears when you mouse over the icon.  To amend an existing one, click the 'Revise' button available in the interface.
 
 The buildings containing civic objects must remain placed and active for the civic object to stay in effect. If a government building is picked up, all civic objects contained on it come with it and they will eventually become disabled if the building is not replaced.
-
+	
 321;
 - Apply Changes Immediately: Citizens given executive privilege can add, remove, and edit civic objects immediately.
 
 - Propose via Election: Citizens with the ability to propose elections will be able to propose an addition/deletion/edit, which will then trigger a new election (using whatever [Election Process|Election Processes] that is defined in the constitution).
 
 - View Only: If the citizen has no privileges as defined in the constitution, they may only view the civic objects by clicking on them and are not allowed to make changes.
-
+  
 322;
 This component is accessed from a [RealEstateDeskItem]. It provides links to all of the individual deeds that can be accessed by interacting with a [PropertyToolItem] on a deed the citizen owns.
 
@@ -1146,4 +1135,22 @@ En outre, le visionneur d'économie permet aux citoyens de transférer directeme
 348;Le visionneur d'économie est accessible en cliquant sur le bouton Économie situé en bas à droite de l'écran.
 349;Feeding the World
 Food forms the backbone of a growing society in Eco, fueling the increase in skills needed to build a civilization.  A well-organized network of food producers, from farmers to chefs, ensures that citizens gain skills at the rate they need.
+
+350;The property where you have taken residency provides your housing points.
+351;
+Each deed can have any number of residents, and those residents will share in an [Experience] boost based on the quality and number of occupants.
+
+As the number of occupants increases, the occupancy penalty increases.  At small numbers of occupants (1 or 2), there is virtually no penalty, and citizens can effectively cohabitate this way and share in the benefit of a well-stocked house.  As the occupants increases beyond that (5 and above), the penalty becomes more steep, eventually topping out at 99% when the house is too overcrowded.
+
+However, the 'diminishing returns' rate of rooms is favorably affected by occupancy (because three bathrooms is overkill when you live alone, but great when you have roommates).  This means that you can overcome the penalty by building a larger house, and duplicate rooms will be inversely affected the occupancy bonus.
+  
+To become a resident of a property, click the name of the property (visible on the popup status panel when youre in the property). From there you can become a resident (if you own the deed) as well as invite others to become residents.  These other invited citizens may then join as a resident through the same interface. You can even invite groups by specifying titles or demographics, allowing you to create housing for special classes of citizens (new players for example). You can also set the max number of occupants, to ensure that residency managed this way (by inviting large groups) doesn't result in overcrowded housing.
+
+Note: An additional feature will be added latter permitting automatic rent collection agreements between citizens. For now this can be done with manual transfers.
+352;Permissions for Residents
+When a citizen becomes a resident of a property, they will gain a special set of permissions, even if they don't otherwise have access to the property, known as Resident Rights. These rights are as follows:
+
+  - Pre-furnished rooms supportedL Residents can access all world objects on the property as consumers.
+  - You can move in your own stuff: Residents may place objects anywhere on the property (but not blocks).
+  - No stealing the furniture that came with the place allowed: Residents may pick up world objects only if they originally placed them.  
 

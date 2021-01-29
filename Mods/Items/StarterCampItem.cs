@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -21,6 +21,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.Items;
     using Eco.Shared.Networking;
     using Eco.Shared.Voxel;
+    using Eco.Gameplay.Settlements;
 
     [Serialized]
     [LocDisplayName("Starter Camp")]
@@ -32,9 +33,9 @@ namespace Eco.Mods.TechTree
 
         public override void OnAreaValid(GameActionPack pack, Player player, Vector3i position, Quaternion rotation)
         {
-            var deed = PropertyManager.FindNearbyDeedOrCreate(player.User, position.XZ);
+            var deed = PropertyManager.FindConnectedDeedOrCreate(player.User, position.XZ);
 
-            foreach (var plotPosition in World.GetAllPropertyPos(position, virtualOccupancy))
+            foreach (var plotPosition in PlotUtil.GetAllPropertyPos(position, virtualOccupancy))
             {
                 if (!this.IsPlotAuthorized(plotPosition, player.User, out var canClaimPlot))
                     return;
@@ -56,9 +57,21 @@ namespace Eco.Mods.TechTree
                 var changeSet = new InventoryChangeSet(storage.Inventory);
                 PlayerDefaults.GetDefaultCampsiteInventory().ForEach(x => changeSet.AddItems(x.Key, x.Value, storage.Inventory));
 
-                // Add a paper for every already claimed plot.
-                if (this.bonusPapers > 0) changeSet.AddItems(typeof(PropertyClaimItem), this.bonusPapers);
+                //If we're running a settlement system, create the homestead item now and fill it with homestead-specific claim papers.
+                if (SettlementPluginConfig.Obj.SettlementSystemEnabled)
+                {
+                    var marker = WorldObjectManager.ForceAdd(typeof(HomesteadMarkerObject), player.User, position + rotation.RotateVector(new Vector3i(3, 0, 3)), rotation, false);
+                    var markerComp = marker.GetComponent<SettlementMarkerComponent>();
+                    markerComp.Settlement.Citizenship.AddSpawnedClaims(this.bonusPapers);
+                    markerComp.UpdateSpawnedClaims();
+                }
+                else
+                { 
+                    //For the old system, add the papers to the tent.
+                    if (this.bonusPapers > 0) changeSet.AddItems(typeof(PropertyClaimItem), this.bonusPapers);
+                }
                 changeSet.Apply();
+
             });
         }
 
@@ -92,7 +105,7 @@ namespace Eco.Mods.TechTree
 
             canOwn = true;
 
-            foreach (var pos in World.GetAllPropertyPos(position, virtualOccupancy))
+            foreach (var pos in PlotUtil.GetAllPropertyPos(position, virtualOccupancy))
             {
                 var plot = PropertyManager.GetPlot(pos);
                 if (plot == null || plot.DeedId == Guid.Empty)        continue;   // Unowned plot.
@@ -123,16 +136,22 @@ namespace Eco.Mods.TechTree
             return plot.Owners == user ? Result.Succeeded : ServiceHolder<IAuthManager>.Obj.IsAuthorized(plot.Position, user, AccessType.ConsumerAccess, null);
         }
 
+        SettlementType? SettleType {get
+        { 
+            if (SettlementPluginConfig.Obj.SettlementSystemEnabled) return SettlementType.Homestead; 
+            else return null;
+        } }
+
         public override void OnSelected(Player player)
         {
             base.OnSelected(player);
-            player?.SetShowPropertyState(virtualOccupancy); // Add camp's virtual occupancy to player's property selector so it could highlight four plots at once.
+            player?.SetPropertyClaimingMode(virtualOccupancy, this.SettleType); // Add camp's virtual occupancy to player's property selector so it could highlight four plots at once.
         }
         
         public override void OnDeselected(Player player)
         {
             base.OnDeselected(player);
-            player?.SetShowPropertyState(false);
+            player?.StopPropertyClaimingMode();
         }
     }
 

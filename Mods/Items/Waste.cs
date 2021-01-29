@@ -1,6 +1,7 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
+using System.ComponentModel;
 using Eco.Core.Items;
 using Eco.Gameplay.Items;
 using Eco.Mods.TechTree;
@@ -21,8 +22,11 @@ public partial class GarbageItem : BlockItem<GarbageBlock>
     public override bool CanStickToWalls { get { return false; } }
 }
 [Serialized]
+[Category("Hidden")]
 [MaxStackSize(1), Tag("Object")]
 public partial class TrashItem : Item { }
+
 [Serialized]
+[Category("Hidden")]
 [MaxStackSize(1), Tag("Object")]
 public partial class CompostablesItem : Item { }

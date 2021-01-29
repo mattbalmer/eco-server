@@ -1,21 +1,28 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.Organisms
 {
+    using System;
+    using System.Linq;
+    using Eco.Gameplay.AI;
+    using Eco.Mods.Organisms.Behaviors;
     using Eco.Shared.States;
     using Eco.Simulation.Agents;
     using Eco.Simulation.Agents.AI;
-    using Eco.Gameplay.AI;
-    using Eco.Mods.Organisms.Behaviors;
     using Eco.Shared.Networking;
     using Eco.Gameplay.Players;
     using Eco.Simulation.Time;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Math;
     
     public class LandPredatorBrain : LandAnimalBrain 
     {
         public static readonly Behavior<Animal> FindAndAttackEnemyTree;
         public static readonly Behavior<Animal> LandPredatorTreeRoot;
+        private static readonly Type[] dangerousWorldObjectTypes = { 
+            typeof(TorchStandObject), typeof(PoweredCartObject), typeof(WoodenElevatorObject), 
+            typeof(IndustrialElevatorObject), typeof(BaseRampObject), typeof(AsphaltConcreteRampObject), typeof(StoneRampObject) };
 
         public override void SetDamaged(Animal agent, INetObject damager, out bool isRunAway)
         {
@@ -42,6 +49,25 @@ namespace Eco.Mods.Organisms
         }
 
         public override Behavior<Animal> RootBehavior(Animal animal) => LandPredatorTreeRoot;
+
+        /// <summary> Provide predator's reaction on blocks around </summary>
+        public override bool ReactOnBlock(Animal agent, Vector3 areaCenter, float areaRadius)
+        {
+            // You're free to add more rules for alerting predators in dangerous areas (more building rules/transport objects etc.)
+            // Run from torch stand TODO run only if torch is inside a torch stand
+            var worldObjectsAround = NetObjectManager.GetObjectsWithin(areaCenter, areaRadius);
+            foreach (var worldObject in worldObjectsAround)
+            {
+                if (dangerousWorldObjectTypes.Any(objectType => objectType == worldObject.GetType()))
+                {
+                    agent.FleeFromImmediately(areaCenter);
+                    agent.Alertness = Animal.MaxAlertness;
+                    return true;
+                }
+            }
+            
+            return false;
+        }
 
         static LandPredatorBrain()
         {

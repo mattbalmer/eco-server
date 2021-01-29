@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 namespace Eco.Mods.TechTree
 {
@@ -49,7 +49,7 @@ namespace Eco.Mods.TechTree
                 {
                     title.Append(context.Block.GetType().Name + " " + context.BlockPosition.ToString());
                 }
-                text.AppendLine(WorldLayerManager.DescribePos(target.Value.XZ));
+                text.AppendLine(WorldLayerManager.Obj.DescribePos(target.Value.XZ));
                 context.Player.OpenInfoPanel(title.ToString(), text.ToString(), "soilsampler");
 
                 this.BurnCaloriesNow(context.Player);

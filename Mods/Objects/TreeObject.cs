@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 using System;
@@ -269,7 +269,7 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
                         pack.GetOrCreateChangeSet   (carried, player.User).AddItems(this.Species.ResourceItemType, numItems);                                   // Add items to the changeset.
                         pack.AddGameAction          (new HarvestOrHunt() {   Species            = this.Species.GetType(),                                       // Create a game action.
                                                                              HarvestedStacks    = new ItemStack(Item.Get(this.Species.ResourceItemType), numItems).SingleItemAsEnumerable(),
-                                                                             Location           = this.Position.XYZi,
+                                                                             ActionLocation           = this.Position.XYZi,
                                                                              Citizen            = player.User,
                                                                              DamagedOrDestroyed = !this.Ripe ? DamagedOrDestroyed.DestroyingOrganism : DamagedOrDestroyed.NotDestroyingOrganism});                    
                         pack.TryPerform(); // Try to perform the action and apply changes & effects.
@@ -434,7 +434,7 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
     {
         Citizen          = context.Player?.User,
         TreeSpecies      = this.Species.GetType(),
-        Location         = this.Position.XYZi,
+        ActionLocation   = this.Position.XYZi,
         AccessNeeded     = AccessType.ConsumerAccess,
         Felled           = felled,
         BranchesTargeted = branches,
@@ -460,20 +460,18 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
 
         this.trunkPieces.Add(trunkPiece);
 
-        if (killer is Player)
+        var player = killer as Player;
+        if (player != null)
         {
-            this.RPC("FellTree", trunkPiece.ID, this.ResourceMultiplier, killer.ID);    // Fell the tree AND set the SyncPhysics to be owned by this player.
-            this.SetPhysicsController((INetObjectViewer)killer, false);                 // LOCALLY (do not send RPC) set the killing player's client as the one in control of the physics of the tree. Handled by "FellTree".
-            killer.RPC("YellTimber");                                                   // Issue sound effect.
-        }
-        else
-        {
-            this.RPC("FellTree", trunkPiece.ID, this.ResourceMultiplier);               // Fell the tree but do NOT set the SyncPhysics to be owned by any particular player.
+            this.SetPhysicsController(player);                                   // set the killing player's client as the one in control of the physics of the tree. Handled by "FellTree".
+            player.RPC("YellTimber");                                            // Issue sound effect.
         }
 
-        
+        this.RPC("FellTree", trunkPiece.ID, this.ResourceMultiplier);            // Fell the tree
+        Animal.AlertNearbyAnimals(this.Position, 15f);                           // Alert nearby animals to aware about falling tree
+
         // break off any branches that are young
-        for (int branchID = 0; branchID < this.branches.Count(); branchID++)
+        for (var branchID = 0; branchID < this.branches.Length; branchID++)
         {
             var branch = this.branches[branchID];
             if (branch == null)
@@ -484,7 +482,7 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
                 this.DestroyBranch(branchID);
         }
 
-        if (killer is Player player)
+        if (player != null)
             PlantSimEvents.OnTreeFelled.Invoke(player.DisplayName);
 
         this.MarkDirty();
@@ -562,10 +560,10 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
             {
                 var performResult = new ChopStump()
                 {
-                    Citizen       = player.User,
-                    Location      = this.Position.XYZi,
-                    Destroyed     = this.stumpHealth <= amount,
-                    TreeSpecies   = this.Species.GetType()
+                    Citizen        = player.User,
+                    ActionLocation = this.Position.XYZi,
+                    Destroyed      = this.stumpHealth <= amount,
+                    TreeSpecies    = this.Species.GetType()
                 }.TryPerform();
                 if (!performResult) return performResult;
             }
@@ -760,7 +758,7 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
         return false;
     }
 
-    public bool SetPhysicsController(INetObjectViewer owner, bool sendRPC = true)
+    public bool SetPhysicsController(INetObjectViewer owner)
     {
         // Trees don't need physics until felled
         if (!this.Fallen)
@@ -775,11 +773,8 @@ public class TreeEntity : Tree, IInteractableObject, IDamageable, IMinimapObject
 
         this.Controller?.AddDestroyAction(this.RemovePhysicsController);
 
-        if (sendRPC)                                                            // In the case of a player felling the tree, don't send this RPC, that is already being handled by a different command.
-        {
-            var id = ((INetObject)owner)?.ID ?? -1;
-            this.NetObj.Controller.RPC("UpdatePhysicsPushPullState", id);
-        }
+        if (owner is INetObject netObject)
+            this.NetObj.Controller.RPC("UpdateController", netObject.ID);
 
         return true;
     }

@@ -49,9 +49,6 @@
 Любая мировая [Currencies|Currency] может быть выбрана в разделе кредита. Эта валюта которая будет использоваться для любых операций происходят на этом объекте (например [Store|Store Component] будет принимать любую валюту, указанную здесь). 
 
 Когда выбирается 'Отсутствует' для валюты в магазине, возможен прямой обмен без валюты.
-
-Objects with a [Crafting Component] can define a fee for authorized citizens to use them. The settings in the Credit Component will determine what currency that fee is charged in and what account the funds are deposited to.
-
 13;The Credit Component allows citizens to set the bank account and currency for transactions on an object.
 14;Продажа прав собственности позволяет покупать и продавать [Property].
   
@@ -101,15 +98,6 @@ The Store Component allows citizens to set items they wish to buy from and sell 
   
 30;
 Валюта и банковский счет, выбранные в [Credit Component], будут использоваться для всех транзакций в магазине. При выборе Нет для валюты в магазине, возможны прямые сделки, не облагаемые налогом с продаж. 
- 
-A store owner can link specific containers in the [Storage Component] to pick which items are considered part of the store's inventory. By default, all nearby storage containers are linked to the store when it is first placed.
-
-When creating a Sale List, only the price needs to be set. The inventory for a Sale List is determined automatically by the availability of items in the linked storage containers.
-
-When creating a Purchase List, the price and Max to Buy quantity for each item must be decided. If the Max to Buy quantity is left at zero, the store will continue to purchase items until the linked containers are full. If a Max to Buy quantity is specified, citizens can sell that item until the linked storage contains that amount.
-
-For tools with durability, a minimum durability to buy/sell can be set, and only items of that durability or higher will be eligible for trade via the store.
-
 32;Sets up an interface for other citizens to buy and sell goods from/to you automatically.
 33;Разделы, связанные с правительством.
 34;
@@ -194,7 +182,7 @@ All placed objects have authorization components.
 69;
 After selecting an item and quantity to craft, resources and labor are required to start the project. These resources can be added manually (placing them directly on the crafting table) or by linking a [Storage Component] that contains them.
 
-Citizens with a related [Specialty|Specialties] require less calories to add labor. Some projects required skilled labor from a citizen with the corresponding specialty. This reduction is applied after the work order is started so citizens of various skill level can contribute to the same work party.
+Citizens with a related [Specialty|Specialties] require less calories to add labor. Some projects require skilled labor from a citizen with the corresponding specialty. This reduction is applied after the work order is started so citizens of various skill level can contribute to the same work party.
 
 By adding an upgrade in the [Modules Component], work orders on a crafting table will have reduced crafting time and resource costs.
 
@@ -343,9 +331,9 @@ Currencies can be transferred to others in the Economy Viewer, as well as throug
 119;Валюта - это социальный инструмент, который упрощает торговлю.
 120;Economy has frequently nothing whatever to do with the amount of money being spent, but with the wisdom used in spending it.
     Henry Ford
-
-121;The economy comprises the actions of harvesting, production and trade among citizens, taking from the [Ecosystem|Ecosystem Overview] under the regulation of the [Government|Government Overview]. Citizens will need to need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
-
+  
+121;The economy comprises the actions of harvesting, production and trade among citizens, taking from the [Ecosystem|Ecosystem Overview] under the regulation of the [Government|Government Overview]. Citizens will need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
+  
 122;Economy Concepts
 123;
   - [Crafting]. Using industrial tools to create new goods.
@@ -366,7 +354,7 @@ If a citizen purchases a bond, they give money to the offering party which they 
 
 Penalties for defaulting on loans can be constructed using [Laws], by watching for the Default on Loan/Bond trigger.  Actions can then be taken, such as repossessing property or applying other penalties and fines.
 
-126;Finance is the management of currency to promote progress.
+126;Финансы-это управление валютой для содействия прогрессу.
 127;Each player can affect the Reputation of any other player, which can in turn be used as a factor in laws, contracts, etc, which may query a citizens reputation and determine privileges (or lack thereof) based on the value). To set reputation on a citizen, hover over their name in chat and click their reputation listing in the tooltip (a list of all citizens can be found on the page [Current Citizens]).
 
 128;Reputation is modified by a Network Multiplier, which is a calculate as +1 for every citizen giving you positive reputation, and -1 for every citizen giving you negative reputation.  This way, it becomes more beneficial to help many citizens and gain a wide-spread reputation than to focus narrowly on a few citizens.  Relative Reputation is another value that only takes into account citizens that you have given positive reputation to.
@@ -622,7 +610,7 @@ Depending on what [Civic Articles] are available, these actions may or may not r
     The government is created by citizens, piece by piece, growing their power and capability alongside the power of the populace.  The parts of the government are:
   
 196;[Constitution]
-Before any other aspect of government can be created, a Constitution must be created at a [CapitolItem]. It determines the how the government operates via civic articles.
+Before any other aspect of government can be created, a Constitution must be created at a [CapitolItem]. It determines how the government operates via civic articles.
 
 197;[Civic Articles]
 A constitution contains civic articles which define how the government functions: who can do what, and how.  They can be created at a [CapitolItem] on a new constitution or added to an existing constitution at an [AmendmentsItem] table.
@@ -699,7 +687,8 @@ Titles can also have wages set on them. Wages are paid periodically as long as a
 215;A citizen cannot thrive without proper shelter, and together with your [Nutrition] your Housing value will determine your [Experience] multiplier.  The better your house’s materials and furnishing are, the higher your experience multiplier.  
 
 Additionally, many objects require houses and utilities to operate. The housing system consists of the following parts:
- - [Rooms]. A room is a fully contained space, and many objects require being place inside a room to function.
+ - [Residency]. You can share residency of a property with others.
+ - [Rooms]. A room is a fully contained space, and many objects require being placed inside a room to function.
  - [Property]. Citizens can claim individual plots of land which they then can control access to.
  - [Power]. Many items require a power source to operate, and generated power can be shared among many citizens.
  - [Sewage]. Certain items require a sewage system of pipes, pumps, and wastewater treatment.
@@ -753,7 +742,7 @@ Character Experience
 Character Experience is your background learning rate, how fast you are gaining knowledge and abilities.  It is constantly going up, even when you’re offline.  Each real-day, you will gain Character Experience at the rate of 1 * your experience multiplier.  When you reach a level up, you will gain a new specialty unlock, represented by a star.  Each level up will require more and more character experience to gain, so it is very difficult to have more than a few specialties.
 
 Specialty Experience
-Specialty Experience is your skill at a specific ability, and rather than going up constantly, it only goes up when you perform actions related to that specialty, such as crafting or performing labor.  Like Character Experience, it too is multiplied by you Experience Multiplier. Along the left side of the screen, you’ll see icons displaying how much experience you’re gaining when you perform actions, and you can click these to get a closer look at the level ups for that specialty.
+Specialty Experience is your skill at a specific ability, and rather than going up constantly, it only goes up when you perform actions related to that specialty, such as crafting or performing labor.  Like Character Experience, it too is multiplied by your Experience Multiplier. Along the left side of the screen, you’ll see icons displaying how much experience you’re gaining when you perform actions, and you can click these to get a closer look at the level ups for that specialty.
 Some level ups will allow you to unlock talents, which give specific bonuses related to the skills they’re in.
 
 Experience Multiplier
@@ -779,7 +768,7 @@ All food provides both calories and nutrients, so while gaining calories from fo
 235;Питание, наряду с жильем, определяет, как быстро вы набираете опыт.
 236;Central to a thriving economy is the ability to specialize and trade, thereby working more efficiently than if you attempted to do everything yourself.  Achieving a successful society depends on successfully accomplishing both.  
     
-    A citizen's skills give them unique abilities and enhancements, which allows them to [Trade] with other citizens having different skills in the economy. As you gain [Experience], you can unlock new [Specialties] and level-up existing ones.  The experience you gain is multiplied by you [Nutrition] and [Housing|Housing Overview].    
+    A citizen's skills give them unique abilities and enhancements, which allows them to [Trade] with other citizens having different skills in the economy. As you gain [Experience], you can unlock new [Specialties] and level-up existing ones.  The experience you gain is multiplied by your [Nutrition] and [Housing|Housing Overview].    
   
 237;Система навыков позволяет жителям специализироваться на определенных профессиях.
 238;
@@ -1050,19 +1039,19 @@ Once a [Constitution] is passed, new government policies are contained as Civic 
 	
 319;Proposing Civic Objects
 320;
-Clicking the Draft button will allow a citizen to propose a new civic object. Citizens can optionally begin a new draft to a civic object by clicking the Copy button which appears when hovering over the icon. This will bring up a dialog allowing you to select any civic object (past or present) to use as a basis. 
+Clicking the 'Draft' button will allow a citizen to propose a new civic object. Citizens can optionally begin a new draft to a civic object by clicking the 'Copy' button which appears when hovering over the icon. This will bring up a dialog allowing you to select any civic object (past or present) to use as a basis. 
 
-By visiting the Civic Object Component on a government building that already contains civic objects, these policies can be amended or repealed. To repeal a civic object, click the red 'X' that appears when you mouse over the icon.  To amend an existing one, click the Revise button available in the interface.
+By visiting the Civic Object Component on a government building that already contains civic objects, these policies can be amended or repealed. To repeal a civic object, click the red 'X' that appears when you mouse over the icon.  To amend an existing one, click the 'Revise' button available in the interface.
 
 The buildings containing civic objects must remain placed and active for the civic object to stay in effect. If a government building is picked up, all civic objects contained on it come with it and they will eventually become disabled if the building is not replaced.
-
+	
 321;
 - Apply Changes Immediately: Citizens given executive privilege can add, remove, and edit civic objects immediately.
 
 - Propose via Election: Citizens with the ability to propose elections will be able to propose an addition/deletion/edit, which will then trigger a new election (using whatever [Election Process|Election Processes] that is defined in the constitution).
 
 - View Only: If the citizen has no privileges as defined in the constitution, they may only view the civic objects by clicking on them and are not allowed to make changes.
-
+  
 322;
 This component is accessed from a [RealEstateDeskItem]. It provides links to all of the individual deeds that can be accessed by interacting with a [PropertyToolItem] on a deed the citizen owns.
 
@@ -1160,4 +1149,22 @@ The [Tailor] specializes in making high end furniture and specialized clothing t
 348;Чтобы посмотреть экономику нужно нажать кнопку «Просмотр экономики» в правом нижнем углу экрана.
 349;Накормить мир
 Продовольствие составляет основу растущего общества в Eco, способствуя повышению навыков, необходимых для построения цивилизации. Хорошо организованная сеть производителей продуктов питания, от фермеров до поваров, гарантирует, что жители получают навыки с необходимой им скоростью.
+
+350;The property where you have taken residency provides your housing points.
+351;
+Each deed can have any number of residents, and those residents will share in an [Experience] boost based on the quality and number of occupants.
+
+As the number of occupants increases, the occupancy penalty increases.  At small numbers of occupants (1 or 2), there is virtually no penalty, and citizens can effectively cohabitate this way and share in the benefit of a well-stocked house.  As the occupants increases beyond that (5 and above), the penalty becomes more steep, eventually topping out at 99% when the house is too overcrowded.
+
+However, the 'diminishing returns' rate of rooms is favorably affected by occupancy (because three bathrooms is overkill when you live alone, but great when you have roommates).  This means that you can overcome the penalty by building a larger house, and duplicate rooms will be inversely affected the occupancy bonus.
+  
+To become a resident of a property, click the name of the property (visible on the popup status panel when youre in the property). From there you can become a resident (if you own the deed) as well as invite others to become residents.  These other invited citizens may then join as a resident through the same interface. You can even invite groups by specifying titles or demographics, allowing you to create housing for special classes of citizens (new players for example). You can also set the max number of occupants, to ensure that residency managed this way (by inviting large groups) doesn't result in overcrowded housing.
+
+Note: An additional feature will be added latter permitting automatic rent collection agreements between citizens. For now this can be done with manual transfers.
+352;Permissions for Residents
+When a citizen becomes a resident of a property, they will gain a special set of permissions, even if they don't otherwise have access to the property, known as Resident Rights. These rights are as follows:
+
+  - Pre-furnished rooms supportedL Residents can access all world objects on the property as consumers.
+  - You can move in your own stuff: Residents may place objects anywhere on the property (but not blocks).
+  - No stealing the furniture that came with the place allowed: Residents may pick up world objects only if they originally placed them.  
 

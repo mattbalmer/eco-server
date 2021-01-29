@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.Organisms.Behaviors
@@ -112,8 +112,8 @@ namespace Eco.Mods.Organisms.Behaviors
             // TODO: Avoid building routes near coast, cache available points far away from coast
             if (!agent.Species.CanSwimNearCoast)
             {
-                var isNearCoast = ((WorldPosition3i) World.World.ClampToGroundOrWaterHeight(targetPos)).SpiralOutXZIter(3)
-                    .Any(topGroundPos => World.World.GetBlock((Vector3i) topGroundPos).Is<Solid>());
+                var waterHeight = World.World.GetWaterHeight(targetPos.XZ);
+                var isNearCoast = ((WorldPosition3i) targetPos).SpiralOutXZIter(3).Any(groundPos => World.World.GetBlock((WrappedWorldPosition3i) groundPos.X_Z(waterHeight)).Is<Solid>());
                 if (isNearCoast) return BTResult.Failure("target position is too close to coast line");
             }
 
@@ -131,7 +131,7 @@ namespace Eco.Mods.Organisms.Behaviors
                     return BTResult.Failure("target position is too thin");
             }
             // Clamp current position to ground or water, if can't float on water surface - stay below water height TODO: make them move on underwater ground
-            var pos       = World.World.ClampToGroundOrWaterHeight(agent.Position.XYZi);
+            var pos       = World.World.ClampToWaterHeight(agent.Position.XYZi);
             // TODO: Remove after pathfinder improvements
             if (!agent.Species.FloatOnSurface && pos.y == World.World.GetWaterHeight(agent.Position.XZi)) pos += Vector3i.Down;
             

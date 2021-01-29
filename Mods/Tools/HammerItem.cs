@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 using System;
@@ -86,8 +86,7 @@ public class HammerItem : ToolItem
     }
 
     public override bool ShouldHighlight(Type block)
-    {
-       
+    {  
         return Block.Is<Constructed>(block) || Block.Is<Empty>(block);
     }
 
@@ -101,10 +100,6 @@ public class HammerItem : ToolItem
         if (player == null)
             return InteractResult.NoOp;
 
-        var authResult = ServiceHolder<IAuthManager>.Obj.IsAuthorized(obj, player.User, AccessType.FullAccess);
-        if (!authResult.Success)
-            return (InteractResult)authResult;
-
         return new AsyncInteractResult(this.PickupDialog(obj, player));
     }
 
@@ -113,7 +108,7 @@ public class HammerItem : ToolItem
         try
         {
             if (!obj.PickupConfirmation.IsSet() || await player.ConfirmBox(obj.PickupConfirmation))
-                return (InteractResult)obj.TryPickUp(player, this.NeededCalories(player));              
+                return (InteractResult)obj.TryPickUpNow(player, null, this.NeededCalories(player));              
 
             return InteractResult.NoOp;
         }

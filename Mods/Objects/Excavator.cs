@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -20,6 +20,7 @@ namespace Eco.Mods.TechTree
     using Eco.World.Blocks;
     using Eco.World;
 
+    [Tag("Excavation")]
     public partial class ExcavatorItem : WorldObjectItem<ExcavatorObject> { }
 
     [Serialized]
@@ -66,7 +67,7 @@ namespace Eco.Mods.TechTree
             this.GetComponent<FuelConsumptionComponent>().Initialize(70);
             this.GetComponent<AirPollutionComponent>().Initialize(0.7f);
             this.GetComponent<VehicleComponent>().Initialize(24, 1);
-            this.GetComponent<VehicleToolComponent>().Initialize(7, 3000000, new DirtItem(),
+            this.GetComponent<VehicleToolComponent>().Initialize(7, 3500000, new DirtItem(),
                 100, 200, 0, VehicleUtilities.GetInventoryRestriction(this));
         }
     }

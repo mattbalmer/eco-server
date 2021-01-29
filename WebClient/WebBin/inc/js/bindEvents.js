@@ -254,6 +254,9 @@ function bindAllElectionEvents(election) {
                 await election.vote();
                 container.html('<span class="localize" translate-key="172">Your vote has been counted</span>');
 
+                // 'You have not voted' notification should go away once I vote
+                $(`a.running-election[data-guid=${election.electionData.Id}] i.fa`).remove();
+
                 // Refreshing election content w/o reloading the page
                 setTimeout(() => {
                     election.loadElectionPage(election.electionData.Id, true);

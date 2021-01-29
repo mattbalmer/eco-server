@@ -1,5 +1,5 @@
 <ecopedia icon="Ecopedia_HousingSewage">
-  <summary loc="230">Certain items require sewage to supply water and remove wastewater.</summary>
+  <summary loc="230">Certain objects require sewage systems to supply water and remove wastewater.</summary>
   <section type="banner" image="sewerageecopedia" />
   <section image="Illustration_sewerage01" loc="229">
 Many industrial and housing objects require <b>sewage</b> support to function.  Typically, this means requiring water as an input, and an output for waste water.  Every object that has a [Pipe Component] will need a sewage connection.

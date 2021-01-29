@@ -612,15 +612,22 @@
     });
 
     $(document).on("click", ".goFullWidth", function() {
-        let $col = window.parent.$('iframe#graph_composer').parent();
+        // Simplified selector
+        let $col = window.parent.$('#graphContainer');
 
         if ($(this).text() == '←→') {
             $col.prev().hide();
             $col.removeClass('col-lg-8').addClass('col-lg-12');
+            $col.removeClass('col-xl-8').addClass('col-xl-12');
             $(this).text('→←');
         } else {
-            $col.prev().show();
+            // Show map only if was visible before
+            if (!window.parent.$('.add-map-button').is(':visible')) {
+                $col.prev().show();
+            }
+
             $col.removeClass('col-lg-12').addClass('col-lg-8');
+            $col.removeClass('col-xl-12').addClass('col-xl-8');
             $(this).text('←→');
         }
     });

@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -19,8 +19,8 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Dirt")]
-    [Weight(30000)]
-    [MaxStackSize(40)]
+    [Weight(19000)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [MakesRoads]
     [Tag("RoadType")]
@@ -49,8 +49,8 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Sand")]
-    [Weight(30000)]
-    [MaxStackSize(40)]
+    [Weight(20000)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [StartsDiscovered]
     [Tag("Excavatable", 1)]
@@ -85,7 +85,7 @@ namespace Eco.Mods.TechTree
         {
             var pos = posDir.FirstPos + Vector3i.Down;
             var existingBlock = World.GetBlock(pos);
-            var waterOuput = Mathf.Min((payload.Amount / payload.Time) / 1000f, .999f);
+            var waterOuput = Mathf.Min(payload.Amount / payload.Time, .999f);
 
             switch (existingBlock)
             {
@@ -120,7 +120,7 @@ namespace Eco.Mods.TechTree
 
         public float OnPipeExit(WireOutput wire, Ray posDir, PipePayload payload)
         {
-            WorldLayerManager.ClimateSim.AddGroundPollution(posDir.FirstPos.XZ, payload.Amount / SewageItemsPerPollution / TimeUtil.SecondsPerHour);
+            WorldLayerManager.Obj.ClimateSim.AddGroundPollution(posDir.FirstPos.XZ, payload.Amount / SewageItemsPerPollution / TimeUtil.SecondsPerHour);
             return payload.Amount;
         }
     }

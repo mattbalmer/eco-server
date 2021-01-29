@@ -618,7 +618,7 @@
                     beforeSend: xhrObj => {xhrObj.setRequestHeader("Content-Type", "application/json")},
                     data: JSON.stringify({
                         ElectionID: election.electionData.Id,
-                        Voter: election.username.escapeQuotes(),
+                        Voter: election.username?.escapeQuotes(),
                         RankedVotes: rankedVotes
                     }),
                 });
@@ -879,6 +879,12 @@
                     $('#position-for-winner-table .flat-table .table-middle:even').addClass("table-alternating-color-2");
                 }
 
+                // Moved modal table generation here to get it work for Prev. Elections
+                if ($('#candidate-names').length !== 0) {
+                    // Added delay for the DOM to be generated:
+                    setTimeout(() => {setupTable(guid)}, 1500);
+                }
+
                 let candidates = data.Candidates;
                 if (candidates.length === 0) return false;
 
@@ -965,14 +971,6 @@
                 }
 
                 election.displayAllSpeeches();
-
-                if ($('#candidate-names').length !== 0) {
-                    if (typeof guid !== typeof undefined) {
-                        setupTable(guid);
-                    } else {
-                        setupTable();
-                    }
-                }
 
                 //updating data in votes per rounds table
                 let novotes = 0;
@@ -1168,7 +1166,6 @@
         this.setupTable = function (guid) {
             setupTable(guid);
         }
-
     };
 
     function getURLParameter(name) {
@@ -1185,7 +1182,7 @@
         function setupTable(data) {
             // Re-create the picture of own vote (if voted)
             for (let vote of data) {
-                if (vote.Voter.toLowerCase() == election.username.toLowerCase()) {
+                if (vote.Voter.toLowerCase() == election.username?.toLowerCase()) {
                     let $wrapper = $('#election-vote .add-self-wrapper');
                     let $ranked  = $('#ranked-election-vote-wrapper .add-self-wrapper');
 
@@ -1235,21 +1232,30 @@
                             let headerStr = "<td class='table-key' colspan='" + candidates.length + "'> <span class='localize' translate-key='133'>Candidates Ranked</span> </td>";
                             row.append(headerStr);
                         }
-
                     } else if (j == 0 && i != 1) {
                         row.append("<td> " + data[i - 2].Voter + "</td>");
                         row.attr('data-voter', encodeURIComponent(data[i - 2].Voter.trim()));
-                        //voter index, since voter name maybe duplicated in case of anonymus voting
+                        //voter index, since voter name maybe duplicated in case of anonymous voting
                         row.attr('data-voter-i', i - 2);
                         row.attr('class', 'table-middle');
                     } else if (j == 0) {
                         if (i == 1) {
-                            row.append("<td class='table-top table-top-left table-key'><span class='localize' translate-key='135'>Voters</span></td>");
+                            row.append(`<td class="table-top table-top-left table-key"><span class="localize" translate-key="135">Voters</span></td>`);
                         }
                     } else if (i == 1) {
                         row.append(`<td class="table-top">${candidates[j - 1]}</td>`);
                     } else if (i != 0) {
-                        row.append(`<td class="rank" data-user="${encodeURIComponent(candidates[j - 1].trim())}" data-rank="${j}"></td>`);
+                        // Determine if user voted Yes or No:
+                        let mark = '';
+
+                        // Looking for choice name by choice id
+                        election.electionData.Choices.forEach((choice, index) => {
+                            if (choice.Id == data[i - 2].RankedVotes[0]) {
+                                mark = j == index + 1 ? '✓' : '';
+                            }
+                        });
+
+                        row.append(`<td class="rank" data-user="${encodeURIComponent(candidates[j - 1].trim())}" data-rank="${j}">${mark}</td>`);
                         row.attr('class', 'table-middle');
                     }
                 }
@@ -1267,37 +1273,37 @@
             $('.flat-table .table-middle:even').addClass("table-alternating-color-2");
 
 
-            //updating the selects based on the user's selections
-            setTimeout(function () {
-                let userSelection = $(`.current-rankings tr[data-voter="${encodeURIComponent(election.username)}"]`);
+            //updating the selects based on the user's selections (no delay, cuzz added global one)
+            let userSelection = $(`.current-rankings tr[data-voter="${encodeURIComponent(election.username)}"]`);
 
-                if (!userSelection.length && $('.active-election').length) {
-                    $(".vote-item select").hide();
-                    return false;
+            if (!userSelection.length && $('.active-election').length) {
+                $(".vote-item select").hide();
+                return false;
+            }
+
+            let obj = [];
+
+            userSelection.find("td.rank").each(function () {
+                let item = {};
+                item.candidate = $(this).attr("data-user");
+                item.vote      = $(this).attr("data-rank");
+                obj.push(item);
+            });
+
+            obj.forEach(function (elm) {
+                $(`.vote-item[data-user="${encodeURIComponent(elm.candidate)}"] select option[value="${elm.vote}"]`).attr("selected", "selected");
+            });
+
+            if (election.electionData.BooleanElection) {
+                let currentVote = data.find(x => x.Voter === election.username);
+
+                if (currentVote) {
+                    let currentChoice = currentVote.RankedVotes[0];
+                    let currentChoiceControl = $("#bool-choice-input-" + currentChoice);
+                    currentChoiceControl.parent().addClass("active");
+                    currentChoiceControl.attr("checked", "checked");
                 }
-                let obj = [];
-                userSelection.find("td.rank").each(function () {
-                    let item = {};
-                    item.candidate = $(this).attr("data-user");
-                    item.vote = $(this).attr("data-rank");
-                    obj.push(item);
-                });
-
-                obj.forEach(function (elm) {
-                    $(`.vote-item[data-user="${encodeURIComponent(elm.candidate)}"] select option[value="${elm.vote}"]`).attr("selected", "selected");
-                });
-
-                if (election.electionData.BooleanElection) {
-                    let currentVote = data.find(x => x.Voter === election.username);
-                    if (currentVote) {
-                        let currentChoice = currentVote.RankedVotes[0];
-                        let currentChoiceControl = $("#bool-choice-input-" + currentChoice);
-                        currentChoiceControl.parent().addClass("active");
-                        currentChoiceControl.attr("checked", "checked");
-                    }
-                }
-
-            }, 1000)
+            }
         }
     }
 
@@ -1388,12 +1394,10 @@
 
     // Flip chevron on collapse/explode section
     $(document).on('show.bs.collapse', '.panel-collapse', function() {
-        console.log($(this).prev().find('.glyphicon'));
         $(this).prev().find('.glyphicon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
     });
 
     $(document).on('hide.bs.collapse', '.panel-collapse', function() {
-        console.log($(this).prev().find('.glyphicon'));
         $(this).prev().find('.glyphicon').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
     });
 })();

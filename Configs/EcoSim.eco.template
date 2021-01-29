@@ -22,7 +22,7 @@
     "MaxTemperatureChangePerDay": 1.5,
     "TemperaturesRiseAtCO2ppm": 340.0,
     "CO2ppmPerDegreeTemperatureRise": 20.0,
-    "MaxCO2PerDayFromAnimals": 10.0,
+    "MaxCO2PerDayFromAnimals": 25.0,
     "MinCO2PerDayFromPlants": -500.0,
     "PollutionPerTailingPerTick": 0.016,
     "MaxDebrisBlocks": 1.0

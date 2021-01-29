@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -10,7 +10,7 @@ namespace Eco.Mods.TechTree
     using Eco.Shared.Localization;
     using Eco.Core.Items;
 
-    [Serialized, Weight(30)]
+    [Serialized, Weight(28000)]
     [LocDisplayName("Wet Tailings")]
     [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]

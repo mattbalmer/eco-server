@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -53,8 +53,8 @@ namespace Eco.Mods.TechTree
             minableBlockTypes.OrderBy(item => item.Value).ForEach(x =>
             {
                 var targetItem = allBlocks.FirstOrDefault(item => item.OriginType == x.Key);
-                var hitCount = (int)Math.Ceiling(x.Value / myHardness);
-                if (targetItem != null) resList.Add(new LocString(string.Format("{0}: {1} {2}", targetItem.UILink(), hitCount, "hit".Pluralize(hitCount))));
+                var hitCount   = (int)Math.Ceiling(x.Value / myHardness);
+                if (targetItem != null) resList.Add(Localizer.Do($"{Localizer.Do($"{targetItem.UILink()}: {hitCount}")} {Localizer.Plural("hit", hitCount)}"));
             });
 
             return new TooltipSection(Localizer.DoStr("Can mine"), resList.FoldoutListLoc("item", context.Origin));

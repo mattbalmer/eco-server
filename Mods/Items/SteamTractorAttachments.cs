@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -104,7 +104,7 @@ namespace Eco.Mods.TechTree
                         pack.AddGameAction(new PlantSeeds()
                         {
                             Species = seed.Species.GetType(),
-                            Location = targetPos,
+                            ActionLocation = targetPos,
                             Citizen = vehicle.Driver.User,
                             ToolUsed = this
                         });

@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -112,7 +112,7 @@ namespace Eco.Mods.TechTree
                     var experienceMultiplier = hitHead ? 2.5f : 1f;
                     // player will do x2 damage when hit head and x2 again if they have HuntingDeadeyeTalent
                     var locationMultiplier = hitHead ? player.User.Talentset.HasTalent(typeof(HuntingDeadeyeTalent)) ? 4 : 2 : 1;
-                    var interactionContext = new InteractionContext() {SelectedItem = this.BowItem};
+                    var interactionContext = new InteractionContext() { SelectedStack = new ItemStack(this.BowItem, 1) };
                     if (targetAnimal.Dead || targetAnimal.TryApplyDamage(player, this.Damage * locationMultiplier, interactionContext, this.BowItem, typeof(ArrowItem), experienceMultiplier))
                         this.Attached = hitAttachInfo;
                     else
