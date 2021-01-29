@@ -29,7 +29,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Tuna";
                 this.DisplayName = Localizer.DoStr("Tuna");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(Kelp), typeof(Seagrass) };
                 this.CalorieValue = 100f;

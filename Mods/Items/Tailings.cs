@@ -11,7 +11,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized, Weight(18000)]
     [LocDisplayName("Tailings")]
-    [MaxStackSize(10)]
+    [MaxStackSize(20)]
     [RequiresTool(typeof(ShovelItem))]
     [Tag("Excavatable", 1)]
     [Ecopedia("Blocks", "Byproducts", true, InPageTooltip.DynamicTooltip)]

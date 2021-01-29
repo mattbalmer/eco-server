@@ -76,7 +76,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Mortared Stone")]
-    [MaxStackSize(15)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Ecopedia("Blocks", "Building Materials", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

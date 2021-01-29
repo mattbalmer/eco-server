@@ -70,7 +70,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Waterweed";
                 this.DisplayName = Localizer.DoStr("Waterweed");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Generation
                 this.Water = true; 
                 this.Height = 1;

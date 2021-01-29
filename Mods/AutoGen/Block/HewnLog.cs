@@ -72,7 +72,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Hewn Log")]
-    [MaxStackSize(15)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Fuel(4000)][Tag("Fuel")]          
     [ResourcePile]                                          

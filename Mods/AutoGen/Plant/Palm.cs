@@ -70,7 +70,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Palm";
                 this.DisplayName = Localizer.DoStr("Palm");
                 // Lifetime
-                this.MaturityAgeDays = 4.5f;
+                this.MaturityAgeDays = 2.5f;
                 // Generation
                 this.Height = 1;
                 // Food

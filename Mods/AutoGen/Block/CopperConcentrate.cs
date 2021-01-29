@@ -76,7 +76,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Copper Concentrate")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Weight(20000)]      
     [Ecopedia("Blocks", "Processed Rock", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

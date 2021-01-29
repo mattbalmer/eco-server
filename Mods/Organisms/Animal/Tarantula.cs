@@ -31,7 +31,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Tarantula";
                 this.DisplayName = Localizer.DoStr("Tarantula");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Food
                 this.FoodSources = new List<System.Type>() {  };
                 this.CalorieValue = 100f;

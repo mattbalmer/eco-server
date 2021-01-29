@@ -7,6 +7,10 @@ This contains all non-sensitive (ie. usernames & server password) modifications 
 
 ## Patch Notes
 
+### 1.2
+
+    - Updated to official v9.2
+
 ### 1.1
 
     - Increased growth time of all animals: 0.5 days -> 0.8 days

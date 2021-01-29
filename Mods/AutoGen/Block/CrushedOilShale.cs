@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Crushed Oil Shale")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Weight(20000)]      
     [Category("Hidden")]    
     [RequiresTool(typeof(ShovelItem))] 

@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Crushed Gneiss")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Weight(28000)]      
     [StartsDiscovered]                                      
     [Ecopedia("Blocks", "Processed Rock", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    

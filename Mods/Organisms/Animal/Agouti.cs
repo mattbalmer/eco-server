@@ -30,7 +30,7 @@ namespace Eco.Mods.Organisms
                 this.DisplayName = Localizer.DoStr("Agouti");
                 this.DisplayDescription = Localizer.DoStr("A long-legged tropical rodent that can be found throughout the rainforest.");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Food
                 this.FoodSources = new List<System.Type>()
                 {

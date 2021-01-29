@@ -71,7 +71,7 @@ namespace Eco.Mods.Organisms
                 this.DisplayName = Localizer.DoStr("Pineapple");
                 this.IsConsideredNearbyFoodDuringSpawnCheck = true; 
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Generation
                 this.Height = 1;
                 // Food

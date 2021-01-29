@@ -11,7 +11,7 @@ using Eco.Shared.Serialization;
 [Serialized]
 [LocDisplayName("Garbage")]
 [Weight(30000)]
-[MaxStackSize(10)]
+[MaxStackSize(20)]
 [RequiresTool(typeof(ShovelItem))]
 [Tag("Excavatable", 1)]
 [Ecopedia("Blocks", "Byproducts", true, InPageTooltip.DynamicTooltip)]

@@ -38,7 +38,7 @@ namespace Eco.Mods.TechTree
             
             var storage = this.GetComponent<PublicStorageComponent>();
             storage.Initialize(DefaultDim.x * DefaultDim.z);
-            storage.Storage.AddInvRestriction(new StockpileStackRestriction(DefaultDim.y * 10)); // limit stack sizes to the y-height of the LumberStockpile
+            storage.Storage.AddInvRestriction(new StockpileStackRestriction(DefaultDim.y * 12)); // limit stack sizes to the y-height of the LumberStockpile
 
             this.GetComponent<LinkComponent>().Initialize(15);
         }

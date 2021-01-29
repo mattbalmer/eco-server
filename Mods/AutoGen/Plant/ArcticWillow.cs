@@ -70,7 +70,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "ArcticWillow";
                 this.DisplayName = Localizer.DoStr("Arctic Willow");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Generation
                 this.Height = 1;
                 // Food

@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Mortared Basalt")]
-    [MaxStackSize(15)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Category("Hidden")]    
     public partial class MortaredBasaltItem :

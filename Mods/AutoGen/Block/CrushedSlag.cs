@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Crushed Slag")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Weight(24000)]      
     [Ecopedia("Blocks", "Processed Rock", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

@@ -76,7 +76,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Iron Bar")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(15000)]      
     [Ecopedia("Blocks", "Metals", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

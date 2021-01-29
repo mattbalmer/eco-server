@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Coal")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(4000)]      
     [Fuel(20000)][Tag("Fuel")]          
     [ResourcePile]                                          

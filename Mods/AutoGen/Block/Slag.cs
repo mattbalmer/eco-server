@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Slag")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(6000)]      
     [Ecopedia("Blocks", "Byproducts", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              
