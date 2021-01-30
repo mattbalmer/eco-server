@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Sandstone")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(6000)]      
     [Ecopedia("Natural Resources", "Stone", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

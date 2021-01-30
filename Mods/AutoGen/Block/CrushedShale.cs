@@ -74,7 +74,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Crushed Shale")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Weight(24000)]      
     [StartsDiscovered]                                      
     [Ecopedia("Blocks", "Processed Rock", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    

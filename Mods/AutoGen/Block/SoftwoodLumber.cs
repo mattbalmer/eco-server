@@ -76,7 +76,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Softwood Lumber")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Fuel(4000)][Tag("Fuel")]          
     [Ecopedia("Blocks", "Building Materials", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    

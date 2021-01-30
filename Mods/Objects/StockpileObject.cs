@@ -11,7 +11,7 @@ namespace Eco.Mods.TechTree
 
     public partial class StockpileItem : WorldObjectItem<StockpileObject>
     {
-        public override bool TryPlaceObject(Player player, Vector3i position, Quaternion rotation)
+        public override bool TryPlaceObject(Player player, Vector3i position, Quaternion rotation)  
         {
             return this.TryPlaceObjectOnSolidGround(player, position, rotation);
         }

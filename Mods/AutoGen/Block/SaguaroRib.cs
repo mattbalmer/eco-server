@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Saguaro Rib")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Fuel(4000)][Tag("Fuel")]          
     [Ecopedia("Natural Resources", "Logs", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    

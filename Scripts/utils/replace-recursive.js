@@ -1,8 +1,32 @@
 // modified from: https://gist.github.com/crubier/3cfcd4931f9c52d93fed4c18d2edee16
 
 const fs = require('fs');
+const path = require("path");
 
-function readFiles(dirname, onFileContent, onError) {
+// todo: fix this damn file
+async function getFiles(path = "./") {
+  const entries = await fs.readdir(path, { withFileTypes: true });
+
+  // Get files within the current directory and add a path key to the file objects
+  const files = entries
+      .filter(file => !file.isDirectory())
+      .map(file => ({ ...file, path: path + file.name }));
+
+  // Get folders within the current directory
+  const folders = entries.filter(folder => folder.isDirectory());
+
+  for (const folder of folders)
+      /*
+        Add the found files within the subdirectory to the files array by calling the
+        current function itself
+      */
+      files.push(...await getFiles(`${path}${folder.name}/`));
+
+  return files;
+}
+
+async function readFiles(dirname, onFileContent, onError) {
+  const files = await getFiles(dirname);
   fs.readdir(dirname, function(err, filenames) {
     if (err) {
       onError(err);

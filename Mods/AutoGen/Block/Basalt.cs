@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Basalt")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(7500)]      
     [ResourcePile]                                          
     [Ecopedia("Natural Resources", "Stone", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    

@@ -29,7 +29,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Cod";
                 this.DisplayName = Localizer.DoStr("Cod");
                 // Lifetime
-                this.MaturityAgeDays = 1f;
+                this.MaturityAgeDays = 0.8f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(Kelp), typeof(Seagrass) };
                 this.CalorieValue = 50f;

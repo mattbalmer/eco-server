@@ -30,7 +30,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Bison";
                 this.DisplayName = Localizer.DoStr("Bison");
                 // Lifetime
-                this.MaturityAgeDays = 1f;
+                this.MaturityAgeDays = 0.8f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(CommonGrass), typeof(Bunchgrass), typeof(Wheat), typeof(BigBluestem), typeof(Switchgrass) };
                 this.CalorieValue = 250f;

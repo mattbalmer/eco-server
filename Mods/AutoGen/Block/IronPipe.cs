@@ -77,7 +77,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Iron Pipe")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Weight(2000)]      
     [Ecopedia("Blocks", "Pipes", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

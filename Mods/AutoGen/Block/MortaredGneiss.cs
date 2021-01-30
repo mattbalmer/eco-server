@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Mortared Gneiss")]
-    [MaxStackSize(15)]                           
+    [MaxStackSize(60)]                           
     [Weight(10000)]      
     [Category("Hidden")]    
     public partial class MortaredGneissItem :

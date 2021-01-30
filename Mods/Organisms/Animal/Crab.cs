@@ -35,7 +35,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Crab";
                 this.DisplayName = Localizer.DoStr("Crab");
                 // Lifetime
-                this.MaturityAgeDays = 1f;
+                this.MaturityAgeDays = 0.8f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(Clam) };
                 this.CalorieValue = 50f;

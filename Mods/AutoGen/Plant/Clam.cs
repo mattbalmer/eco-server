@@ -70,7 +70,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Clam";
                 this.DisplayName = Localizer.DoStr("Clam");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 0.65f;
                 // Generation
                 this.Water = true; 
                 this.Height = 2;

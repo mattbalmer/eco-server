@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Log")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Fuel(4000)][Tag("Fuel")]          
     [Category("Hidden")]    

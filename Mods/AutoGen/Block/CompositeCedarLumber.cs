@@ -65,7 +65,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Composite Cedar Lumber")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(10000)]      
     [Ecopedia("Blocks", "Building Materials", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
     [Currency][Tag("Currency")]                              

@@ -29,7 +29,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "BighornSheep";
                 this.DisplayName = Localizer.DoStr("BighornSheep");
                 // Lifetime
-                this.MaturityAgeDays = 1f;
+                this.MaturityAgeDays = 0.8f;
                 // Food
                 this.FoodSources = new List<System.Type>() {typeof(DwarfWillow), typeof(PricklyPear), typeof(Agave), typeof(CreosoteBush), typeof(WhiteBursage)};
                 this.CalorieValue = 150f;

@@ -30,7 +30,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "MountainGoat";
                 this.DisplayName = Localizer.DoStr("MountainGoat");
                 // Lifetime
-                this.MaturityAgeDays = 1f;
+                this.MaturityAgeDays = 0.8f;
                 // Food
                 this.FoodSources = new List<System.Type>() { typeof(Saxifrage), typeof(Lupine), typeof(Fireweed), typeof(DwarfWillow), typeof(ArcticWillow)};
                 this.CalorieValue = 100f;

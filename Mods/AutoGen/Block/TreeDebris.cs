@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Tree Debris")]
-    [MaxStackSize(10)]                                       
+    [MaxStackSize(20)]                                       
     [Category("Hidden")]    
     [StartsDiscovered]                                      
     [Ecopedia("Blocks", "Byproducts", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    

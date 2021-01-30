@@ -37,7 +37,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized]
     [LocDisplayName("Shale")]
-    [MaxStackSize(20)]                           
+    [MaxStackSize(40)]                           
     [Weight(6000)]      
     [ResourcePile]                                          
     [Ecopedia("Natural Resources", "Stone", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]                    
