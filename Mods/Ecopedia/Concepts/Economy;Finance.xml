@@ -1,0 +1,11 @@
+<ecopedia icon="Ecopedia_Finance">
+  <summary loc="126">Finance is the management of currency to promote progress.</summary>
+  <section type="banner" image="FinanceEcopedia" />
+  <section loc="125">Through the use of [Contracts], Citizens in Eco can create loan and bond agreements between two parties, tracking automatically the interest payment and due date of the funds.  Loans and bonds are a great way for new citizens to collaborate with long-time citizens with more wealth in a way that benefits both parties and increases societal progress.
+
+If a citizen takes a loan, the offering party gives them money which they are expected to pay with interest.
+If a citizen purchases a bond, they give money to the offering party which they expect to be repaid with interest.
+
+Penalties for defaulting on loans can be constructed using [Laws], by watching for the <b>Default on Loan/Bond</b> trigger.  Actions can then be taken, such as repossessing property or applying other penalties and fines.
+</section>
+</ecopedia>

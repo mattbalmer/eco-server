@@ -1,0 +1,24 @@
+<ecopedia icon="Residency">
+  <summary loc="350">The property where you have taken residency provides your housing points.</summary>
+  <section type="banner" image="ecopedia_banner_residency" />
+Citizens pick a primary residence to determine which deed will provide their [Housing|Housing Overview] bonus. Each deed can have any number of residents, and those residents will share in an [Experience] boost based on the quality of the house and number of occupants.
+  <section loc="351">  
+</section>
+ <section image="Illustration_ResidencyUI">
+As the number of occupants increases, the occupancy penalty increases.  At small numbers of occupants (1 or 2), there is virtually no penalty, and citizens can effectively cohabitate this way and share in the benefit of a well-stocked house.  As the occupants increases beyond that (5 and above), the penalty becomes more steep, eventually topping out at 99% when the house is too overcrowded.
+
+However, the 'diminishing returns' rate of rooms is <i>favorably</i> affected by occupancy (because three bathrooms is overkill when you live alone, but great when you have roommates).  This means that you can overcome the penalty by building a larger house, and duplicate rooms will inversely affect the occupancy bonus.
+  
+To become a resident of a property, click the name of the property (visible on the popup status panel when you're in the property). From there you can become a resident (if you own the deed) as well as invite others to become residents.  These other invited citizens may then join as a resident through the same interface. You can even invite groups by specifying titles or demographics, allowing you to create housing for special classes of citizens (new players for example). You can also set the max number of occupants, to ensure that residency managed this way (by inviting large groups) doesn't result in overcrowded housing.
+</section>
+  <section loc="352">
+    <b>Permissions for Residents</b>
+When a citizen becomes a resident of a property, they will gain a special set of permissions, even if they don't otherwise have access to the property, known as <i>Resident Rights</i>. These rights are as follows:
+
+  - <b>Pre-furnished rooms supported</b>: Residents can access all world objects on the property as consumers.
+  - <b>You can move in your own stuff</b>: Residents may place objects anywhere on the property (but not blocks).
+  - <b>No stealing the furniture that came with the place allowed</b>: Residents may pick up world objects <i>only if they originally placed them</i>.  
+  
+  <i>Note: An additional feature will be added later permitting automatic rent collection agreements between citizens. For now this can be done with manual transfers.</i>
+</section>
+</ecopedia>

@@ -1,0 +1,11 @@
+<ecopedia icon="Ecopedia_TextComponent">
+  <summary loc="303">Allows citizens write text that is displayed to other citizens.</summary>
+  <section loc="323">The <b>Text Component</b> allows a citizen to write text that is displayed on a world object for other citizens to read.</section>
+  <section loc="302" image="IllustrationTextExample">
+The Text Component can be found on <b>Signs</b>, [Vehicles|Vehicle Component], and the [Distribution Station|Item Distribution Component].
+  
+Text can be useful for giving directions, advertising, or just writing a friendly greeting
+
+For those familar with text markup, a variety of tags may be used to alter the size, color, and formatting of text.
+</section>
+</ecopedia>

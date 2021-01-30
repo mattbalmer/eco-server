@@ -1,0 +1,14 @@
+<ecopedia icon="CivicAction_PerformExecutiveAction">
+  <summary loc="192">An action performed by a government official having effects on taxes, property, etc.</summary>
+  <section type="banner" image="ExecutiveactionsEcopedia" />
+  <section loc="191"><b>Executive Actions</b> are one-time actions that can affect a specific group of citizens or all citizens at once.
+  
+Executive Actions can be proposed at an [ExecutiveOfficeItem] using the [Civic Action Component]. These actions have three main effects:
+  
+ - Issue a one-time [Tax|Taxes]
+ - Provide a payment to citizens from the [TreasuryItem]
+ - Change the [Property] owner of existing property
+
+Depending on what [Civic Articles] are available, these actions may or may not require an election. Some civic articles state that only [Elected Titles] may perform Executive Actions.
+  </section>
+</ecopedia>

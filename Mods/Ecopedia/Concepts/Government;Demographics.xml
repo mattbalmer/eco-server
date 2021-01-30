@@ -1,0 +1,13 @@
+<ecopedia icon="Demographic">
+  <summary loc="182">Defines a set of citizens matchings some criteria.</summary>
+  <section type="banner" image="DemographicsEcopedia" />
+  <section loc="181">
+  Demographics are classes of citizen, created in the government. These can then be used anywhere you can specify a citizen (permissions, laws, etc).
+
+For example, citizens could define a demographic 'Lumberjacks', which would only contain users with a logging skill level of 3 or more.  Then, a law could be created that only permits 'Lumberjacks' to cut down old-growth trees.
+
+Demographics are defined at a [Census Bureau|CensusBureauItem].
+
+Demographics can also have wages set on them. Wages are paid periodically as long as a citizen remains within the demographic.
+</section>
+</ecopedia>

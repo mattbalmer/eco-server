@@ -1,0 +1,2 @@
+Put any user custom code in this folder. It will be compiled together with other Mods source files.
+You can use this directory for existing classes customization (with partial method implementations) or for new objects.

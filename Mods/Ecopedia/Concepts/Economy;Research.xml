@@ -1,0 +1,10 @@
+<ecopedia icon="WorkbenchItem">
+  <summary loc="131">Research creates new shareable knowledge, unlocking new types of products and abilities.</summary>
+  <section type="banner" image="ResearchEcopedia" />
+  <section loc="130">Research creates new shareable knowledge, unlocking new types of products and abilities.  It is conducted at a [ResearchTableItem] where you craft a <b>skill book</b>.  Once created, a skill book can be used to create an unlimited number of <b>skill scrolls</b>, which will unlock the specialty for a citizen that uses one.
+
+Each skill scroll is a one-time-use consumable that unlocks a new [Specialty|specialties] in whomever uses it, which must then be claimed with a level-up through the [Skills|skills overview] system.  Gaining a new skill scroll also grants the citizen the benefit of a set of [Property Claim Papers|Property], which allows them to claim more land as they gain in skill.
+    
+Skill books are some of the most difficult items to create, and citizens will typically need to collaborate to acquire all the various resources and labor required to produce them.  As such, research projects are especially well-suited for [Work Parties], as citizens can use them to share the work needed to create them along with the knowledge reward upon completion.
+  </section>
+</ecopedia>

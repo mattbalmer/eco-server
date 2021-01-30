@@ -1,0 +1,16 @@
+<ecopedia icon="Ecopedia_Ecosystem" priority="-10">
+  <summary loc="156">The living system of plants and animals which provides the means for humans to survive.</summary>
+  <section type="banner" image="EcopediaEcosystem" />
+  <section type="quote" loc="150">"The true meaning of life is to plant trees, under whose shade you do not expect to sit."\n– Nelson Henderson</section>
+  <section loc="151">
+
+The ecosystem is an end unto itself in Eco, and its continued prosperity is the primary goal of the game, alongside economic progress. That is, the ecosystem starts in a win-state, and players must use its resources without bringing it into a lose-state, which would mean destruction for humanity.
+
+The ecosystem in Eco runs on a <b>continuous simulation</b>, active as long as the server is running, regardless of whether players are in the game or not. Each simulated plant and animal are growing, consuming food sources and reproducing. It is the sole source of materials from which players must build their society, and the process of extracting them will affect it greatly. Chopping down a forest might destroy a creature’s habitat, driving them to extinction. Mine tailings may pollute nearby rivers and lakes, poisoning farms that rely on it. The actions players take in Eco affect their environment, and players will need to understand the impact they’re having in order to thrive and stop the meteor. It is not an option to leave the ecosystem in a pristine, untouched state; the meteor ensures that choice will also lead to the ecosystem’s destruction. To save it, citizens must take from it, building a society that has the power to stop the meteor, while also having the restraint to not destroy the ecosystem in the process.
+</section>
+  <section type="header" loc="152">Gameplay</section>
+  <section loc="153">The ecosystem is the foundational system which citizens must understand and contend with. From growing large [Farms|Farming] and [Mines|Mining] to understanding the impact of [Pollution] through study, the impact of citizens on the ecosystem will determine the success or failure of player decisions. Understanding how it functions using in-game [Data] becomes a key requirement of survival. Unlike the [Economy|Economy Overview] and the [Government|Government Overview], the ecosystem is not a citizen construct – its behavior is absolute, nothing about how it functions can be changed by fiat the way the economy can. In this sense it’s a reality check, the place where the conflicting biases and beliefs of citizens collide and reveal the true consequences.</section>
+  <section type="header" loc="154">Between Economy and Government</section>
+  <section loc="155">As citizens progress society, they must beware the ‘Tragedy of the Commons’; that giving a population unfettered access to a common resource will frequently result in its destruction. To prevent this, citizens must organize, deciding rules for the common good through [Laws] and other civic regulations which may limit the individual but allow the group to survive. This conflict, the individual vs the group, forms the heart of the challenge of building a civilization.
+  </section>
+</ecopedia>

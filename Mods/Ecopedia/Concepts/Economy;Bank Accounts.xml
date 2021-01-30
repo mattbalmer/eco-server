@@ -1,0 +1,9 @@
+<ecopedia icon="BankAccount">
+  <summary loc="112">Bank accounts serve as a storage and separation of currency for various uses by various citizens and government entities.</summary>
+  <section type="banner" image="BankaccountsEcopedia" />
+  <section loc="111">
+    <b>Bank accounts</b> are storages of [Currency] that one or more citizen can access.  Each citizen enters the world with a permanent Personal Bank Account, containing an infinite amount of their Personal Credit. Additional bank accounts can be granted and have their access-rights adjusted at a [Bank|bank component].
+
+Bank accounts are useful for organizing currency, allowing access to funds by multiple parties, and storing the collection of taxes and designating who can access them.  Governments will generally setup a number of bank accounts to manage the in-flow of taxes, ensuring the funds are used as intended.  Each bank account can hold unlimited amounts of unlimited currencies, with each currency tracked separately. Clicking on the bank account will display the ledger listing all transactions to or from it, as all transactions in Eco are public.
+</section>
+</ecopedia>

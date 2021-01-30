@@ -1,0 +1,13 @@
+<ecopedia icon="Ecopedia_MyDeedsComponent">
+  <summary loc="301">Allows citizens to see view and manage all property they own.</summary>
+  <section loc="300">
+The <b>My Deeds Component</b> allows citizens to see view and manage all [Property] that they own, providing an interface to access them easily.
+  </section>
+  <section image="IllustrationMyDeedsComponent" loc="322">
+This component is accessed from a [RealEstateDeskItem]. It provides links to all of the individual deeds that can be accessed by interacting with a [PropertyToolItem] on a deed the citizen owns.
+
+Citizens can quickly rename their deeds, choose a color for that property on the minimap, or provide consumer rights to other citizens, all of which is normally done through the [Authorization Component].
+
+A useful feature of this component is the ability to quickly move plots of property from one deed to another. This includes the option to create a new deed to split an existing piece of property.
+</section>
+</ecopedia>

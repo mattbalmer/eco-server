@@ -1,0 +1,16 @@
+{
+  "PublicServer": false,  
+  "Playtime": "",
+  "DiscordAddress": "",
+  "Password": "",
+  "Description": "",
+  "DetailedDescription": "",
+  "ServerCategory": "None",
+  "IPAddress": "Any",
+  "RemoteAddress": "",
+  "GameServerPort": 3000,
+  "WebServerPort": 3001,
+  "Rate": 20,
+  "MaxConnections": -1,  
+  "UPnPEnabled": true
+}

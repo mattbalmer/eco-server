@@ -1,0 +1,10 @@
+<ecopedia icon="ConstitutionalArticle">
+  <summary loc="178">A set of rules about how the government works.</summary>
+  <section type="banner" image="CivicarticlesEcopedia" />
+  <section loc="177">Consitutional Articles define how things happen in the government: who can pass laws, set taxes, change the rules, etc.  It can also define certain actions as needing an election, by specifying an [Election Process|Election Processes] inside them.  
+
+Constitutional Articles can be added in two places.  On a [CapitolItem], you can add up to three, and on [AmendmentsItem] you can add up to another 10 more per item.
+
+Defining the rules of the government is very important for keeping it a stable, society-supporting structure.  Governments can be granted a great deal of power over the world with laws, and there's a danger of this power being abused.  By setting a system of checks and balances, citizens can design a government that can undergo a number of changes, including changes of leadership, while maintaining the power to effect positive changes in the world.
+</section>
+</ecopedia>

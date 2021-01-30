@@ -1,0 +1,15 @@
+<ecopedia icon="Election">
+  <summary loc="190">A poll set to a group of citizens to determine a position or referendum.</summary>
+  <section type="banner" image="ElectionsEcopedia" />
+  <section loc="189">Elections can take two forms:
+  
+    - <b>Elections of Officials</b>. These are elections of [Elected Titles] which give specific powers to a citizen.
+    - <b>Referendums</b>.  A yes-or-no vote that will determine if a specific civic action should be taken.
+
+Elections of Officials are started at a [BallotBoxItem], where citizens can also perform a number of other civic actions.  Depending on what [Civic Articles] are available, these actions may or may not require an election; if they do, the citizen will have the option to start one immediately.
+
+Referendums are started at the various government buildings, each corresponding to a different government action. These include things like creating a new [Law|Laws] or performing an [Executive Action|Executive Actions]. When proposing an election of this type, multiple provisions can be added to one election package that will be part of the same yes-or-no vote. 
+
+Elections can have a number of settings determined by their [Election Process|Election Processes]. This will state who can vote, who can veto, how long the election lasts, what percent is needed to win, etc.  Multiple types of elections can be created for different purposes. For example, a representative government could be created with some elections only allowing elected officials to vote, while most citizens vote only in elections for representatives.
+  </section>
+</ecopedia>

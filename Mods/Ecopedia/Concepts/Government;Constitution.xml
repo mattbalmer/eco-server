@@ -1,0 +1,13 @@
+<ecopedia icon="Constitution">
+  <summary loc="180">The founding document for a government.</summary>
+  <section type="banner" image="ConstitutionEcopedia" />
+  <section loc="179">A constitution is a founding document defining how a society will be governed.  A constitution must be created before any other government object. They are created at a [Capitol|CapitolItem].
+ 
+<b>Ratifying a Constitution</b>
+Once a capitol is placed, a constitution can be proposed by opening it and clicking Create Ratification Election Draft. You can add additional provisions ([Titles|Elected Titles], [Election Processes], etc.) to the election before starting voting. These provisions can be then be referenced in the constitution draft.
+
+<b>Overthrowing Governments</b>
+If there is already a constitution active, a new constitution can be proposed to take its place if the housing value of the new capitol room exceeds that of the existing capitol by a significant amount, depending on the server settings.
+ 
+<i>Note: A forthcoming update of Eco will allow multiple concurrent governments.</i></section>
+</ecopedia>

@@ -1,0 +1,12 @@
+<ecopedia icon="Ecopedia_HousingSewage">
+  <summary loc="230">Certain objects require sewage systems to supply water and remove wastewater.</summary>
+  <section type="banner" image="sewerageecopedia" />
+  <section image="Illustration_sewerage01" loc="229">
+Many industrial and housing objects require <b>sewage</b> support to function.  Typically, this means requiring water as an input, and an output for waste water.  Every object that has a [Pipe Component] will need a sewage connection.
+
+Sewage systems are created by connecting a [MechanicalWaterPumpItem] or [ElectricWaterPumpItem] to a water source, and then building <b>Pipes</b> between the different objects that need supplying.  On the waste side, pipes will take the waste water from the object to either dump it into the environment (producing [Pollution] at the exit point), or process it at a [Waster Filter|WasteFilterItem], which will generate [Compost|CompostItem] from the wastewater.
+
+Pipes will automatically connect to any adjacent pipe block of the same type.  To make sewage systems with different pipes in close proximity, use different materials of pipes.
+</section>
+<section image="Illustration_sewerage02"></section>
+</ecopedia>

@@ -1,0 +1,17 @@
+<ecopedia icon="StorageComponent">
+  <summary loc="109">Manages inventory and allows linking storage to other objects.</summary>
+  <section loc="104">The <b>Storage Component</b> is used to manage the inventory of storage containers and link them to objects that need storage.
+  </section>
+  <section type="header" loc="105">Managing Storage</section>
+  <section image="IllustrationStorageComponent" loc="106">
+Inventory can be moved between containers by dragging stacks of items from one container to another.
+
+Holding down the 'Shift' key while dragging items will move all stacks of the same item between containers. Right clicking a stack of items will allow a player to divide a stack into smaller quantities. Holding down ‘Ctrl’ when clicking a stack of items will split the stack in half.
+
+Some storage containers, like a [StockpileItem], can contain any type of item. Other storage containers, like a [StorageChestItem], can only contain non-carriable items.
+  </section>
+  <section type="header" loc="107">Linking Storage Containers</section>
+  <section loc="108">
+An object can be linked to containers in the Storage Component by selecting the check box for the container. Once linked, the object gain access to all items in the containers and can use the container for storage. When linking storage containers, the topmost container in the Storage Component will be used first for storage.  The order can be changed by clicking and dragging the storage displays in the list. 
+  </section>
+</ecopedia>

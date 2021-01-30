@@ -1,0 +1,19 @@
+<ecopedia icon="Ecopedia_Mining" priority="-1">
+  <summary loc="166">The extraction of ore, coal, and other valuable minerals from the ground.</summary>
+  <section type="banner" image="ecopedia_banner_mining" />
+  <section loc="161">
+The ground beneath you is host to a huge variety of resources, such as rocks, metals, and other mineral deposits. Different types of rock host different kinds of mineral deposits or lend themselves to trapping other resources like petroleum. Due to the immense complexity of earth resources in reality and the necessity in Eco of providing players with a predictable balance of raw materials to start with, rocks and their deposits are generated based on Biomes. Each biome comes with a suite of associated rocks and deposits that sprawls out beneath it in layers.
+</section>
+  <section type="header" loc="162">Mining by Hand</section>
+  <section image="Illustration_miningbyhand" loc="163">
+To mine ore, first you must locate it. Ores in Eco are each hosted in particular host rocks, so learning which rocks have the type of ore you want and then digging near rocks of those type is a good way to start. Use a [WoodenShovelItem] or better to dig away soil from the surface or start digging into a hill from the side. Once you hit rock you want to go through, you'll need to use a pickaxe like the [StonePickaxeItem] to break it. When breaking rocks with the pickaxe, sometimes you'll break off a larger piece of rock that needs to be hit again to break into pieces small enough to pick up. It's a good idea to pick up rock as you break it, and stack it elsewhere for use, preferably in a [StockpileItem] or vehicle you're using to transport your ore like a [WoodCartItem].
+</section>
+  <section type="header" loc="164">Mineral Processing</section>
+  <section image="Illustration_oreprocess" loc="165">
+Once you have collected a large amount of metal ore, you'll need to process the ore before you can craft metal products with it. This is a dirty and expensive process, and optimizing it and the byproducts from it will be an ongoing matter of consideration. The three main steps of mineral processing are:
+
+Comminution: Comminution means to crush the rock into smaller sized particles which can be further processed. Crushed rock of the type the ore is hosted in is the main byproduct of this process.
+Concentration: Concentration is a way to separate the desired metals in an ore rock from the waste rock. This process is never perfect, and inevitably results in a large output of waste rock which still contains traces of freed metals. This waste rock with traces of heavy metals is known as [TailingsItem]. [CopperOreItem] and [GoldOreItem] require chemical leeching and wet processing to separate from their host rocks, and thus produce more polluted and volatile [WetTailingsItem] during the concentration process.  
+Smelting: Once you have precious ore concentrate, you can at last smelt it into metal products like [IronBarItem] at a [BloomeryItem] or using a more advanced smelting technology. 
+</section>
+</ecopedia>

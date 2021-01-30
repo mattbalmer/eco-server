@@ -1,0 +1,34 @@
+<ecopedia icon="CraftingComponent">
+  <summary loc="76">The Crafting Component is used to craft items and add labor to projects.</summary>
+  <section loc="67">
+    The <b>Crafting Component</b> is used to [Craft|Crafting] items, add resources or labor, and cancel existing projects. When contributing to a [Work Party|Work Parties], the Crafting Component can be accessed by citizens who have joined the work party.
+  </section>
+  <section type="header" loc="68">Crafting Items</section>
+  <section image="IllustrationCraftingComponent" loc="69">
+After selecting an item and quantity to craft, resources and labor are required to start the project. These resources can be added manually (placing them directly on the crafting table) or by linking a [Storage Component] that contains them.
+
+Citizens with a related [Specialty|Specialties] require less calories to add labor. Some projects require skilled labor from a citizen with the corresponding specialty. This reduction is applied after the work order is started so citizens of various skill level can contribute to the same work party.
+
+By adding an upgrade in the [Modules Component], work orders on a crafting table will have reduced crafting time and resource costs.
+
+If a project is cancelled early (by right clicking the order), the resources will be refunded but the spent labor will be lost.
+  </section>
+  <section type="header" loc="70">Adding Labor</section>
+  <section image="IllustrationLabor" loc="71">
+For every unit of labor needed, [Calories|Nutrition] are consumed. After a work order is started, citizens can add labor by pressing the 'Work' button in the Crafting Component. 
+
+Once a project is started, labor can quickly be added from outside the Crafting Component by right clicking on a crafting table. When adding labor in this way, holding down 'Ctrl' will add 5x the normal amount of labor. Holding down 'Alt' will add all available calories.
+  </section>
+  <section type="header" loc="72">Tagged Ingredients</section>
+  <section image="IllustrationTaggedIngredient" loc="73">
+Some recipes use <b>Tagged Ingredients</b> that can accept similar items as inputs. For example, an item may specify it needs 'Rock', and will accept any type of rock with that tag ([GraniteItem], [BasaltItem], etc).
+	
+Tagged ingredients will be consumed automatically, so there is no need to create separate orders using the different ingredients.
+  </section>
+  <section type="header" loc="74">Parent Recipes</section>
+  <section image="IllustrationParentRecipes" loc="75">
+Some recipes are part of larger group of recipes, known as <b>Parent Recipes</b>. When crafting one of these recipes, a citizen may select a specific variation to produce. The number crafted will be the quantity selected for the parent recipe.
+
+By default only recipes that have available resources will be displayed. By checking 'Show All', all possible variations will be displayed.
+  </section>
+</ecopedia>

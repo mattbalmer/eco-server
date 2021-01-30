@@ -1,0 +1,14 @@
+<ecopedia icon="CreditComponent">
+  <summary loc="13">The Credit Component allows citizens to set the bank account and currency for transactions on an object.</summary>
+  <section loc="11">The <b>Credit Component</b> allows citizens to set the currency and bank account for all transactions on an object they own.
+  </section>
+  <section image="IllustrationCreditComponent" loc="12">
+When selecting [Bank Accounts], citizens can select any account they have been granted access to (performed in a [Bank Component]). By default, the citizen's personal account will be selected.
+
+Any of the world's [Currencies|Currency] can be selected in the Credit Component. This is the currency that will be used for any transactions that take place on that object (for example a [Store|Store Component] will accept whatever currency is set here). 
+
+When selecting "None" for the currency in a store, direct trades are possible without the need for a currency.
+
+Objects with a [Crafting Component] can define a <b>fee</b> for authorized citizens to use them. The settings in the Credit Component will determine what currency that fee is charged in and what account the funds are deposited to.
+  </section>
+</ecopedia>

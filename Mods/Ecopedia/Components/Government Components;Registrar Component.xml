@@ -1,0 +1,18 @@
+<ecopedia icon="RegistrarComponent">
+  <summary loc="51">Allows creation and management of non-elected titles.</summary>
+  <section loc="46">The <b>Registrar Component</b> allows for the creation and management of non-elected [Titles].  These titles can be used for many of the same purposes as [Elected Titles], but they are appointed at the Registrar.</section>
+  <section type="header" loc="47">Assigning Titles</section>
+  <section image="IllustrationRegistrarComponent" loc="48">
+    <b>Title Managers</b> can rename the title and assign new managers and title holders. Title Managers are not considered Title Users.
+
+<b>Title Users</b> are the citizens considered title holders and receive all associated benefits and conditions.
+	</section>
+  <section type="header" loc="49">Advanced Settings</section>
+  <section image="IllustrationRegistrarAdvanced" loc="50">
+In the Advanced Settings, <b>requirements</b> for title holders can be set, and <b>hourly wages</b> can be assigned to title holders who qualify.
+  
+When deciding what is <b>Required of Office Holders</b> a variety of conditions can be set. If a citizen fails to maintain these requirements, they will lose their assignment as a Title User. By using a 'Set of Conditions', multiple requirements can be set for title holders.
+ 
+<b>Wages</b> are paid to Title Users from any [Bank Account|Bank Accounts] that a Title Manager has been given to permission to use in the [Bank Component]. Wages are paid each hour (depending on World settings) into the personal account of each Title User. The Wage Type can be used to exclude offline hours from wage payments.
+	</section>
+</ecopedia>

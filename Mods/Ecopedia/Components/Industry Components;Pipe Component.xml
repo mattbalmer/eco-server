@@ -1,0 +1,30 @@
+<ecopedia icon="LiquidConsumerComponent">
+  <summary loc="88">The Pipe Component allows a citizen to check the status of an object’s smog output and water usage.</summary>
+  <section loc="83">
+The <b>Pipe Component</b> allows a citizen to check the status of an object’s smog output, water usage, and sewage flow.  
+  </section>
+  <section type="header" loc="324">Pipe Requirements</section>
+  <section image="IllustrationPipeComponent" loc="325">
+When opening the Pipe Component, different pipe inputs and outputs will appear to represent the pipe requirements. Objects with this component must meet all the pipe requirements for that object to be active.
+
+Some objects require all three uses of pipes to have an active [Status|Status Component], while others objects only require some. Each pipe system can only be used for one of the three uses. 
+
+By holding the mouse over the display for one of the pipes, a tooltip appears with more information about why a pipe is or isn't active.
+  </section>
+  <section type="header" loc="84">Smog Output</section>
+  <section image="IllustrationSmogOutput" loc="85">
+By checking the <b>Smog Output</b> tooltip, a citizen can find additional information about the current object’s pollution output and the world’s [Pollution] levels.
+	
+Pipes can be used to redirect the flow of the air pollution. The pipes containing the Smog Output can have multiple inputs but must have only one open end, outside of all rooms, and above the object.
+
+Objects that emit smog pollution only pollute when the object is active. 
+	</section>
+  <section type="header" loc="86">Water and Sewage</section>
+  <section image="IllustrationWaterPipe" loc="87">
+Objects with a <b>Water Input</b> and pumps with a <b>Water Output</b> connect through a system of pipes. Water pipes systems can have multiple inputs for water pumps and multiple outputs for each object with a water demand.	
+
+By checking the water tooltip in the Pipe Component, a citizen can see exactly how much water an object is producing or consuming. If there is not enough water being produced, objects will start to become inactive.
+
+Pipes containing <b>Sewage Output</b> function similar to water pipes, but the [Sewage] they contain is a source of ground pollution. After [Waste Filters|Waste Filter Item] are invented, the sewage output can be piped into to a filter to mitigate the ground pollution.
+	</section>
+</ecopedia>

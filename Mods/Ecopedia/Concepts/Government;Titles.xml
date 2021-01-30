@@ -1,0 +1,17 @@
+<ecopedia icon="ElectedTitle">
+  <summary loc="214">Positions which can hold one or more citizens.  Used for designating permissions and paying wages.</summary>
+  <section type="banner" image="TitlesEcopedia" />
+  <section loc="213">Titles are used for designating a group of users, then referencing that group in other things like permissions.  They are different from [Demographics] in that Titles are specified directly by citizens, while the citizens within a demographic are automatically defined based on a citizen-defined condition.
+
+There are two types of Titles available:
+
+ - <b>Regular Titles</b>. These can be created and managed by anyone at a [RegistrarItem].  There, the citizen can set which other citizens can assign the role (managers) and which are occupying the role.
+ - <b>Elected Titles</b>. These titles can only be elected (or appointed) and are created at a [GovernmentOfficeItem].  The properties of the government office determine what kind of [Election] is needed to elect the given position.  Elected Titles can only be left if they are forcibly removed from office, if they resign (both performed at a [BallotBoxItem], or if their term ends as defined in the position’s term limits.
+
+Elected Titles give a lot of flexibility in defining the governance of a world, and privileges can be tied directly to these accounts. For example, a tax law could be created that taxes vehicle usage and puts it into a fund that only the Elected Title ‘Minister of Transportation’ has access to. If there is another election for that position and it changes leaders, then the former citizen will automatically lose access to the account.
+
+By setting requirements on the Elected Title, you can ensure the continued good governance by citizens holding office. For example, you could place a requirement that all occupants of a given office are part of the 'Active' demographic may hold it. If an office holder becomes inactive, they will then automatically be removed from office and a specified successor put in their position.
+
+Titles can also have wages set on them. Wages are paid periodically as long as a citizen continues to occupy the title (and the payer has funds).
+  </section>
+</ecopedia>

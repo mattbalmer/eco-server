@@ -1,0 +1,12 @@
+<ecopedia icon="CurrencyTrade">
+  <summary loc="133">Trade between citizens of different abilities and possessing different goods is the backbone of the economy.</summary>
+  <section type="banner" image="TradeEcopedia" />
+  <section loc="132">Trade with your fellow citizens is essential in Eco, as each player has a set of [Specialties] that they can contribute to most effectively while trading with other citizens who are skilled in professions in which they are not. 
+
+ - Trades can be setup at a [Store Component], listing buy/sell prices for the different goods you would like.  Citizens can then buy and sell goods to you asynchronously, without being present.
+ - Trade of labor can happen through [Contracts] and [Work Parties], allowing players to perform work for payment within agreed upon terms.  This can be performed asynchronously as well.
+ - Trade of currencies can happen at a [Currency Exchange|Exchange Component], listing buy/sell prices for exchanges of different currencies.
+ - Trade is facilitated by [Transport] and building transportation infrastructure between the burgeoning hubs of your civilization will greatly promote the ability to trade.
+ - Trade is subject to [Taxes], set by the Government[government overview], which can either promote or reduce the value of certain trades.
+</section>
+</ecopedia>

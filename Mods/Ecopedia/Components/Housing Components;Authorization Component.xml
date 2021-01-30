@@ -1,0 +1,12 @@
+<ecopedia icon="AuthComponent">
+  <summary loc="63">Allows citizens to set the access rights of a given object.</summary>
+  <section loc="61">The <b>Authorization Component</b> allows specifying what permissions citizens have on the object.
+    </section>
+  <section image="Illustration Object Property" loc="62">
+The <b>Deed</b> displayed here is simply a link to the deed of the [Property] which the object is on (or the deed associated with the [Vehicle|Vehicle Component] if it is one).
+
+<b>Authorized Consumers</b> can be listed here, either as specific people, [Titles], or [Demographics].  Anyone listed can <b>interact</b> with the object without having full control.  A store, for example, will allow citizens with consumer rights to buy and sell there, but only citizens with full rights to the property may change what is for sale, or move the store itself.
+
+All placed objects have authorization components.
+  </section>
+</ecopedia>

@@ -1,0 +1,23 @@
+<ecopedia icon="Beet">
+  <summary loc="235">Nutrition, alongside housing, determines how fast you gain experience.</summary>
+  <section type="banner" image="nutritionecopedia" />
+  <section loc="234">
+Your Experience[Experience] is determined by your nutrition and housing[Housing|Housing Overview], and the more nutritious the food you eat the faster you will gain [Experience].  The healthier you are, the faster you advance.
+
+There are four nutrients represented in foods: <b>Protein, Fat, Vitamins, and Carbs</b>.  By adding up the average of each of these nutrients in all the food you’ve eaten in the last 24 hours, your experience multiplier is determined.   This means that if you eat junk food (low nutrients) it will affect you for 24 hours before it has passed through your body.
+
+Additionally, a balance multiplier is applied, giving an additional 0% - 50% of your total based on how equal the nutrients are in your body. If you have exactly 25% of each nutrient for example, you will gain an extra 50% skill.
+
+Depending on the difficulty settings for this server, a ‘skill gain multiplier’ may also be set which increases it further.
+
+Finally, a base skill gain value is added to the total. This ensures that even when you’re totally starving, you’re still gaining at least some skill.  You can see all these calculations for yourself in the tooltip for food in the bottom left UI.
+
+<b>Calories</b>
+Calories, unlike nutrients, are spent when you perform work, and when you run out of calories you’ll be unable to work until you eat more.  Calorie usage can be greatly reduced by upgraded tools and leveling-up skills.
+All food provides both calories and nutrients, so while gaining calories from food you’re also determining your skill multiplier, so watch that diet.
+</section>
+  <section image="Illustration_nutrition" loc="349">
+    <b>Feeding the World</b>
+Food forms the backbone of a growing society in Eco, fueling the increase in skills needed to build a civilization.  A well-organized network of food producers, from farmers to chefs, ensures that citizens gain skills at the rate they need.
+</section>
+</ecopedia>

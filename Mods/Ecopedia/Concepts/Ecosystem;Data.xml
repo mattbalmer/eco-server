@@ -1,0 +1,22 @@
+<ecopedia icon="Ecopedia_EcosystemData" priority="-1">
+  <summary loc="149">Data on the ecosystem and economy can provide valuable insights into the actions of society and help guide future decisions.</summary>
+  <section type="banner" image="ecopedia_banner_data" />
+  <section type="header" loc="143">Graphs</section>
+  <section image="Illustration_graphs" loc="144">
+Each Eco world stores every action in the game and monitors the progress of every aspect of the simulation. Data is stored in a few major categories, specifically the ecosystem and the economy. As players perform actions or as the ecosystem changes, it will be represented on graphs visible to citizens.
+
+Graphs are most useful for comparing the states of various metrics and viewing them overtime. As such, they’re especially useful for determining the results of laws and regulations in retrospect, by studying how things changed after they were implemented.  They are also useful for extrapolating into future effects, projecting the rate at which things are changing (i.e., population dropping as a result of deforestation) and making changes before they occur. Reading, composing, and understanding graphs is a very powerful tool for the government, and citizens are given the tools to craft graphs that support or refute arguments and present them to their fellow citizens directly on discussions for civic actions.
+</section>
+  <section type="header" loc="145">Heatmaps</section>
+  <section image="Illustration_heatmaps" loc="146">
+Eco worlds are varied places, with many different biomes and locations of human development and environmental impact. To view how different parts of the world vary, heatmaps are available for all the various world effects in the game.  Such values as citizen activity, population rates, pollution rates, temperature, moisture, and dozens more can be viewed through heatmaps, with changes recorded over time that can be played back and used for scientific argumentation.
+
+Players can view these in two ways: through the minimap in game, which can also display colored terrain in the game.   Secondly, they can be viewed in the web browser, where their ability to play back over time is taken advantage of. A snapshot of each heatmap is stored in the server data every 10 minutes (configurable), and citizens can view time lapse views of how the heat maps change over time.  This is essential to measuring impacts in specific locations and determining the best routes to build infrastructures and news settlements.
+</section>
+  <section type="header" loc="147">Mini-Map</section>
+  <section image="Illustration_minimap" loc="148">
+The minimap is a powerful tool within the game that serves many purposes: navigation, planning, data viewing, property locating, and many more. It can be enabled to view the various world layers of the game (heatmaps), highlighting regions that are high/low in population, pollution, citizen activity, etc using a gradient of colors.  World markers can be added manually, or globally for all citizens, to direct to specific points, aiding the coordination of human activity. These markers are also used to direct citizens automatically to dynamic work, specifying where roads should be built in a contract, where to deliver goods for transport, and so on.
+
+Currently we’re working on adding in-game designation of property and districts, as well as specifying specific land areas for work parties and contracts, allowing for example citizens to highlight in-game the areas they wish to hire others to plow a field, or build a road, etc. This will greatly open up the ability for the labor market, letting citizens be much more specific in an easier way when designating where they would like work performed.
+</section>
+</ecopedia>

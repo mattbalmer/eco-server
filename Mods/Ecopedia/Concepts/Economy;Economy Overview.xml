@@ -1,0 +1,21 @@
+<ecopedia icon="MoneyBag" priority="-2">
+   <summary loc="124">The economy consists of all resource usage, trade, and technological progress by citizens.</summary>
+  <section type="banner" image="ecopedia_banner_economyoverview" />
+  <section type="quote" loc="120">"Economy has frequently nothing whatever to do with the amount of money being spent, but with the wisdom used in spending it."
+    Henry Ford
+  </section>
+  <section loc="121">The <b>economy</b> comprises the actions of harvesting, production and trade among citizens, taking from the [Ecosystem|Ecosystem Overview] under the regulation of the [Government|Government Overview]. Citizens will need to ensure a smoothly running economy in order to progress technology enough to stop the meteor, without letting it run amok and destroy the planet through pollution in the process.
+  </section>
+  <section type="header" loc="122">Economy Concepts</section>
+  <section loc="123">
+  - [Crafting]. Using industrial tools to create new goods.
+  - [Trade]. Exchange of goods created by individuals with different specialties or access to resources.
+  - [Transport].  Moving resources from place to place, and building infrastructure throughout the world to do so.
+  - [Research]. Advancing human knowledge for the betterment of society.
+  - [Currency]. A representation of value created by citizens that facilitates economic activity.
+  - [Work Parties]. Organized labor groups sharing rewards.
+  - [Contracts]. Agreements between two citizens regarding labor or other arrangements.
+  - [Bank Accounts]. Containers of currency with configurable access.
+  - [Finance]. Providing capital to other citizens to help them progress while making a profit yourself.
+  </section>
+</ecopedia>

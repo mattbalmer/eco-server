@@ -1,0 +1,37 @@
+<ecopedia icon="ContractBoardComponent">
+  <summary loc="10">The Contract Board Component allows citizens to post or accept contracts and work party offers</summary>
+  <section loc="4">The <b>Contract Board Component</b> allows citizens to post and accepts [Contracts] and [Work Parties], allowing enforced labor and other agreements between citizens.</section>
+  <section type="header" loc="5">Setting Up a Contract</section>
+  <section image="IllustrationMowLawnContract" loc="6">
+When posting a contract, it may have as many or as few clauses as desired, and each clause can be configured to describe the job requested.  Each clause must be satisfied before the contract is considered complete.
+
+When <b>'Auto-Accept'</b> is checked, completion of contracts is auto-detected by the system.  For example, if a contract is set to build a road between two points, the contractor performing the work can open the contract in their side menu and press 'Job Finished', which will trigger a detection if the job is indeed complete. If so, the contract will be paid out according to the agreement and automatically closed.
+
+The 'Custom Clause' is a special clause that allows players to describe in words what they would like done. If a contract contains such a clause, it must be manually approved by the client (auto-accept may not be checked), since auto-detection can't determine when it's finished.
+  
+When auto-detection is unchecked, the contractor will click 'Job Finished' when they believe the job is done, and the contractor will then either <b>accept or reject</b> the completion.  Contracts without auto-accept require more trust between citizens, as there is no guarantee the contractor will honestly accept a completed job.  Citizens are advised to use [Reputation] as a means of determining trust in these situations.
+
+Contracts have a set time length they must be completed within, determined when posting the contract. In addition, contracts can be set to repeat for reoccurring jobs - when this is enabled, each time a contract is accepted the repetition counter will reduce by one.
+
+Any payment offered for a contract will be held in a special <b>Escrow</b> [Bank Account|Bank Accounts] while the contract is active.  If the contract completes successfully, that payment will be transferred to the contractor, and if it fails it will be refunded to the client.  A <b>deposit</b> can also be collected by the contractor, which will be held in escrow and refunded to the contractor upon successful completion, or given to the client upon failure.
+  </section>
+  <section type="header" loc="7">Work Parties</section>
+  <section image="IllustrationWorkParty" loc="8">
+[Work Parties] can also be posted on a Contract Board, allowing the creation of tasks that can be completed by multiple other citizens, as opposed to contracts which are an agreement between two parties only. Before posting a work party, a citizen must start a work order on a crafting table they own.
+
+After posting a work party, <b>Laborers</b> can join the project at the Contract Board. By default anyone can join the work party as a laborer, but requirements can be set for individual roles or general requirements for anyone to join. When 'Expand Roles When Full' is checked, space for new laborers to join is created automatically when all roles are filled.
+
+When setting the <b>Work</b> desired, the poster of the work party can decide to hire for labor, resources, or both. Any citizen who contributes to the work party will recieve a share of the payment based on the amount of work they provided. By assigning additional <b>Weight</b> to a particular job in a work party, that job will recieve a higher share of the payment.
+</section>
+  <section loc="9">
+There are a variety of <b>Payment</b> options for a work party, and multiple payment options can be offered for the same work party.
+
+- When offering [Currency] as a payment, there is an option to <b>'Pay as you Go'</b> which will pay out laborers as they contribute instead of paying a lump sum when the contract is finished.
+
+- When offering [Reputation] as a payment, it will be split by all citizens who contributed when the work party is finished.
+
+- When offering [Research] as a payment, all citizens who contribute the required amount will instantly discover the technology when the work party is finished. Research can be offered as payment only when the work party is creating a research book or if the citizen offering the work party has the research book in their inventory when posting the work party.
+
+- When granting a [Title|Titles] as a payment, the citizen posting the contract must be a title manager for the title being offered. All citizens who contribute the minimum amount will be granted the new title. The <b>Access Type</b> determines if they will become a title manager or title user.
+</section>
+</ecopedia>

@@ -1,0 +1,12 @@
+{
+  "CollaborationPreset": "MediumCollaboration",
+  "DifficultyModifiers": {
+    "SpecialtyCostMultiplier": 1.0,
+    "SkillGainMultiplier": 1.0,
+    "SpecialtyExperiencePerLevel": 25.0,
+    "CraftResourceModifier": 1.0,
+    "CraftTimeModifier": 1.0,
+    "PlayerExperiencePerSpecialtyExperience": 0.0
+  },
+  "EndgameCraftCost": "Normal"
+}

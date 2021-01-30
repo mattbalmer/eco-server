@@ -1,0 +1,8 @@
+<ecopedia icon="Skill Book" chapter="Concepts" priority="-1">
+  <summary loc="237">The skill system allows citizens to specialize in specific trades.</summary>
+  <section type="banner" image="ecopedia_banner_skillsoverview" />
+  <section loc="236">Central to a thriving economy is the ability to specialize and trade, thereby working more efficiently than if you attempted to do everything yourself.  Achieving a successful society depends on successfully accomplishing both.  
+    
+    A citizen's <b>skills</b> give them unique abilities and enhancements, which allows them to [Trade] with other citizens having different skills in the economy. As you gain [Experience], you can unlock new [Specialties] and level-up existing ones.  The experience you gain is multiplied by your [Nutrition] and [Housing|Housing Overview].    
+  </section>
+</ecopedia>

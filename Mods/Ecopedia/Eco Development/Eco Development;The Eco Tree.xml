@@ -1,0 +1,10 @@
+<ecopedia icon="CeibaSpecies">
+  <summary loc="309">Follow the development of Eco.</summary>
+  <section type="banner" image="IllustrationEcoTree" />
+  <section loc="307">
+    We intend Eco to be a forever-game, growing in depth and breadth and connections to other future games, a system of unlimited possibilities that aims to go beyond entertainment.  This tree contains the past, present, and future of Eco.
+
+    Via our website, you can view all the interactive parts of the tree and see where we're headed and the guiding philosophy behind the game.
+  </section>
+  <section type="button" url="http://play.eco/#tree" loc="308">View Eco Tree at</section>
+</ecopedia>

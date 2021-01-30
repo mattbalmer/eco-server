@@ -1,0 +1,11 @@
+<ecopedia icon="Prevent_LegalAction">
+  <summary loc="210">Cause-and-Effect rules designed by citizens and enforced automatically in order to achieve societal goals.</summary>
+  <section type="banner" image="LawsEcopedia" />
+  <title>Laws</title>
+  <section loc="209">Laws are the means by which the government makes changes in the world, to achieve goals of the populace.
+
+Laws are created by placing a [CourtItem], and depending on the [Civic Articles] available may require an election to pass.  Each law is created with a list of causes and effects, and when the cause happens the effect will be activated.  This allows a lot of flexibility in how the laws work, and they can cover many areas; from taxation to regulation to paid out funds incentivizing activities.
+
+Many ‘Cause’ choices will provide context about the citizen who triggered it, where it was triggered, etc. These ‘context’ properties can be seen in the Cause tooltip, and are available for specifying data in the ‘Effects’.  For example, an effect may tax the specific player who chopped down a tree
+  </section>
+</ecopedia>

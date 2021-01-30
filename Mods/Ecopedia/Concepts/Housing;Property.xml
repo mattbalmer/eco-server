@@ -1,0 +1,16 @@
+<ecopedia icon="Ecopedia_Property">
+  <summary loc="226">Citizens and governments may own property and determine the access rights of them.</summary>
+  <section type="banner" image="propertyecopedia" />
+  <section loc="219">
+    By claiming <b>Property</b>, citizens can protect access to plots of land, determining who is allowed to access the land and what they are allowed to do on objects contained on it.
+  </section>
+  <section></section>
+  <section type="header" loc="220">Land Property Rights</section>
+  <section image="Illustration Property" loc="221">
+  Land can be claimed as property by using a [Land Claim Stake|Property Tool Item] and targeting an unclaimed plot of land.  When targeted, a [Land Claim Paper|Property Claim Item] will be consumed, and the citizen will become the owner on the deed. The property at your current position can be seen in the world panel in the bottom right of the screen, and clicking the title will open the deed.</section>
+  <section type="header" loc="222">Object Property Rights</section>
+  <section image="Illustration Object Property" loc="223">Objects can have their access rights set separately from the land they are on, to allow <b>consumer access</b> to objects that are on private land.  These settings are determined in an [Authorization Component].  
+</section>
+  <section type="header" loc="224">Deeds</section>
+  <section image="Illustration Deed" loc="225">On the deed, citizens can add and remove parties that may access the land (place or remove blocks).  The owner can also be changed by clicking the gear beside the owner name.  Note that both [Demographics] and [Titles] can both be given ownership on a deed, including [Elected Titles]. Structuring a government this way can allow only elected officials to have certain access rights to land.</section>
+</ecopedia>

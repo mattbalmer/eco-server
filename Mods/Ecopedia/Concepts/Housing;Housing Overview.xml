@@ -1,0 +1,13 @@
+<ecopedia priority="-1" icon="House">
+  <summary loc="216">Your housing (along with your diet) determines your skill gain.</summary>
+  <section type="banner" image="ecopedia_banner_housingoverview" />
+  <section loc="215">A citizen cannot thrive without proper shelter, and together with your [Nutrition] your <b>Housing</b> value will determine your [Experience] multiplier.  The better your house’s materials and furnishing are, the higher your experience multiplier.  
+
+Additionally, many objects require houses and utilities to operate. The housing system consists of the following parts:
+ - [Residency]. You can share residency of a property with others.
+ - [Rooms]. A room is a fully contained space, and many objects require being placed inside a room to function.
+ - [Property]. Citizens can claim individual plots of land which they then can control access to.
+ - [Power]. Many items require a power source to operate, and generated power can be shared among many citizens.
+ - [Sewage]. Certain items require a sewage system of pipes, pumps, and wastewater treatment.
+</section>
+</ecopedia>

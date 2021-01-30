@@ -1,0 +1,7 @@
+<ecopedia chapter="Reference">
+  <summary loc="260">Tailors work with cloth to make clothing and high-end furniture for other citizens.</summary>
+  <section loc="259">Tailors work with cloth to make clothing and high-end furniture for other citizens. Unlike other professions, the Tailor profession has only one specialty.
+	
+[TailoringSkill] allows citizens to create [ClothItem] for use in crafting projects by a variety of professions. The clothing tailors creates provides citizens with special bonuses. For example, a [BigBackpackItem] has a higher maximum weight limit than the starter [BasicBackpackItem].
+	</section>=
+</ecopedia>

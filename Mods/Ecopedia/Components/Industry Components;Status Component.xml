@@ -1,0 +1,20 @@
+<ecopedia icon="StatusComponent">
+  <summary loc="103">Displays if an object is active or inactive and why.</summary>
+  <section loc="98">
+The <b>Status Component</b> allows citizens to see the requirements for an object to be active, and which of those requirements are met. If an object causes [Pollution], the status component also shows the lifetime pollution production for that object.
+	</section>
+  <section type="header" loc="99">Object Status</section>
+  <section image="IllustrationStatusComponent" loc="100">
+Each condition in the Status Component must be satisfied before an object can be active.  Some examples of conditions include:
+
+- Being contained in a valid [Room|Rooms]
+
+- Having enough [Power]
+
+- A working [Sewage] system
+	</section>
+  <section type="header" loc="101">Status Indicator</section>
+  <section image="IllustrationStatusIndicator" loc="102">
+When interacting with an object with a Status Component, citizens can quickly see the status of the object by checking the status indicator in the top left corner. A green circle means an object is active while a red circle means it is inactive.
+	</section>
+</ecopedia>

@@ -1,0 +1,22 @@
+{
+  "AllowOverthrow": true,
+  "ValueAdditionToOverthrow": 50.0,
+  "DayRangeForActiveDemographic": 1.5,
+  "HoursPlayedToBeActiveDemographic": 0.5,
+  "DayRangeForAbandonedDemographic": 7.0,
+  "HoursPlayedToBeAbandonedDemographic": 0.0,
+  "CitizenAgeForAbandonedDemographic": 24.0,
+  "MinutesBetweenCivicsUpdates": 5.0,
+  "AllowInvalidCivicContainerTimeInMinutes": 20.0,
+  "RecurringTransferFrequency": 30.0,
+  "AllowLawsToPreventLoginOrPlay": false,
+  "BasicElectionSettings": {
+    "MaximumElectionHours": 24.0,
+    "MinimumPercentOfEligibleVotersRequired": 10.0,
+    "MinimumDaysBetweenElectionsOfThisType": 0.0,
+    "EndElectionEarlyWhenThisPercentHaveVoted": 95.0,
+    "PercentOfAllVotersToInstantWin": 51.0,
+    "PercentOfAllVotersToInstantLose": 51.0,
+    "AnonymousVoting": false
+  }
+}

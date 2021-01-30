@@ -1,0 +1,17 @@
+<ecopedia icon="Ecopedia_Farming" priority="-1">
+  <summary loc="160">The cultivation of plants for food, fibers, and raw materials in production.</summary>
+  <section type="banner" image="ecopedia_banner_farming" />
+  <section loc="157">
+Farming provides a way to take the plant species most useful to people and create a global scale food supply. Farming can also focus on plants useful for other industrial purposes, like biofuel for a potentially renewable source of energy.
+
+Farmers will need to pay attention to the resources and health of their soil, avoiding depletion and pollution. Fertilizers like [CompostFertilizerItem] and methods of monitoring soil resources like the [SoilSamplerItem] will be important tools to keep farmland productive. Various vehicles, storage technologies, and more powerful hand tools will allow players to scale up their farming operations as the food and fuel needs of their societies increases.
+
+Farming is a big activity in Eco that we want to enhance and expand as we move forward with development. Balancing and storage will be a core part of farming improvements to start, as we make sure that Eco societies generate an appropriate demand from farmers to fuel technological growth, and that the storage objects and mechanics exist to support these demands. Farming itself has many possible improvements and expansions, among them developing and modifying seeds and organisms to be more productive or resistant to pollutants, or other environmental factors.
+  </section>
+  <section type="header" loc="158">Soil</section>
+  <section image="Illustration_soil" loc="159">
+The soil of Eco contains nutrients that allow plants to grow and thrive: too much or too little of any given type can change the yield and growth speed of both naturally occurring and farmed plants. As plants grow, they take nutrients from the soil and return it when they die bringing the world into a natural state of equilibrium. Players influence these changes by removing the plants from the environment through harvesting, deforesting, mining, or introducing pollution which slowly removes nutrients from the soil. Players can reintroduce nutrients or modify the existing ratios by using fertilizers on their land.
+
+As we increase the dependencies of the animals on the plant layers, we can have those parts of the ecosystems further affect the soil as species that consume plants can also remove nutrients from the soil. Another addition that can be considered is how topsoil exists within Eco: currently it’s purely cosmetic and tied to the biome of the area, but in each biome the topsoil is a unique and valuable resource compared to the dense clay and dirt below.
+</section>
+</ecopedia>

@@ -1,0 +1,15 @@
+<ecopedia priority="2" icon="Ecopedia_UsingTools">
+  <summary loc="297">Having access to the best tools allow you to achieve the most progress.</summary>
+  <section type="banner" image="ecopedia_banner_usingtools" />
+  <section loc="295">Through the use of <b>tools</b>, citizens can build great structures and move mountains.  The starting tools will allow you to effect small change only, but as technology advances you will gain tools that can perform batch operations, and eventually [Vehicle|Vehicle Component] that can make massive transformations to the world. </section>
+  <section loc="296">There are a number of different tool types available:
+  - <b>[Building] Tools</b>.  Hammers will allow you to place construction materials in 'Forms', shovels allow moving soil.  
+  - <b>[Farming] Tools</b>.  Plowing, planting, and sowing all have tools to increase their efficiency.
+  - <b>[Transport] Tools</b>.  Vehicles and tools for constructing roads are especially are useful for transporting goods.
+  - <b>[Harvesting] Tools</b>.  These tools allow collection of resources from the ecosystem.
+  - <b>[Hunting] Tools</b>.  Hunting animals for food requires specialized tools.
+  
+Tools that are manually powered require <b>Calories</b>, affecting your [Nutrition].
+All tools have <b>Durability</b> associated with them, which drops as they are used.  Once a tool has lost its durability, it will take a tremendous amount of calories to use, and should be repaired at a [Repair|Repair Component] Table.
+  </section>
+</ecopedia>
