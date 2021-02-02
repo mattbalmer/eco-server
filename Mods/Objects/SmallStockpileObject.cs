@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -37,9 +37,8 @@ namespace Eco.Mods.TechTree
             this.GetComponent<StockpileComponent>().Initialize(DefaultDim);
 
             var storage = this.GetComponent<PublicStorageComponent>();
-            this.GetComponent<LinkComponent>().Initialize(15);
             storage.Initialize(DefaultDim.x * DefaultDim.z);
-            storage.Storage.AddInvRestriction(new StockpileStackRestriction(DefaultDim.y * 10)); // limit stack sizes to the y-height of the stockpile
+            storage.Storage.AddInvRestriction(new StockpileStackRestriction(DefaultDim.y)); // limit stack sizes to the y-height of the stockpile
         }
     }
 }
