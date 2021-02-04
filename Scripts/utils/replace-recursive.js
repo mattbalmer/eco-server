@@ -49,13 +49,13 @@ async function readFiles(dirname, options, onFileContent, onError) {
   const files = await getFiles(dirname, options);
   console.log('files', files);
   files.slice(0, 2).forEach(file => {
-    const { name, absolutePath, relativePath } = file;
+    // const { name, absolutePath, relativePath } = file;
     fs.readFile(absolutePath, 'utf-8', function(err, content) {
       if (err) {
         onError(err);
         return;
       }
-      onFileContent(relativePath, content);
+      onFileContent(file, content);
     });
   });
 }
@@ -63,10 +63,10 @@ async function readFiles(dirname, options, onFileContent, onError) {
 function replaceRecursive(dirname, options, getContent, onSuccess) {
   readFiles(dirname,
     options,
-    function(filename, content) {
-      const newcontent = getContent(content, filename);
+    function(file, content) {
+      const newcontent = getContent(content, file.relativePath);
       // console.log('newcontent', newcontent);
-      fs.writeFile(filename, newcontent, { encoding: 'utf8' }, (err) => {
+      fs.writeFile(file.absolutePath, newcontent, { encoding: 'utf8' }, (err) => {
         if (err) {
           throw err;
         } else if(onSuccess) {
