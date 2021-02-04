@@ -2,6 +2,13 @@ const path = require('path');
 const fs = require('fs');
 const { replaceRecursive } = require('./utils/replace-recursive');
 
+const options = {
+  signHeader: true,
+  ignoreSigned: true,
+};
+
+const HEADER = '// This file modified by @mbalmer eco-custom-server script\n';
+
 replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
   {
     match: /.*\.cs$/g,
@@ -11,10 +18,16 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       'WebClient',
     ]
   },
-  (content, file) => {
+  (rawContent, file) => {
     const filepath = file.relativePath;
     const filename = file.name;
+    let content = (' ' + rawContent).slice(1);
     console.log(`Replacing ${filepath}`);
+
+    if (options.ignoreSigned && content.includes(HEADER)) {
+      console.log('Skipping signed file', filepath);
+      return;
+    }
 
     if (filename === 'TinyStockpileObject.cs') {
       content = content
@@ -73,7 +86,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
         )
     }
 
-    return content
+    content = content
       .replace(/\[MaxStackSize\(20\)\]/g, "[MaxStackSize(40)]")
       .replace(/\[MaxStackSize\(15\)\]/g, "[MaxStackSize(60)]")
       .replace(/\[MaxStackSize\(10\)\]/g, "[MaxStackSize(40)]")
@@ -87,6 +100,12 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       .replace(/MaturityAgeDays = 7;/g, "MaturityAgeDays = 4.5f;")
       .replace(/MaturityAgeDays = 30;/g, "MaturityAgeDays = 10f;")
       ;
+
+    if (options.signHeader && content !== rawContent) {
+      content += HEADER;
+    }
+
+    return content;
   }
 );
 
