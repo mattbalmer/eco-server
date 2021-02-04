@@ -7,7 +7,7 @@ const options = {
   ignoreSigned: true,
 };
 
-const HEADER = '// This file modified by @mbalmer eco-custom-server script\n';
+const HEADER = '// This file modified by @mbalmer eco-custom-server script';
 
 replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
   {
