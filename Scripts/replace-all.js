@@ -37,7 +37,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
 
     if (filename === 'SmallStockpileObject.cs') {
       content = content
-        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 8)')
+        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 10)')
         .replace(`storage.Initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            storage.Initialize')
     }
 
@@ -81,7 +81,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       content = content
         .replace(
           `this.GetComponent<StockpileComponent>().Initialize(new Vector3i(2,2,3))`,
-          'this.GetComponent<StockpileComponent>().Initialize(new Vector3i(2,6,3))'
+          'this.GetComponent<StockpileComponent>().Initialize(new Vector3i(2,20,3))'
         )
     }
 
