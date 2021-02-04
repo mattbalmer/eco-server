@@ -61,7 +61,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       content = content
         .replace(
           /this\.GetComponent<PublicStorageComponent>/g,
-          'this.GetComponent<LinkComponent>().Initialize(20);            this.GetComponent<PublicStorageComponent>'
+          'this.GetComponent<LinkComponent>().Initialize(20);\n            this.GetComponent<PublicStorageComponent>'
         )
     }
 
