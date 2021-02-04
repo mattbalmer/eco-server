@@ -102,7 +102,10 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       ;
 
     if (options.signHeader && content !== rawContent) {
-      content += HEADER;
+      // const i = content.indexOf('// See LICENSE file in the project root for full license information.') + '// See LICENSE file in the project root for full license information.'.length;
+      const lines = content.split('\n');
+      lines.splice(2, 0, HEADER);
+      content = lines.join('\n');
     }
 
     return content;
