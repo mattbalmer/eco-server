@@ -19,7 +19,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
     if (filename === 'TinyStockpileObject.cs') {
       content = content
         .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 5)')
-        .replace(`storage.initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            ')
+        .replace(`storage.Initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            storage.Initialize')
       ;
     }
 
