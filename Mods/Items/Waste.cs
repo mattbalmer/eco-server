@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
-// This file modified by @mbalmer eco-custom-server script
 
 using System.ComponentModel;
 using Eco.Core.Items;
@@ -12,7 +11,7 @@ using Eco.Shared.Serialization;
 [Serialized]
 [LocDisplayName("Garbage")]
 [Weight(30000)]
-[MaxStackSize(40)]
+[MaxStackSize(10)]
 [RequiresTool(typeof(ShovelItem))]
 [Tag("Excavatable", 1)]
 [Ecopedia("Blocks", "Byproducts", true, InPageTooltip.DynamicTooltip)]

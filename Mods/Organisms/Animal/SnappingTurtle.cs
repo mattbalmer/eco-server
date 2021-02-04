@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
-// This file modified by @mbalmer eco-custom-server script
 
 namespace Eco.Mods.Organisms
 {
@@ -38,7 +37,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "SnappingTurtle";
                 this.DisplayName = Localizer.DoStr("SnappingTurtle");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 1f;
                 // Food
                 this.FoodSources = new List<System.Type>()
                 { 

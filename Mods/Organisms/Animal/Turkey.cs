@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
-// This file modified by @mbalmer eco-custom-server script
 
 namespace Eco.Mods.Organisms
 {
@@ -30,7 +29,7 @@ namespace Eco.Mods.Organisms
                 this.Name = "Turkey";
                 this.DisplayName = Localizer.DoStr("Turkey");
                 // Lifetime
-                this.MaturityAgeDays = 0.8f;
+                this.MaturityAgeDays = 1f;
                 // Food
                 this.FoodSources = new List<System.Type>() {typeof(Camas), typeof(Wheat), typeof(Bunchgrass), typeof(Corn), typeof(Huckleberry), typeof(BigBluestem)};
                 this.CalorieValue = 75f;

@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
-// This file modified by @mbalmer eco-custom-server script
 
 namespace Eco.Mods.TechTree
 {
@@ -21,7 +20,7 @@ namespace Eco.Mods.TechTree
     [Serialized]
     [LocDisplayName("Dirt")]
     [Weight(19000)]
-    [MaxStackSize(40)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [MakesRoads]
     [Tag("RoadType")]
@@ -51,7 +50,7 @@ namespace Eco.Mods.TechTree
     [Serialized]
     [LocDisplayName("Sand")]
     [Weight(20000)]
-    [MaxStackSize(40)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [StartsDiscovered]
     [Tag("Excavatable", 1)]
@@ -71,7 +70,7 @@ namespace Eco.Mods.TechTree
     [Serialized, Liquid]
     [LocDisplayName("Water")]
     [Category("Hidden")]
-    [MaxStackSize(40)]
+    [MaxStackSize(10)]
     [StartsDiscovered]
     [Tag("Liquid", 1)]
     [Ecopedia("Natural Resources", "Blocks", true, InPageTooltip.DynamicTooltip)]

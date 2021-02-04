@@ -1,6 +1,5 @@
 ﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
-// This file modified by @mbalmer eco-custom-server script
 
 namespace Eco.Mods.TechTree
 {
@@ -13,7 +12,7 @@ namespace Eco.Mods.TechTree
 
     [Serialized, Weight(28000)]
     [LocDisplayName("Wet Tailings")]
-    [MaxStackSize(40)]
+    [MaxStackSize(10)]
     [RequiresTool(typeof(ShovelItem))]
     [Tag("Excavatable", 1)]
     [Ecopedia("Blocks", "Byproducts", true, InPageTooltip.DynamicTooltip)]
