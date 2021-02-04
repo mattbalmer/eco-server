@@ -47,8 +47,7 @@ async function getFiles(dirname = './', options = {}) {
 
 async function readFiles(dirname, options, onFileContent, onError) {
   const files = await getFiles(dirname, options);
-  console.log('files', files.slice(0, 2));
-  files.slice(0, 2).forEach(file => {
+  files.forEach(file => {
     fs.readFile(file.absolutePath, 'utf-8', function(err, content) {
       if (err) {
         onError(err);
