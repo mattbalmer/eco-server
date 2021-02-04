@@ -1,0 +1,6 @@
+{
+    "name": "eco-server",
+    "scripts": {
+        "run": "./run.sh"
+    }
+}

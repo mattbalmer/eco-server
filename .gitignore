@@ -1,5 +1,9 @@
 *.code-workspace
 .vscode/
+.idea/
+*.iml
+.DS_STORE
+node_modules/
 
 Mods.zip
 
