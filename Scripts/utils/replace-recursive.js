@@ -1,11 +1,14 @@
 // modified from: https://gist.github.com/crubier/3cfcd4931f9c52d93fed4c18d2edee16
 
 const fs = require('fs');
-const path = require("path");
+const path = require('path');
+const util = require('util');
+
+const readdir = util.promisify(fs.readdir);
 
 // todo: fix this damn file
 async function getFiles(path = "./") {
-  const entries = await fs.readdir(path, { withFileTypes: true });
+  const entries = await readdir(path, { withFileTypes: true });
 
   // Get files within the current directory and add a path key to the file objects
   const files = entries
