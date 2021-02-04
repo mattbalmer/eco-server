@@ -9,12 +9,25 @@ const readdir = util.promisify(fs.readdir);
 // todo: fix this damn file
 async function getFiles(dirname = './', options = {}) {
   const ignore = options.ignore || [];
+  if (!options.basePath) {
+    options.basePath = dirname;
+  }
   const entries = await readdir(dirname, { withFileTypes: true });
 
   // Get files within the current directory and add a path key to the file objects
   const files = entries
-      .filter(file => !file.isDirectory())
-      .map(file => ({ ...file, path: dirname + file.name }));
+      .filter(file => {
+        if (file.isDirectory()) {
+          return false;
+        }
+        const relPath = path.relative(options.basePath, path.resolve(dirname, file.name));
+        return options.match ? options.match.test(relPath) : true;
+      })
+      .map(file => ({
+        ...file,
+        absolutePath: path.resolve(dirname, file.name),
+        relativePath: path.relative(options.basePath, path.resolve(dirname, file.name))
+      }));
 
   // Get folders within the current directory
   const folders = entries.filter(folder => folder.isDirectory());
@@ -25,7 +38,7 @@ async function getFiles(dirname = './', options = {}) {
         current function itself
       */
     if (!ignore.includes(folder.name)) {
-      files.push(...await getFiles(`${dirname}/${folder.name}/`));
+      files.push(...await getFiles(path.resolve(dirname, folder.name), options));
     }
   }
 
@@ -35,25 +48,16 @@ async function getFiles(dirname = './', options = {}) {
 async function readFiles(dirname, options, onFileContent, onError) {
   const files = await getFiles(dirname, options);
   console.log('files', files);
-  files.forEach(file => {
-    const { name, path } = file;
-
+  files.slice(0, 2).forEach(file => {
+    const { name, absolutePath, relativePath } = file;
+    fs.readFile(absolutePath, 'utf-8', function(err, content) {
+      if (err) {
+        onError(err);
+        return;
+      }
+      onFileContent(relativePath, content);
+    });
   });
-  // fs.readdir(dirname, function(err, filenames) {
-  //   if (err) {
-  //     onError(err);
-  //     return;
-  //   }
-  //   filenames.forEach(function(filename) {
-  //     fs.readFile(dirname + filename, 'utf-8', function(err, content) {
-  //       if (err) {
-  //         onError(err);
-  //         return;
-  //       }
-  //       onFileContent(filename, content);
-  //     });
-  //   });
-  // });
 }
 
 function replaceRecursive(dirname, options, getContent, onSuccess) {
@@ -61,6 +65,7 @@ function replaceRecursive(dirname, options, getContent, onSuccess) {
     options,
     function(filename, content) {
       const newcontent = getContent(content, filename);
+      // console.log('newcontent', newcontent);
       fs.writeFile(filename, newcontent, { encoding: 'utf8' }, (err) => {
         if (err) {
           throw err;

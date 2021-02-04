@@ -4,6 +4,7 @@ const { replaceRecursive } = require('./utils/replace-recursive');
 
 replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
   {
+    match: /.*\.cs$/g,
     ignore: [
       '.git',
       'Scripts',
