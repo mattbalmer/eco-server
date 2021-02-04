@@ -16,18 +16,23 @@ async function getFiles(dirname = './', options = {}) {
 
   // Get files within the current directory and add a path key to the file objects
   const files = entries
-      .filter(file => {
-        if (file.isDirectory()) {
-          return false;
-        }
-        const relPath = path.relative(options.basePath, path.resolve(dirname, file.name));
-        return options.match ? options.match.test(relPath) : true;
-      })
-      .map(file => ({
-        ...file,
-        absolutePath: path.resolve(dirname, file.name),
-        relativePath: path.relative(options.basePath, path.resolve(dirname, file.name))
-      }));
+    .filter(file => {
+      if (file.isDirectory()) {
+        return false;
+      }
+      const relPath = path.relative(options.basePath, path.resolve(dirname, file.name));
+      const good = options.match ? (() => {
+        options.match.lastIndex = 0;
+        return options.match.test(relPath);
+      })() : true;
+      console.log('got entry', file, good);
+      return good;
+    })
+    .map(file => ({
+      ...file,
+      absolutePath: path.resolve(dirname, file.name),
+      relativePath: path.relative(options.basePath, path.resolve(dirname, file.name))
+    }));
 
   // Get folders within the current directory
   const folders = entries.filter(folder => folder.isDirectory());

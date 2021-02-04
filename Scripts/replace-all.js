@@ -9,7 +9,7 @@ const options = {
 
 const HEADER = '// This file modified by @mbalmer eco-custom-server script';
 
-replaceRecursive(path.resolve(__dirname, '..', 'Mods/AutoGen/Plant'),
+replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
   {
     match: /.*\.cs$/g,
     ignore: [
