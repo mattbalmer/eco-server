@@ -24,7 +24,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
     let content = (' ' + rawContent).slice(1);
 
     if (options.ignoreSigned && content.includes(HEADER)) {
-      console.log('Skipping file ', filepath);
+      console.log('Skipping file :', filepath);
       return;
     }
 
@@ -106,9 +106,9 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
         lines.splice(2, 0, HEADER);
         content = lines.join('\n');
       }
-      console.log('Modified file ', filepath);
+      console.log('Modified file :', filepath);
     } else {
-      console.log('Read file     ', filepath);
+      console.log('Read file     :', filepath);
     }
 
     return content;

@@ -21,12 +21,10 @@ async function getFiles(dirname = './', options = {}) {
         return false;
       }
       const relPath = path.relative(options.basePath, path.resolve(dirname, file.name));
-      const good = options.match ? (() => {
+      return options.match ? (() => {
         options.match.lastIndex = 0;
         return options.match.test(relPath);
       })() : true;
-      console.log('got entry', file, good);
-      return good;
     })
     .map(file => ({
       ...file,
