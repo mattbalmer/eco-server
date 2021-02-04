@@ -26,21 +26,43 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
     if (filename === 'SmallStockpileObject.cs') {
       content = content
         .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 8)')
+        .replace(`storage.Initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            storage.Initialize')
     }
 
     if (filename === 'StockpileObject.cs') {
       content = content
         .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 10)')
+        .replace(`storage.Initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            storage.Initialize')
     }
 
     if (filename === 'LumberStockpileObject.cs') {
       content = content
         .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 12)')
+        .replace(`storage.Initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            storage.Initialize')
     }
 
     if (filename === 'LargeLumberStockpileObject.cs') {
       content = content
         .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 12)')
+        .replace(`storage.Initialize`, 'this.GetComponent<LinkComponent>().Initialize(15);\n            storage.Initialize')
+    }
+
+    if (filename === 'StorageChestObject.cs') {
+      content = content
+        .replace(`this.GetComponent<LinkComponent>().Initialize(5);`, 'this.GetComponent<LinkComponent>().Initialize(10);')
+    }
+
+    if (filename === 'StorageChestObject.cs') {
+      content = content
+        .replace(`this.GetComponent<LinkComponent>().Initialize(5);`, 'this.GetComponent<LinkComponent>().Initialize(10);')
+    }
+
+    if (filename === 'SiloObject.cs') {
+      content = content
+        .replace(
+          /this\.GetComponent<PublicStorageComponent>/g,
+          'this.GetComponent<LinkComponent>().Initialize(20);            this.GetComponent<PublicStorageComponent>'
+        )
     }
 
     if (filename === 'SteamTruck.cs') {
