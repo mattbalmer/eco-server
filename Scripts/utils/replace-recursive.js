@@ -24,7 +24,7 @@ async function getFiles(dirname = './', options = {}) {
         Add the found files within the subdirectory to the files array by calling the
         current function itself
       */
-    if (!options.ignore.includes(folder.name)) {
+    if (!ignore.includes(folder.name)) {
       files.push(...await getFiles(`${dirname}${folder.name}/`));
     }
   }
@@ -56,8 +56,9 @@ async function readFiles(dirname, options, onFileContent, onError) {
   // });
 }
 
-function replaceRecursive(dirname, getContent, onSuccess) {
+function replaceRecursive(dirname, options, getContent, onSuccess) {
   readFiles(dirname,
+    options,
     function(filename, content) {
       const newcontent = getContent(content, filename);
       fs.writeFile(filename, newcontent, { encoding: 'utf8' }, (err) => {
