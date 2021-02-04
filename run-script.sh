@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node ./scripts/"$1".js
+node ./Scripts/"$1".js
