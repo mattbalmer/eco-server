@@ -26,6 +26,8 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       .replace(/MaturityAgeDays = 6/g, "MaturityAgeDays = 4f")
       .replace(/MaturityAgeDays = 7/g, "MaturityAgeDays = 4.5f")
       .replace(/MaturityAgeDays = 30/g, "MaturityAgeDays = 10")
+
+      .replace(/(\s+)?$/g, '')
     ;
   }
 );
