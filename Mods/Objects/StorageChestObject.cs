@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 namespace Eco.Mods.TechTree
@@ -12,7 +12,7 @@ namespace Eco.Mods.TechTree
         protected override void PostInitialize()
         {
             base.PostInitialize();
-            this.GetComponent<LinkComponent>().Initialize(10);
+            this.GetComponent<LinkComponent>().Initialize(5);
         }
     }
 }

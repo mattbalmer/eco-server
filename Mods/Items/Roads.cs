@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 using System;
@@ -48,7 +48,6 @@ public class DirtRampObject : BaseRampObject
 [ItemGroup("Road Items")]
 [Tag("Road")]
 [Tag("Constructable")]
-[MaxStackSize(20)]
 [Ecopedia("Blocks", "Roads", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]
 [Weight(60000)]
 public class DirtRampItem : RampItem<DirtRampObject>
@@ -77,7 +76,6 @@ public class StoneRampObject : BaseRampObject
 [ItemGroup("Road Items")]
 [Tag("Road")]
 [Tag("Constructable")]
-[MaxStackSize(20)]
 [Ecopedia("Blocks", "Roads", createAsSubPage: true, display: InPageTooltip.DynamicTooltip)]
 [Weight(60000)]
 public class StoneRampItem : RampItem<StoneRampObject>
@@ -106,7 +104,6 @@ public class AsphaltConcreteRampObject : BaseRampObject
 [ItemGroup("Road Items")]
 [Tag("Road")]
 [Tag("Constructable")]
-[MaxStackSize(20)]
 [Category("Hidden")]
 [Weight(60000)]
 public class AsphaltConcreteRampItem : RampItem<AsphaltConcreteRampObject>

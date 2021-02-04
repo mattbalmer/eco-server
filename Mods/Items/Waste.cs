@@ -1,4 +1,4 @@
-// Copyright (c) Strange Loop Games. All rights reserved.
+﻿// Copyright (c) Strange Loop Games. All rights reserved.
 // See LICENSE file in the project root for full license information.
 
 using System.ComponentModel;
@@ -11,7 +11,7 @@ using Eco.Shared.Serialization;
 [Serialized]
 [LocDisplayName("Garbage")]
 [Weight(30000)]
-[MaxStackSize(40)]
+[MaxStackSize(10)]
 [RequiresTool(typeof(ShovelItem))]
 [Tag("Excavatable", 1)]
 [Ecopedia("Blocks", "Byproducts", true, InPageTooltip.DynamicTooltip)]
