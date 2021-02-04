@@ -57,7 +57,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
         .replace(`this.GetComponent<LinkComponent>().Initialize(5);`, 'this.GetComponent<LinkComponent>().Initialize(10);')
     }
 
-    if (filename === 'SiloObject.cs') {
+    if (filename === 'SiloObjects.cs') {
       content = content
         .replace(
           /this\.GetComponent<PublicStorageComponent>/g,
