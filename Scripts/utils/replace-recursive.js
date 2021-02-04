@@ -63,7 +63,6 @@ function replaceRecursive(dirname, options, getContent, onSuccess) {
     options,
     function(file, content) {
       const newcontent = getContent(content, file);
-      // console.log('newcontent', newcontent);
       fs.writeFile(file.absolutePath, newcontent, { encoding: 'utf8' }, (err) => {
         if (err) {
           throw err;

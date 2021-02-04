@@ -22,10 +22,9 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods/AutoGen/Plant'),
     const filepath = file.relativePath;
     const filename = file.name;
     let content = (' ' + rawContent).slice(1);
-    console.log(`Replacing ${filepath}`);
 
     if (options.ignoreSigned && content.includes(HEADER)) {
-      console.log('Skipping signed file', filepath);
+      console.log('Skipping file ', filepath);
       return;
     }
 
@@ -99,12 +98,17 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods/AutoGen/Plant'),
       .replace(/MaturityAgeDays = 6;/g, "MaturityAgeDays = 4f;")
       .replace(/MaturityAgeDays = 7;/g, "MaturityAgeDays = 4.5f;")
       .replace(/MaturityAgeDays = 30;/g, "MaturityAgeDays = 10f;")
-      ;
+    ;
 
-    if (options.signHeader && content !== rawContent) {
-      const lines = content.split('\n');
-      lines.splice(2, 0, HEADER);
-      content = lines.join('\n');
+    if (content !== rawContent) {
+      if (options.signHeader) {
+        const lines = content.split('\n');
+        lines.splice(2, 0, HEADER);
+        content = lines.join('\n');
+      }
+      console.log('Modified file ', filepath);
+    } else {
+      console.log('Read file     ', filepath);
     }
 
     return content;
