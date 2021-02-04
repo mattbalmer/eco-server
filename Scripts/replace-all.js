@@ -9,7 +9,7 @@ const options = {
 
 const HEADER = '// This file modified by @mbalmer eco-custom-server script';
 
-replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
+replaceRecursive(path.resolve(__dirname, '..', 'Mods/AutoGen/Plant'),
   {
     match: /.*\.cs$/g,
     ignore: [
@@ -102,7 +102,6 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       ;
 
     if (options.signHeader && content !== rawContent) {
-      // const i = content.indexOf('// See LICENSE file in the project root for full license information.') + '// See LICENSE file in the project root for full license information.'.length;
       const lines = content.split('\n');
       lines.splice(2, 0, HEADER);
       content = lines.join('\n');
