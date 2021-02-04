@@ -5,11 +5,9 @@ const { replaceRecursive } = require('./utils/replace-recursive');
 replaceRecursive(path.resolve(__dirname, '..', 'Mods'), (content, filename) => {
   console.log(`Replacing ${filename}`);
   return content
-    .replace(/\[MaxStackSize\(40\)\]/g, "[MaxStackSize(60)]")
-    .replace(/\[MaxStackSize\(30\)\]/g, "[MaxStackSize(50)]")
     .replace(/\[MaxStackSize\(20\)\]/g, "[MaxStackSize(40)]")
     .replace(/\[MaxStackSize\(15\)\]/g, "[MaxStackSize(60)]")
-    .replace(/\[MaxStackSize\(10\)\]/g, "[MaxStackSize(20)]")
+    .replace(/\[MaxStackSize\(10\)\]/g, "[MaxStackSize(40)]")
 
     .replace(/MaturityAgeDays = 0.8f/g, "MaturityAgeDays = 0.65f")
     .replace(/MaturityAgeDays = 1f/g, "MaturityAgeDays = 0.8f")
