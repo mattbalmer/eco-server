@@ -11,8 +11,44 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       'WebClient',
     ]
   },
-  (content, filename) => {
-    console.log(`Replacing ${filename}`);
+  (content, file) => {
+    const filepath = file.relativePath;
+    const filename = file.name;
+    console.log(`Replacing ${filepath}`);
+
+    if (filename === 'TinyStockpileObject.cs') {
+      content = content
+        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 5)')
+    }
+
+    if (filename === 'SmallStockpileObject.cs') {
+      content = content
+        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 8)')
+    }
+
+    if (filename === 'StockpileObject.cs') {
+      content = content
+        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 10)')
+    }
+
+    if (filename === 'LumberStockpileObject.cs') {
+      content = content
+        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 12)')
+    }
+
+    if (filename === 'LargeLumberStockpileObject.cs') {
+      content = content
+        .replace(`new StockpileStackRestriction(DefaultDim.y)`, 'new StockpileStackRestriction(DefaultDim.y * 12)')
+    }
+
+    if (filename === 'SteamTruck.cs') {
+      content = content
+        .replace(
+          `this.GetComponent<StockpileComponent>().Initialize(new Vector3i(2,2,3))`,
+          'this.GetComponent<StockpileComponent>().Initialize(new Vector3i(2,6,3))'
+        )
+    }
+
     return content
       .replace(/\[MaxStackSize\(20\)\]\s*/g, "[MaxStackSize(40)]")
       .replace(/\[MaxStackSize\(15\)\]\s*/g, "[MaxStackSize(60)]")
