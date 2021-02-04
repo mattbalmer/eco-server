@@ -25,7 +25,7 @@ async function getFiles(dirname = './', options = {}) {
         current function itself
       */
     if (!ignore.includes(folder.name)) {
-      files.push(...await getFiles(`${dirname}${folder.name}/`));
+      files.push(...await getFiles(`${dirname}/${folder.name}/`));
     }
   }
 
