@@ -74,9 +74,9 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
     }
 
     return content
-      .replace(/\[MaxStackSize\(20\)\]\s*/g, "[MaxStackSize(40)]")
-      .replace(/\[MaxStackSize\(15\)\]\s*/g, "[MaxStackSize(60)]")
-      .replace(/\[MaxStackSize\(10\)\]\s*/g, "[MaxStackSize(40)]")
+      .replace(/\[MaxStackSize\(20\)\]/g, "[MaxStackSize(40)]")
+      .replace(/\[MaxStackSize\(15\)\]/g, "[MaxStackSize(60)]")
+      .replace(/\[MaxStackSize\(10\)\]/g, "[MaxStackSize(40)]")
 
       .replace(/MaturityAgeDays = 0.8f/g, "MaturityAgeDays = 0.65f")
       .replace(/MaturityAgeDays = 1f/g, "MaturityAgeDays = 0.8f")
@@ -86,7 +86,7 @@ replaceRecursive(path.resolve(__dirname, '..', 'Mods'),
       .replace(/MaturityAgeDays = 6;/g, "MaturityAgeDays = 4f;")
       .replace(/MaturityAgeDays = 7;/g, "MaturityAgeDays = 4.5f;")
       .replace(/MaturityAgeDays = 30;/g, "MaturityAgeDays = 10f;")
-    ;
+      ;
   }
 );
 
