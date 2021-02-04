@@ -9,12 +9,12 @@ const readdir = util.promisify(fs.readdir);
 // todo: fix this damn file
 async function getFiles(dirname = './', options = {}) {
   const ignore = options.ignore || [];
-  const entries = await readdir(path, { withFileTypes: true });
+  const entries = await readdir(dirname, { withFileTypes: true });
 
   // Get files within the current directory and add a path key to the file objects
   const files = entries
       .filter(file => !file.isDirectory())
-      .map(file => ({ ...file, path: path + file.name }));
+      .map(file => ({ ...file, path: dirname + file.name }));
 
   // Get folders within the current directory
   const folders = entries.filter(folder => folder.isDirectory());
@@ -25,7 +25,7 @@ async function getFiles(dirname = './', options = {}) {
         current function itself
       */
     if (!options.ignore.includes(folder.name)) {
-      files.push(...await getFiles(`${path}${folder.name}/`));
+      files.push(...await getFiles(`${dirname}${folder.name}/`));
     }
   }
 
